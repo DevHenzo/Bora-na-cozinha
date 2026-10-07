@@ -7,6 +7,11 @@ const recipeData = [
     yield: '10 fatias',
     difficulty: 'Fácil',
     description: 'Bolo fofinho de cenoura com massa macia e cobertura de chocolate para um sabor clássico e irresistível.',
+    keywords: ['bolo de cenoura', 'bolo com cobertura de chocolate', 'bolo fofinho', 'cenoura', 'sobremesa'],
+    tags: ['bolos', 'sobremesas', 'forno', 'vegetariano'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/37711037/pexels-photo-37711037.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '3 cenouras médias raladas',
@@ -41,6 +46,11 @@ const recipeData = [
     yield: '8 porções',
     difficulty: 'Fácil',
     description: 'Pudim cremoso e delicado com calda caramelizada, clássico e sempre bem aceito.',
+    keywords: ['pudim de leite condensado', 'pudim', 'sobremesa', 'calda caramelizada'],
+    tags: ['sobremesas', 'doces', 'geladeira', 'vegetariano'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/34234275/pexels-photo-34234275.png?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '1 lata de leite condensado',
@@ -71,6 +81,11 @@ const recipeData = [
     yield: '6 porções',
     difficulty: 'Média',
     description: 'Camadas de massa com molho bolonhesa, queijo e molho bechamel, muito saborosa e reconfortante.',
+    keywords: ['lasanha à bolonhesa', 'lasanha', 'massa', 'carne moída', 'molho bechamel'],
+    tags: ['massas', 'prato principal', 'forno', 'carne'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Italiana',
     image: 'https://images.pexels.com/photos/31119077/pexels-photo-31119077.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '500 g de massa para lasanha',
@@ -105,6 +120,11 @@ const recipeData = [
     yield: '4 porções',
     difficulty: 'Fácil',
     description: 'Frango em molho cremoso de tomate e creme de leite, perfeito para acompanhar arroz e batata.',
+    keywords: ['strogonoff de frango', 'estrogonofe', 'frango cremoso', 'frango', 'molho de tomate'],
+    tags: ['carnes', 'frango', 'prato principal', 'rápidas'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/30700761/pexels-photo-30700761.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '500 g de peito de frango em tiras',
@@ -137,6 +157,11 @@ const recipeData = [
     yield: '8 fatias',
     difficulty: 'Fácil',
     description: 'Brownie úmido, com casca crocante por fora e centro macio, ideal para qualquer momento.',
+    keywords: ['brownie de chocolate', 'brownie', 'chocolate', 'sobremesa', 'bolo úmido'],
+    tags: ['sobremesas', 'doces', 'chocolate', 'forno', 'vegetariano'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Americana',
     image: 'https://images.pexels.com/photos/17488699/pexels-photo-17488699.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '200 g de chocolate amargo',
@@ -168,6 +193,11 @@ const recipeData = [
     yield: '12 fatias',
     difficulty: 'Média',
     description: 'Bolo de chocolate macio e aromático, perfeito para aniversários e sobremesas em família.',
+    keywords: ['bolo de chocolate', 'bolo', 'chocolate', 'aniversário', 'sobremesa'],
+    tags: ['bolos', 'sobremesas', 'chocolate', 'forno', 'vegetariano'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: null,
     image: 'https://images.pexels.com/photos/29538417/pexels-photo-29538417.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '2 xícaras de farinha de trigo',
@@ -200,6 +230,11 @@ const recipeData = [
     yield: '6 porções',
     difficulty: 'Fácil',
     description: 'Farofa dourada de mandioca com bacon, cebola e ovos, um acompanhamento brasileiro crocante e saboroso.',
+    keywords: ['farofa', 'farinha de mandioca', 'acompanhamento brasileiro', 'bacon', 'cebola'],
+    tags: ['acompanhamentos', 'brasileira', 'frigideira', 'rápidas'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/16976659/pexels-photo-16976659.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '250 g de farinha de mandioca torrada',
@@ -230,6 +265,11 @@ const recipeData = [
     yield: '8 fatias',
     difficulty: 'Média',
     description: 'Torta crocante por fora e cremosa por dentro, com recheio de frango bem temperado.',
+    keywords: ['torta de frango', 'frango desfiado', 'torta salgada', 'lanche', 'frango cremoso'],
+    tags: ['carnes', 'frango', 'tortas', 'forno'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: null,
     image: 'https://images.pexels.com/photos/39070762/pexels-photo-39070762.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '1 massa para torta',
@@ -262,6 +302,11 @@ const recipeData = [
     yield: '10 fatias',
     difficulty: 'Fácil',
     description: 'Bolo de fubá tradicional, macio e com leve sabor de milho bem equilibrado.',
+    keywords: ['bolo de fubá', 'bolo de milho', 'fubá', 'café da tarde', 'bolo caseiro'],
+    tags: ['bolos', 'sobremesas', 'café da tarde', 'forno', 'vegetariano'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/27135309/pexels-photo-27135309.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '1 xícara de fubá',
@@ -294,6 +339,11 @@ const recipeData = [
     yield: '6 porções',
     difficulty: 'Fácil',
     description: 'Mousse cremosa de maracujá com sabor tropical e toque cítrico, finalizada com polpa fresca da fruta.',
+    keywords: ['mousse de maracujá', 'maracujá', 'sobremesa', 'mousse cremosa', 'doce tropical'],
+    tags: ['sobremesas', 'doces', 'frutas', 'geladeira', 'rápidas'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/24247238/pexels-photo-24247238.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '1 lata de leite condensado',
@@ -321,6 +371,11 @@ const recipeData = [
     yield: '8 porções',
     difficulty: 'Média',
     description: 'Feijoada brasileira feita com feijão-preto, carnes suínas e temperos, cozida lentamente até ficar encorpada.',
+    keywords: ['feijoada', 'feijão-preto', 'comida brasileira', 'carne suína', 'prato tradicional'],
+    tags: ['brasileira', 'prato principal', 'carnes', 'cozimento lento'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Brasileira',
     image: 'https://images.pexels.com/photos/34234280/pexels-photo-34234280.png?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '500 g de feijão-preto, deixado de molho',
@@ -356,6 +411,11 @@ const recipeData = [
     yield: '25 unidades',
     difficulty: 'Média',
     description: 'Pão de queijo mineiro com casquinha dourada, interior macio e queijo meia-cura em cada mordida.',
+    keywords: ['pão de queijo', 'pão de queijo mineiro', 'polvilho', 'queijo meia-cura', 'lanche'],
+    tags: ['lanches', 'brasileira', 'mineira', 'forno', 'congelável'],
+    prepTime: null,
+    cookTime: null,
+    cuisine: 'Mineira',
     image: 'https://images.pexels.com/photos/20450299/pexels-photo-20450299.jpeg?auto=compress&cs=tinysrgb&w=1200',
     ingredients: [
       '500 g de polvilho doce',
@@ -529,7 +589,24 @@ function renderRecipePage() {
     tips.innerHTML = recipe.tips.map((tip) => `<li>${tip}</li>`).join('');
   }
 
-  const relatedRecipes = recipeData.filter((item) => item.id !== recipe.id).slice(0, 3);
+  const recipeTags = Array.isArray(recipe.tags) ? recipe.tags : [];
+  const relatedRecipes = recipeData
+    .filter((item) => item.id !== recipe.id)
+    .map((item) => {
+      const itemTags = Array.isArray(item.tags) ? item.tags : [];
+      return {
+        recipe: item,
+        sameCategory: item.category === recipe.category,
+        sharedTagCount: itemTags.filter((tag) => recipeTags.includes(tag)).length
+      };
+    })
+    .sort(
+      (a, b) =>
+        Number(b.sameCategory) - Number(a.sameCategory) ||
+        b.sharedTagCount - a.sharedTagCount
+    )
+    .slice(0, 3)
+    .map(({ recipe: item }) => item);
 
   if (related) {
     related.innerHTML = relatedRecipes
@@ -561,11 +638,9 @@ function renderRecipePage() {
 }
 
 function updateRecipeCount() {
-  const countNode = document.querySelector('[data-recipe-count]');
-
-  if (countNode) {
-    countNode.textContent = String(recipeData.length);
-  }
+  document.querySelectorAll('[data-recipe-count]').forEach((node) => {
+    node.textContent = String(recipeData.length);
+  });
 }
 
 function initPage() {
