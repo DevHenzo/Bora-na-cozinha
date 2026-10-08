@@ -26,6 +26,24 @@
         </a>
 
         <nav class="site-nav" aria-label="Navegação principal">
+          <form class="header-search header-search--desktop" role="search" aria-label="Pesquisar receitas" action="index.html#featured" method="get" data-recipe-search-form>
+            <div class="recipe-search__controls">
+              <svg class="recipe-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16 16 4 4"></path>
+              </svg>
+              <input
+                class="recipe-search__input"
+                type="search"
+                name="q"
+                placeholder="Buscar receitas..."
+                aria-label="Buscar receitas"
+                autocomplete="off"
+                data-recipe-search-input
+              />
+              <button class="recipe-search__clear" type="button" aria-label="Limpar pesquisa" data-recipe-search-clear hidden>×</button>
+            </div>
+          </form>
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="#featured">Destaques</a>
           <a class="nav-link" href="#categories">Categorias</a>
@@ -35,11 +53,39 @@
 
         <a class="btn btn-primary header-cta" href="#featured">Explorar receitas</a>
 
+        <button class="header-search-toggle" type="button" aria-label="Abrir pesquisa" aria-expanded="false" aria-controls="mobile-recipe-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m16 16 4 4"></path>
+          </svg>
+        </button>
+
         <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
+      </div>
+      <div class="header-search-panel" id="mobile-recipe-search" data-mobile-search-panel hidden>
+        <form class="header-search header-search--mobile" role="search" aria-label="Pesquisar receitas" action="index.html#featured" method="get" data-recipe-search-form>
+          <div class="recipe-search__controls">
+            <svg class="recipe-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+            <input
+              class="recipe-search__input"
+              type="search"
+              name="q"
+              placeholder="Buscar receitas..."
+              aria-label="Buscar receitas"
+              autocomplete="off"
+              data-recipe-search-input
+            />
+            <button class="recipe-search__clear" type="button" aria-label="Limpar pesquisa" data-recipe-search-clear hidden>×</button>
+          </div>
+          <button class="header-search-close" type="button" aria-label="Fechar pesquisa" data-mobile-search-close>×</button>
+        </form>
       </div>
     </header>
 
@@ -75,9 +121,9 @@
               <a class="btn btn-secondary" href="#journal">Ver inspiração</a>
             </div>
             <ul class="hero-meta" aria-label="Recursos do site">
-              <li><strong data-recipe-count>0</strong><span>receitas no catálogo</span></li>
-              <li><strong>Passo a passo</strong><span>em cada receita</span></li>
-              <li><strong>Checklist</strong><span>de ingredientes</span></li>
+              <li><strong>4.9/5⭐</strong><span>Avaliações</span></li>
+              <li><strong>500+ 🌮</strong><span>Receitas</span></li>
+              <li><strong>Desde 📅</strong><span>20 De Outubro</span></li>
             </ul>
           </div>
 
@@ -105,7 +151,10 @@
             <p class="eyebrow eyebrow--muted">Curadoria</p>
             <h2>Receitas em destaque</h2>
           </div>
-          <div class="recipe-grid" data-recipe-grid="featured" aria-live="polite"></div>
+          <p class="recipe-search__empty" role="status" aria-live="polite" data-recipe-search-empty hidden>
+            Nenhuma receita encontrada. Tente outra busca.
+          </p>
+          <div class="recipe-grid" id="featured-recipes" data-recipe-grid="featured"></div>
         </div>
       </section>
 
@@ -119,61 +168,86 @@
           </div>
 
           <div class="category-grid">
-            <article class="category-card">
-              <span class="category-surface category-surface--cafe" aria-hidden="true"></span>
-              <div>
-                <h3>Café da manhã</h3>
-                <p>Pratos leves e acolhedores para começar bem.</p>
+            <a class="category-card" href="index.html#featured" data-category-link="Todos">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Todos</h3>
+                <p>Explore todas as nossas receitas e encontre seu próximo prato favorito.</p>
               </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--massas" aria-hidden="true"></span>
-              <div>
-                <h3>Massas</h3>
-                <p>Texturas sedosas e molhos intensos.</p>
-              </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--carnes" aria-hidden="true"></span>
-              <div>
-                <h3>Carnes</h3>
-                <p>Sabor profundo, crosta dourada e gratidão.</p>
-              </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--sobremesas" aria-hidden="true"></span>
-              <div>
-                <h3>Sobremesas</h3>
-                <p>Finales delicados para celebrar pequenos momentos.</p>
-              </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--bolos" aria-hidden="true"></span>
-              <div>
+            </a>
+            <a class="category-card" href="index.html?categoria=bolos#featured" data-category-link="Bolos">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
                 <h3>Bolos</h3>
-                <p>Doçura aromática e textura irresistível.</p>
+                <p>Bolos fofinhos, caseiros e deliciosos para qualquer ocasião.</p>
               </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--bebidas" aria-hidden="true"></span>
-              <div>
+            </a>
+            <a class="category-card" href="index.html?categoria=doces#featured" data-category-link="Doces">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Doces</h3>
+                <p>Docinhos e guloseimas para adoçar o seu dia.</p>
+              </div>
+            </a>
+            <a class="category-card" href="index.html?categoria=sobremesas#featured" data-category-link="Sobremesas">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Sobremesas</h3>
+                <p>Delícias para finalizar qualquer refeição com sabor.</p>
+              </div>
+            </a>
+            <a class="category-card" href="index.html?categoria=massas#featured" data-category-link="Massas">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Massas</h3>
+                <p>Lasanhas, macarrões e massas para todos os gostos.</p>
+              </div>
+            </a>
+            <a class="category-card" href="index.html?categoria=carnes#featured" data-category-link="Carnes">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Carnes</h3>
+                <p>Receitas com carnes suculentas, assadas e bem temperadas.</p>
+              </div>
+            </a>
+            <a class="category-card" href="index.html?categoria=almoco-e-janta#featured" data-category-link="Almoço e Janta">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Almoço e Janta</h3>
+                <p>Pratos práticos e saborosos para as refeições do dia a dia.</p>
+              </div>
+            </a>
+            <a class="category-card" href="index.html?categoria=bebidas#featured" data-category-link="Bebidas">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
                 <h3>Bebidas</h3>
-                <p>Infusões, smoothies e combinações refrescantes.</p>
+                <p>Sucos, vitaminas e bebidas refrescantes para todos os momentos.</p>
               </div>
-            </article>
-
-            <article class="category-card">
-              <span class="category-surface category-surface--rapidas" aria-hidden="true"></span>
-              <div>
-                <h3>Receitas rápidas</h3>
-                <p>Opções práticas para dias intensos.</p>
+            </a>
+            <a class="category-card" href="index.html?categoria=cafe-da-manha#featured" data-category-link="Café da Manhã">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Café da Manhã</h3>
+                <p>Receitas simples e gostosas para começar bem o dia.</p>
               </div>
-            </article>
+            </a>
+            <a class="category-card" href="index.html?categoria=lanche#featured" data-category-link="Lanche">
+              <img class="category-card__image" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=640&q=80" alt="" loading="lazy" />
+              <span class="category-card__overlay" aria-hidden="true"></span>
+              <div class="category-card__content">
+                <h3>Lanche</h3>
+                <p>Lanches rápidos, salgados e gostosuras para qualquer hora.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -212,16 +286,16 @@
 
             <div class="mini-metrics" aria-label="Recursos do site">
               <div>
-                <strong data-recipe-count>0</strong>
-                <span>receitas no catálogo</span>
+                <strong>500+</strong>
+                <span>Receitas 🌮</span>
               </div>
               <div>
-                <strong>Passo a passo</strong>
-                <span>em cada receita</span>
+                <strong>4.9/5</strong>
+                <span>Avaliações⭐</span>
               </div>
               <div>
-                <strong>Checklist</strong>
-                <span>de ingredientes</span>
+                <strong>Desde</strong>
+                <span>20 De Outubro 📅</span>
               </div>
             </div>
           </div>
@@ -264,11 +338,16 @@
     <!-- Categorias -->
         <div>
           <h3>Categorias</h3>
-          <ul class="footer-links">
-            <li><a href="receita.html?id=lasanha-a-bolonhesa">Massas</a></li>
-            <li><a href="receita.html?id=strogonoff-de-frango">Carnes</a></li>
-            <li><a href="receita.html?id=brownie-de-chocolate">Sobremesas</a></li>
-            <li><a href="#categories">Café da manhã</a></li>
+          <ul class="footer-links footer-links--categories">
+            <li><a href="index.html?categoria=bolos#featured">Bolos</a></li>
+            <li><a href="index.html?categoria=doces#featured">Doces</a></li>
+            <li><a href="index.html?categoria=sobremesas#featured">Sobremesas</a></li>
+            <li><a href="index.html?categoria=massas#featured">Massas</a></li>
+            <li><a href="index.html?categoria=carnes#featured">Carnes</a></li>
+            <li><a href="index.html?categoria=almoco-e-janta#featured">Almoço e Janta</a></li>
+            <li><a href="index.html?categoria=bebidas#featured">Bebidas</a></li>
+            <li><a href="index.html?categoria=cafe-da-manha#featured">Café da Manhã</a></li>
+            <li><a href="index.html?categoria=lanche#featured">Lanche</a></li>
           </ul>
         </div>
 

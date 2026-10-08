@@ -1,3 +1,15 @@
+const recipeCategories = [
+  { name: 'Bolos', description: 'Bolos fofinhos, caseiros e deliciosos para qualquer ocasião.' },
+  { name: 'Doces', description: 'Docinhos e guloseimas para adoçar o seu dia.' },
+  { name: 'Sobremesas', description: 'Delícias para finalizar qualquer refeição com sabor.' },
+  { name: 'Massas', description: 'Lasanhas, macarrões e massas para todos os gostos.' },
+  { name: 'Carnes', description: 'Receitas com carnes suculentas, assadas e bem temperadas.' },
+  { name: 'Almoço e Janta', description: 'Pratos práticos e saborosos para as refeições do dia a dia.' },
+  { name: 'Bebidas', description: 'Sucos, vitaminas e bebidas refrescantes para todos os momentos.' },
+  { name: 'Café da Manhã', description: 'Receitas simples e gostosas para começar bem o dia.' },
+  { name: 'Lanche', description: 'Lanches rápidos, salgados e gostosuras para qualquer hora.' }
+];
+
 const recipeData = [
   {
     id: 'bolo-de-cenoura-com-cobertura-de-chocolate',
@@ -8,7 +20,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Bolo fofinho de cenoura com massa macia e cobertura de chocolate para um sabor clássico e irresistível.',
     keywords: ['bolo de cenoura', 'bolo com cobertura de chocolate', 'bolo fofinho', 'cenoura', 'sobremesa'],
-    tags: ['bolos', 'sobremesas', 'forno', 'vegetariano'],
+    tags: ['Bolos', 'Sobremesas', 'forno', 'vegetariano'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -47,7 +59,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Pudim cremoso e delicado com calda caramelizada, clássico e sempre bem aceito.',
     keywords: ['pudim de leite condensado', 'pudim', 'sobremesa', 'calda caramelizada'],
-    tags: ['sobremesas', 'doces', 'geladeira', 'vegetariano'],
+    tags: ['Doces', 'geladeira', 'vegetariano'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -82,7 +94,7 @@ const recipeData = [
     difficulty: 'Média',
     description: 'Camadas de massa com molho bolonhesa, queijo e molho bechamel, muito saborosa e reconfortante.',
     keywords: ['lasanha à bolonhesa', 'lasanha', 'massa', 'carne moída', 'molho bechamel'],
-    tags: ['massas', 'prato principal', 'forno', 'carne'],
+    tags: ['Almoço e Janta', 'Carnes', 'prato principal', 'forno', 'carne'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Italiana',
@@ -121,7 +133,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Frango em molho cremoso de tomate e creme de leite, perfeito para acompanhar arroz e batata.',
     keywords: ['strogonoff de frango', 'estrogonofe', 'frango cremoso', 'frango', 'molho de tomate'],
-    tags: ['carnes', 'frango', 'prato principal', 'rápidas'],
+    tags: ['Almoço e Janta', 'frango', 'prato principal', 'rápidas'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -158,7 +170,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Brownie úmido, com casca crocante por fora e centro macio, ideal para qualquer momento.',
     keywords: ['brownie de chocolate', 'brownie', 'chocolate', 'sobremesa', 'bolo úmido'],
-    tags: ['sobremesas', 'doces', 'chocolate', 'forno', 'vegetariano'],
+    tags: ['Doces', 'chocolate', 'forno', 'vegetariano'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Americana',
@@ -194,7 +206,7 @@ const recipeData = [
     difficulty: 'Média',
     description: 'Bolo de chocolate macio e aromático, perfeito para aniversários e sobremesas em família.',
     keywords: ['bolo de chocolate', 'bolo', 'chocolate', 'aniversário', 'sobremesa'],
-    tags: ['bolos', 'sobremesas', 'chocolate', 'forno', 'vegetariano'],
+    tags: ['Bolos', 'Sobremesas', 'chocolate', 'forno', 'vegetariano'],
     prepTime: null,
     cookTime: null,
     cuisine: null,
@@ -225,13 +237,13 @@ const recipeData = [
   {
     id: 'farofa',
     title: 'Farofa',
-    category: 'Acompanhamentos',
+    category: 'Almoço e Janta',
     time: '25 min',
     yield: '6 porções',
     difficulty: 'Fácil',
     description: 'Farofa dourada de mandioca com bacon, cebola e ovos, um acompanhamento brasileiro crocante e saboroso.',
     keywords: ['farofa', 'farinha de mandioca', 'acompanhamento brasileiro', 'bacon', 'cebola'],
-    tags: ['acompanhamentos', 'brasileira', 'frigideira', 'rápidas'],
+    tags: ['brasileira', 'frigideira', 'rápidas'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -260,13 +272,13 @@ const recipeData = [
   {
     id: 'torta-de-frango',
     title: 'Torta de frango',
-    category: 'Carnes',
+    category: 'Lanche',
     time: '70 min',
     yield: '8 fatias',
     difficulty: 'Média',
     description: 'Torta crocante por fora e cremosa por dentro, com recheio de frango bem temperado.',
     keywords: ['torta de frango', 'frango desfiado', 'torta salgada', 'lanche', 'frango cremoso'],
-    tags: ['carnes', 'frango', 'tortas', 'forno'],
+    tags: ['Almoço e Janta', 'Carnes', 'frango', 'tortas', 'forno'],
     prepTime: null,
     cookTime: null,
     cuisine: null,
@@ -303,7 +315,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Bolo de fubá tradicional, macio e com leve sabor de milho bem equilibrado.',
     keywords: ['bolo de fubá', 'bolo de milho', 'fubá', 'café da tarde', 'bolo caseiro'],
-    tags: ['bolos', 'sobremesas', 'café da tarde', 'forno', 'vegetariano'],
+    tags: ['Bolos', 'Sobremesas', 'café da tarde', 'forno', 'vegetariano'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -340,7 +352,7 @@ const recipeData = [
     difficulty: 'Fácil',
     description: 'Mousse cremosa de maracujá com sabor tropical e toque cítrico, finalizada com polpa fresca da fruta.',
     keywords: ['mousse de maracujá', 'maracujá', 'sobremesa', 'mousse cremosa', 'doce tropical'],
-    tags: ['sobremesas', 'doces', 'frutas', 'geladeira', 'rápidas'],
+    tags: ['Doces', 'frutas', 'geladeira', 'rápidas'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -366,13 +378,13 @@ const recipeData = [
   {
     id: 'feijoada',
     title: 'Feijoada',
-    category: 'Brasileira',
+    category: 'Almoço e Janta',
     time: '3 h (+ demolho)',
     yield: '8 porções',
     difficulty: 'Média',
     description: 'Feijoada brasileira feita com feijão-preto, carnes suínas e temperos, cozida lentamente até ficar encorpada.',
     keywords: ['feijoada', 'feijão-preto', 'comida brasileira', 'carne suína', 'prato tradicional'],
-    tags: ['brasileira', 'prato principal', 'carnes', 'cozimento lento'],
+    tags: ['Carnes', 'brasileira', 'prato principal', 'cozimento lento'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Brasileira',
@@ -406,13 +418,13 @@ const recipeData = [
   {
     id: 'pao-de-queijo',
     title: 'Pão de queijo',
-    category: 'Lanches',
+    category: 'Lanche',
     time: '45 min',
     yield: '25 unidades',
     difficulty: 'Média',
     description: 'Pão de queijo mineiro com casquinha dourada, interior macio e queijo meia-cura em cada mordida.',
     keywords: ['pão de queijo', 'pão de queijo mineiro', 'polvilho', 'queijo meia-cura', 'lanche'],
-    tags: ['lanches', 'brasileira', 'mineira', 'forno', 'congelável'],
+    tags: ['Café da Manhã', 'brasileira', 'mineira', 'forno', 'congelável'],
     prepTime: null,
     cookTime: null,
     cuisine: 'Mineira',
@@ -452,7 +464,7 @@ function renderRecipeCards(containerSelector, filterCallback = () => true) {
   container.innerHTML = filtered
     .map(
       (recipe) => `
-        <article class="recipe-card" aria-label="${recipe.title}">
+        <article class="recipe-card" aria-label="${recipe.title}" data-recipe-card="${recipe.id}">
           <a href="receita.html?id=${recipe.id}" class="recipe-card__link" aria-label="Abrir receita de ${recipe.title}">
             <div class="recipe-card__media">
               <img src="${recipe.image}" alt="${recipe.title}" loading="lazy" />
@@ -474,6 +486,263 @@ function renderRecipeCards(containerSelector, filterCallback = () => true) {
       `
     )
     .join('');
+}
+
+function normalizeSearchText(value) {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function getCategorySlug(categoryName) {
+  return normalizeSearchText(categoryName)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function setupRecipeSearch() {
+  const forms = Array.from(document.querySelectorAll('[data-recipe-search-form]'));
+  const inputs = Array.from(document.querySelectorAll('[data-recipe-search-input]'));
+  const clearButtons = Array.from(document.querySelectorAll('[data-recipe-search-clear]'));
+  const emptyMessage = document.querySelector('[data-recipe-search-empty]');
+  const recipeGrid = document.querySelector('[data-recipe-grid="featured"]');
+  const mobileSearchPanel = document.querySelector('[data-mobile-search-panel]');
+  const mobileSearchToggle = document.querySelector('.header-search-toggle');
+  const mobileSearchClose = document.querySelector('[data-mobile-search-close]');
+
+  if (inputs.length === 0) {
+    return;
+  }
+
+  const queryParam = new URLSearchParams(window.location.search).get('q') || '';
+  inputs.forEach((input) => {
+    input.value = recipeGrid ? queryParam : '';
+  });
+
+  const closeMobileSearch = () => {
+    if (!mobileSearchPanel || !mobileSearchToggle) {
+      return;
+    }
+
+    mobileSearchPanel.hidden = true;
+    mobileSearchToggle.setAttribute('aria-expanded', 'false');
+    mobileSearchToggle.setAttribute('aria-label', 'Abrir pesquisa');
+  };
+
+  mobileSearchToggle?.addEventListener('click', () => {
+    if (!mobileSearchPanel) {
+      return;
+    }
+
+    mobileSearchPanel.hidden = !mobileSearchPanel.hidden;
+    const isOpen = !mobileSearchPanel.hidden;
+    mobileSearchToggle.setAttribute('aria-expanded', String(isOpen));
+    mobileSearchToggle.setAttribute('aria-label', isOpen ? 'Fechar pesquisa' : 'Abrir pesquisa');
+
+    if (isOpen) {
+      mobileSearchPanel.querySelector('[data-recipe-search-input]')?.focus();
+    }
+  });
+  mobileSearchClose?.addEventListener('click', () => {
+    closeMobileSearch();
+    mobileSearchToggle?.focus();
+  });
+
+  const syncSearchInputs = (sourceInput) => {
+    inputs.forEach((input) => {
+      if (input !== sourceInput) {
+        input.value = sourceInput.value;
+      }
+    });
+    clearButtons.forEach((button) => {
+      button.hidden = sourceInput.value.length === 0;
+    });
+  };
+
+  if (!recipeGrid || !emptyMessage) {
+    inputs.forEach((input) => {
+      input.addEventListener('input', () => syncSearchInputs(input));
+    });
+    clearButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const input = button.closest('form')?.querySelector('[data-recipe-search-input]');
+        inputs.forEach((searchInput) => {
+          searchInput.value = '';
+        });
+        clearButtons.forEach((clearButton) => {
+          clearButton.hidden = true;
+        });
+        input?.focus();
+      });
+    });
+    return;
+  }
+
+  const officialCategoryNames = new Set(recipeCategories.map(({ name }) => normalizeSearchText(name)));
+  const searchableRecipes = recipeData.map((recipe) => {
+    const terms = normalizeSearchText([
+      recipe.title,
+      ...recipe.ingredients,
+      ...recipe.keywords,
+      ...recipe.tags
+    ].join(' ')).split(/[^a-z0-9]+/).filter(Boolean);
+
+    return {
+      id: recipe.id,
+      terms,
+      termSet: new Set(terms),
+      categories: new Set([
+        recipe.category,
+        ...recipe.tags.filter((tag) => officialCategoryNames.has(normalizeSearchText(tag)))
+      ].map(normalizeSearchText))
+    };
+  });
+  const categoryCounts = new Map(recipeCategories.map(({ name }) => [
+    normalizeSearchText(name),
+    searchableRecipes.filter((recipe) => recipe.categories.has(normalizeSearchText(name))).length
+  ]));
+  const cards = new Map(
+    Array.from(recipeGrid.querySelectorAll('[data-recipe-card]')).map((card) => [
+      card.dataset.recipeCard,
+      card
+    ])
+  );
+  const categoryParam = new URLSearchParams(window.location.search).get('categoria');
+  const initialCategory = recipeCategories.find(({ name }) => getCategorySlug(name) === categoryParam);
+  let selectedCategory = initialCategory ? normalizeSearchText(initialCategory.name) : 'all';
+  let hasScrolledForSearch = false;
+  let previousQuery = null;
+  let previousCategory = null;
+
+  const scrollToFeatured = () => {
+    recipeGrid.closest('#featured')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const syncCategoryUrl = () => {
+    const url = new URL(window.location.href);
+
+    if (selectedCategory === 'all') {
+      url.searchParams.delete('categoria');
+      url.searchParams.delete('q');
+    } else {
+      const category = recipeCategories.find(({ name }) => normalizeSearchText(name) === selectedCategory);
+      if (category) {
+        url.searchParams.set('categoria', getCategorySlug(category.name));
+      }
+    }
+
+    window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+  };
+
+  const updateSearchResults = () => {
+    const query = normalizeSearchText(inputs[0].value);
+
+    if (query === previousQuery && selectedCategory === previousCategory) {
+      return;
+    }
+    previousQuery = query;
+    previousCategory = selectedCategory;
+
+    const queryTerms = query.split(/\s+/).filter(Boolean);
+    const hasExactMatch = queryTerms.length > 0 && searchableRecipes.some((recipe) =>
+      queryTerms.every((term) => recipe.termSet.has(term))
+    );
+    let resultCount = 0;
+
+    searchableRecipes.forEach((recipe) => {
+      const card = cards.get(recipe.id);
+      if (!card) {
+        return;
+      }
+
+      const categoryMatches = selectedCategory === 'all' || recipe.categories.has(selectedCategory);
+      const queryMatches = queryTerms.length === 0 || queryTerms.every((term) =>
+        hasExactMatch
+          ? recipe.termSet.has(term)
+          : recipe.terms.some((recipeTerm) => recipeTerm.startsWith(term))
+      );
+      const isMatch = categoryMatches && queryMatches;
+      card.hidden = !isMatch;
+      if (isMatch) {
+        resultCount += 1;
+      }
+    });
+
+    clearButtons.forEach((button) => {
+      button.hidden = query.length === 0;
+    });
+    const selectedCategoryCount = categoryCounts.get(selectedCategory) || 0;
+    emptyMessage.textContent = selectedCategory !== 'all' && selectedCategoryCount === 0
+      ? 'Novas receitas serão adicionadas a esta categoria em breve.'
+      : 'Nenhuma receita encontrada. Tente outra busca.';
+    emptyMessage.hidden = resultCount !== 0;
+  };
+
+  document.querySelectorAll('a[href$="#featured"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (link.getAttribute('href').includes('?categoria=')) {
+        return;
+      }
+
+      selectedCategory = 'all';
+      inputs.forEach((input) => {
+        input.value = '';
+      });
+      clearButtons.forEach((button) => {
+        button.hidden = true;
+      });
+      syncCategoryUrl();
+      updateSearchResults();
+    });
+  });
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      syncSearchInputs(input);
+      updateSearchResults();
+
+      const hasQuery = normalizeSearchText(input.value).length > 0;
+      if (!hasQuery) {
+        hasScrolledForSearch = false;
+      } else if (!hasScrolledForSearch) {
+        hasScrolledForSearch = true;
+        scrollToFeatured();
+      }
+    });
+  });
+  clearButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const input = button.closest('form')?.querySelector('[data-recipe-search-input]');
+      inputs.forEach((searchInput) => {
+        searchInput.value = '';
+      });
+      clearButtons.forEach((clearButton) => {
+        clearButton.hidden = true;
+      });
+      updateSearchResults();
+      hasScrolledForSearch = false;
+      input?.focus();
+    });
+  });
+  forms.forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      updateSearchResults();
+    });
+  });
+
+  updateSearchResults();
+
+  if (queryParam.trim()) {
+    hasScrolledForSearch = true;
+    if (mobileSearchPanel && mobileSearchToggle && window.matchMedia('(max-width: 980px)').matches) {
+      mobileSearchPanel.hidden = false;
+      mobileSearchToggle.setAttribute('aria-expanded', 'true');
+      mobileSearchToggle.setAttribute('aria-label', 'Fechar pesquisa');
+    }
+    window.requestAnimationFrame(scrollToFeatured);
+  }
 }
 
 function setupNavigation() {
@@ -655,6 +924,8 @@ function initPage() {
   if (document.querySelector('[data-recipe-image]')) {
     renderRecipePage();
   }
+
+  setupRecipeSearch();
 }
 
 document.addEventListener('DOMContentLoaded', initPage);
