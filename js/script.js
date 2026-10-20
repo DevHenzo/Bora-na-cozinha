@@ -10,462 +10,60 @@ const recipeCategories = [
   { name: 'Lanche', description: 'Lanches rápidos, salgados e gostosuras para qualquer hora.' }
 ];
 
-const recipeData = [
-  {
-    id: 'bolo-de-cenoura-com-cobertura-de-chocolate',
-    title: 'Bolo de cenoura com cobertura de chocolate',
-    category: 'Bolos',
-    time: '60 min',
-    yield: '10 fatias',
-    difficulty: 'Fácil',
-    description: 'Bolo fofinho de cenoura com massa macia e cobertura de chocolate para um sabor clássico e irresistível.',
-    keywords: ['bolo de cenoura', 'bolo com cobertura de chocolate', 'bolo fofinho', 'cenoura', 'sobremesa'],
-    tags: ['Bolos', 'Sobremesas', 'forno', 'vegetariano'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/37711037/pexels-photo-37711037.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '3 cenouras médias raladas',
-      '4 ovos',
-      '1 xícara de óleo',
-      '2 xícaras de açúcar',
-      '2 xícaras de farinha de trigo',
-      '1 colher de sopa de fermento em pó',
-      '1 xícara de chocolate em pó para cobertura',
-      '1/2 xícara de leite',
-      '2 colheres de sopa de manteiga'
-    ],
-    instructions: [
-      'Bata os ovos com o açúcar até ficar bem cremoso.',
-      'Misture o óleo e a cenoura ralada.',
-      'Adicione a farinha e o fermento e mexa até incorporar.',
-      'Despeje em uma forma untada e asse até dourar.',
-      'Para a cobertura, aqueça o chocolate em pó, leite e manteiga até formar um creme.',
-      'Espalhe a cobertura sobre o bolo frio e sirva.'
-    ],
-    tips: [
-      'A cenoura deve estar bem raspada para uma massa mais cremosa.',
-      'Deixe o bolo esfriar antes de cobrir para a cobertura não derreter demais.'
-    ],
-    quick: false
-  },
-  {
-    id: 'pudim-de-leite-condensado',
-    title: 'Pudim de leite condensado',
-    category: 'Sobremesas',
-    time: '50 min',
-    yield: '8 porções',
-    difficulty: 'Fácil',
-    description: 'Pudim cremoso e delicado com calda caramelizada, clássico e sempre bem aceito.',
-    keywords: ['pudim de leite condensado', 'pudim', 'sobremesa', 'calda caramelizada'],
-    tags: ['Doces', 'geladeira', 'vegetariano'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/34234275/pexels-photo-34234275.png?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '1 lata de leite condensado',
-      '1 lata de leite comum',
-      '3 ovos',
-      '1 xícara de açúcar para a calda',
-      '1/2 xícara de água',
-      '1 pitada de sal'
-    ],
-    instructions: [
-      'Caramele a forma com o açúcar e reserve.',
-      'Bata no liquidificador o leite condensado, o leite e os ovos.',
-      'Despeje a mistura na forma caramelizada.',
-      'Asse em banho-maria até firmar.',
-      'Espere esfriar e desenforme antes de servir.'
-    ],
-    tips: [
-      'O banho-maria ajuda a manter a textura cremosa.',
-      'Deixe o pudim gelar por algumas horas antes de servir para melhor textura.'
-    ],
-    quick: false
-  },
-  {
-    id: 'lasanha-a-bolonhesa',
-    title: 'Lasanha à bolonhesa',
-    category: 'Massas',
-    time: '75 min',
-    yield: '6 porções',
-    difficulty: 'Média',
-    description: 'Camadas de massa com molho bolonhesa, queijo e molho bechamel, muito saborosa e reconfortante.',
-    keywords: ['lasanha à bolonhesa', 'lasanha', 'massa', 'carne moída', 'molho bechamel'],
-    tags: ['Almoço e Janta', 'Carnes', 'prato principal', 'forno', 'carne'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Italiana',
-    image: 'https://images.pexels.com/photos/31119077/pexels-photo-31119077.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '500 g de massa para lasanha',
-      '500 g de carne moída',
-      '1 cebola picada',
-      '2 dentes de alho picados',
-      '1 lata de tomate pelado',
-      '2 xícaras de molho de tomate',
-      '200 g de queijo mozzarella',
-      '2 colheres de manteiga',
-      '2 colheres de farinha',
-      '2 xícaras de leite'
-    ],
-    instructions: [
-      'Refogue a cebola e o alho, depois adicione a carne moída até dourar.',
-      'Junte o tomate e cozinhe até engrossar.',
-      'Prepare o molho branco com manteiga, farinha e leite.',
-      'Monte camadas de massa, molho bolonhesa, molho branco e queijo.',
-      'Leve ao forno até gratinar e sirva em seguida.'
-    ],
-    tips: [
-      'Reserve um pouco de molho de tomate para cobrir a última camada.',
-      'A lasanha fica ainda melhor quando descansa alguns minutos antes de servir.'
-    ],
-    quick: false
-  },
-  {
-    id: 'strogonoff-de-frango',
-    title: 'Strogonoff de frango',
-    category: 'Carnes',
-    time: '40 min',
-    yield: '4 porções',
-    difficulty: 'Fácil',
-    description: 'Frango em molho cremoso de tomate e creme de leite, perfeito para acompanhar arroz e batata.',
-    keywords: ['strogonoff de frango', 'estrogonofe', 'frango cremoso', 'frango', 'molho de tomate'],
-    tags: ['Almoço e Janta', 'frango', 'prato principal', 'rápidas'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/30700761/pexels-photo-30700761.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '500 g de peito de frango em tiras',
-      '1 cebola picada',
-      '2 colheres de manteiga',
-      '1 colher de sopa de mostarda',
-      '1 xícara de molho de tomate',
-      '1 caixa de creme de leite',
-      '1 pitada de sal',
-      'Pimenta a gosto'
-    ],
-    instructions: [
-      'Refogue a cebola em manteiga até murchar.',
-      'Adicione o frango e cozinhe até ficar dourado.',
-      'Misture a mostarda e o molho de tomate.',
-      'Abaixe o fogo e adicione o creme de leite.',
-      'Ajuste o sal e a pimenta e sirva em seguida.'
-    ],
-    tips: [
-      'Não deixe o creme de leite ferver demais para não talhar.',
-      'Sirva com arroz branco ou batata palha.'
-    ],
-    quick: true
-  },
-  {
-    id: 'brownie-de-chocolate',
-    title: 'Brownie de chocolate',
-    category: 'Sobremesas',
-    time: '40 min',
-    yield: '8 fatias',
-    difficulty: 'Fácil',
-    description: 'Brownie úmido, com casca crocante por fora e centro macio, ideal para qualquer momento.',
-    keywords: ['brownie de chocolate', 'brownie', 'chocolate', 'sobremesa', 'bolo úmido'],
-    tags: ['Doces', 'chocolate', 'forno', 'vegetariano'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Americana',
-    image: 'https://images.pexels.com/photos/17488699/pexels-photo-17488699.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '200 g de chocolate amargo',
-      '100 g de manteiga',
-      '2 ovos',
-      '1/2 xícara de açúcar mascavo',
-      '1/2 xícara de açúcar refinado',
-      '1/2 xícara de farinha de trigo',
-      '1 colher de sopa de cacau em pó'
-    ],
-    instructions: [
-      'Derreta o chocolate com a manteiga em banho-maria.',
-      'Bata os ovos com os açúcares até clarear.',
-      'Misture o chocolate derretido aos ovos.',
-      'Adicione a farinha e o cacau e incorpore delicadamente.',
-      'Asse em forma untada até o centro ficar macio.'
-    ],
-    tips: [
-      'Evite assar demais para manter a textura fudgy.',
-      'Sirva com uma bola de sorvete para um toque especial.'
-    ],
-    quick: false
-  },
-  {
-    id: 'bolo-de-chocolate',
-    title: 'Bolo de chocolate',
-    category: 'Bolos',
-    time: '55 min',
-    yield: '12 fatias',
-    difficulty: 'Média',
-    description: 'Bolo de chocolate macio e aromático, perfeito para aniversários e sobremesas em família.',
-    keywords: ['bolo de chocolate', 'bolo', 'chocolate', 'aniversário', 'sobremesa'],
-    tags: ['Bolos', 'Sobremesas', 'chocolate', 'forno', 'vegetariano'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: null,
-    image: 'https://images.pexels.com/photos/29538417/pexels-photo-29538417.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '2 xícaras de farinha de trigo',
-      '1 xícara de açúcar',
-      '1/2 xícara de chocolate em pó',
-      '1 ovo',
-      '1 xícara de leite',
-      '1/2 xícara de óleo',
-      '1 colher de sopa de fermento em pó',
-      '1 pitada de sal'
-    ],
-    instructions: [
-      'Misture os ingredientes secos em uma tigela.',
-      'Adicione os ingredientes líquidos e bata bem até ficar homogêneo.',
-      'Coloque em uma forma untada e leve ao forno.',
-      'Asse até o centro firmar e dourar levemente.',
-      'Espere esfriar antes de desenformar.'
-    ],
-    tips: [
-      'Use cacau de boa qualidade para um sabor mais intenso.',
-      'Para um bolo mais úmido, use leite integral.'
-    ],
-    quick: false
-  },
-  {
-    id: 'farofa',
-    title: 'Farofa',
-    category: 'Almoço e Janta',
-    time: '25 min',
-    yield: '6 porções',
-    difficulty: 'Fácil',
-    description: 'Farofa dourada de mandioca com bacon, cebola e ovos, um acompanhamento brasileiro crocante e saboroso.',
-    keywords: ['farofa', 'farinha de mandioca', 'acompanhamento brasileiro', 'bacon', 'cebola'],
-    tags: ['brasileira', 'frigideira', 'rápidas'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/16976659/pexels-photo-16976659.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '250 g de farinha de mandioca torrada',
-      '120 g de bacon em cubos',
-      '1 cebola picada',
-      '2 colheres de sopa de manteiga',
-      '2 ovos',
-      'Sal e cheiro-verde a gosto'
-    ],
-    instructions: [
-      'Frite o bacon em uma frigideira grande até dourar.',
-      'Junte a manteiga e a cebola e refogue até ficar macia.',
-      'Acrescente os ovos e mexa até cozinharem.',
-      'Adicione a farinha aos poucos, mexendo até ficar dourada e crocante.',
-      'Tempere com sal, finalize com cheiro-verde e sirva.'
-    ],
-    tips: [
-      'Adicione a farinha aos poucos para controlar a textura e evitar que a farofa fique seca.',
-      'Para uma versão vegetariana, retire o bacon e doure a cebola na manteiga.'
-    ],
-    quick: true
-  },
-  {
-    id: 'torta-de-frango',
-    title: 'Torta de frango',
-    category: 'Lanche',
-    time: '70 min',
-    yield: '8 fatias',
-    difficulty: 'Média',
-    description: 'Torta crocante por fora e cremosa por dentro, com recheio de frango bem temperado.',
-    keywords: ['torta de frango', 'frango desfiado', 'torta salgada', 'lanche', 'frango cremoso'],
-    tags: ['Almoço e Janta', 'Carnes', 'frango', 'tortas', 'forno'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: null,
-    image: 'https://images.pexels.com/photos/39070762/pexels-photo-39070762.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '1 massa para torta',
-      '500 g de frango cozido e desfiado',
-      '1 cebola picada',
-      '2 colheres de manteiga',
-      '1 colher de sopa de farinha',
-      '1 xícara de caldo',
-      '1/2 xícara de creme de leite',
-      'Sal e pimenta a gosto'
-    ],
-    instructions: [
-      'Refogue a cebola e adicione o frango desfiado.',
-      'Misture a farinha e o caldo para engrossar o recheio.',
-      'Finalize com creme de leite e tempere.',
-      'Coloque o recheio sobre uma base de massa.',
-      'Cubra com a massa e asse até dourar.'
-    ],
-    tips: [
-      'Use massa pronta para agilizar o preparo.',
-      'A torta fica melhor se descansar alguns minutos antes de servir.'
-    ],
-    quick: false
-  },
-  {
-    id: 'bolo-de-fuba',
-    title: 'Bolo de fubá',
-    category: 'Bolos',
-    time: '45 min',
-    yield: '10 fatias',
-    difficulty: 'Fácil',
-    description: 'Bolo de fubá tradicional, macio e com leve sabor de milho bem equilibrado.',
-    keywords: ['bolo de fubá', 'bolo de milho', 'fubá', 'café da tarde', 'bolo caseiro'],
-    tags: ['Bolos', 'Sobremesas', 'café da tarde', 'forno', 'vegetariano'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/27135309/pexels-photo-27135309.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '1 xícara de fubá',
-      '1 xícara de farinha de trigo',
-      '1 xícara de açúcar',
-      '1 colher de sopa de fermento',
-      '2 ovos',
-      '1 xícara de leite',
-      '1/2 xícara de óleo',
-      '1 pitada de sal'
-    ],
-    instructions: [
-      'Misture os ingredientes secos em uma tigela.',
-      'Junte os ovos, o leite e o óleo até incorporar bem.',
-      'Despeje em forma untada.',
-      'Asse até ficar dourado e firme.',
-      'Espere esfriar antes de cortar.'
-    ],
-    tips: [
-      'A massa fica mais úmida se você bater pouco.',
-      'Sirva com café ou chá para combinar bem.'
-    ],
-    quick: true
-  },
-  {
-    id: 'mousse-de-maracuja',
-    title: 'Mousse de maracujá',
-    category: 'Sobremesas',
-    time: '15 min (+ geladeira)',
-    yield: '6 porções',
-    difficulty: 'Fácil',
-    description: 'Mousse cremosa de maracujá com sabor tropical e toque cítrico, finalizada com polpa fresca da fruta.',
-    keywords: ['mousse de maracujá', 'maracujá', 'sobremesa', 'mousse cremosa', 'doce tropical'],
-    tags: ['Doces', 'frutas', 'geladeira', 'rápidas'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/24247238/pexels-photo-24247238.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '1 lata de leite condensado',
-      '1 caixa de creme de leite',
-      '3/4 de xícara de suco concentrado de maracujá',
-      'Polpa de 1 maracujá para finalizar'
-    ],
-    instructions: [
-      'Bata o leite condensado, o creme de leite e o suco de maracujá no liquidificador até obter um creme homogêneo.',
-      'Distribua a mousse em taças ou em um recipiente.',
-      'Leve à geladeira por pelo menos 3 horas, até firmar.',
-      'Finalize com a polpa de maracujá antes de servir.'
-    ],
-    tips: [
-      'Acrescente o suco aos poucos e prove para ajustar o equilíbrio entre doce e cítrico.',
-      'Mantenha a mousse refrigerada até o momento de servir.'
-    ],
-    quick: true
-  },
-  {
-    id: 'feijoada',
-    title: 'Feijoada',
-    category: 'Almoço e Janta',
-    time: '3 h (+ demolho)',
-    yield: '8 porções',
-    difficulty: 'Média',
-    description: 'Feijoada brasileira feita com feijão-preto, carnes suínas e temperos, cozida lentamente até ficar encorpada.',
-    keywords: ['feijoada', 'feijão-preto', 'comida brasileira', 'carne suína', 'prato tradicional'],
-    tags: ['Carnes', 'brasileira', 'prato principal', 'cozimento lento'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Brasileira',
-    image: 'https://images.pexels.com/photos/34234280/pexels-photo-34234280.png?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '500 g de feijão-preto, deixado de molho',
-      '300 g de carne-seca dessalgada em cubos',
-      '300 g de costelinha suína dessalgada',
-      '200 g de paio em rodelas',
-      '200 g de linguiça calabresa em rodelas',
-      '150 g de bacon em cubos',
-      '1 cebola grande picada',
-      '4 dentes de alho picados',
-      '2 folhas de louro',
-      'Água, sal e pimenta-do-reino a gosto'
-    ],
-    instructions: [
-      'Deixe o feijão de molho por pelo menos 8 horas. Dessalgue as carnes com antecedência, mantendo-as refrigeradas em água e trocando a água algumas vezes.',
-      'Escorra o feijão e coloque-o em uma panela grande com a carne-seca, a costelinha, o louro e água suficiente para cobrir.',
-      'Cozinhe até o feijão e as carnes começarem a ficar macios; se usar panela de pressão, siga as orientações de segurança do fabricante.',
-      'Em outra panela, doure o bacon, o paio e a calabresa. Junte a cebola e o alho e refogue até ficarem macios.',
-      'Misture o refogado à panela do feijão e cozinhe sem pressão até o caldo encorpar e todos os ingredientes ficarem macios.',
-      'Ajuste o sal e a pimenta e sirva quente.'
-    ],
-    tips: [
-      'Dessalgue as carnes na geladeira e troque a água algumas vezes para controlar o sal.',
-      'Sirva com arroz branco, couve refogada, farofa e laranja.'
-    ],
-    quick: false
-  },
-  {
-    id: 'pao-de-queijo',
-    title: 'Pão de queijo',
-    category: 'Lanche',
-    time: '45 min',
-    yield: '25 unidades',
-    difficulty: 'Média',
-    description: 'Pão de queijo mineiro com casquinha dourada, interior macio e queijo meia-cura em cada mordida.',
-    keywords: ['pão de queijo', 'pão de queijo mineiro', 'polvilho', 'queijo meia-cura', 'lanche'],
-    tags: ['Café da Manhã', 'brasileira', 'mineira', 'forno', 'congelável'],
-    prepTime: null,
-    cookTime: null,
-    cuisine: 'Mineira',
-    image: 'https://images.pexels.com/photos/20450299/pexels-photo-20450299.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    ingredients: [
-      '500 g de polvilho doce',
-      '250 ml de leite',
-      '100 ml de óleo',
-      '1 colher de chá de sal',
-      '2 ovos',
-      '250 g de queijo meia-cura ralado'
-    ],
-    instructions: [
-      'Aqueça o leite, o óleo e o sal até começarem a ferver.',
-      'Coloque o polvilho em uma tigela e despeje a mistura quente, mexendo para escaldar. Deixe amornar.',
-      'Acrescente os ovos, um de cada vez, misturando bem.',
-      'Junte o queijo ralado e misture até formar uma massa homogênea.',
-      'Modele bolinhas, disponha em uma assadeira e asse em forno preaquecido a 180 °C por cerca de 25 minutos, até crescer e dourar.'
-    ],
-    tips: [
-      'Unte levemente as mãos com óleo para modelar as bolinhas sem grudar.',
-      'Congele as bolinhas cruas na assadeira e depois armazene em um saco bem fechado.'
-    ],
-    quick: false
-  }
-];
+const utensilDisplayNames = Object.freeze({
+  'forma para bolo': 'Forma',
+  'forma para brownie': 'Forma',
+  'forma de pudim': 'Forma',
+  formas: 'Formas',
+  'panela grande': 'Panela',
+  'panela para refogado': 'Panela',
+  'panela para banho-maria': 'Panela',
+  'batedor de arame': 'Fouet',
+  'refratario para torta': 'Refratário',
+  'assadeira para banho-maria': 'Assadeira'
+});
+const utensilImageAliases = Object.freeze({
+  'tacas ou recipiente': 'recipiente',
+  taca: 'taca',
+  'colher para sobremesa': 'colher',
+  'panela com cabo': 'panela',
+  'travessa de vidro': 'refratario',
+  'bowl (tigela)': 'tigela',
+  'espatula para bolo': 'espatula'
+});
+const utensilImages = Object.freeze({
+  assadeira: 'assets/images/utensilios/assadeira.webp',
+  'colher de pau': 'assets/images/utensilios/colher-de-pau.webp',
+  colher: 'assets/images/utensilios/colher.webp',
+  espatula: 'assets/images/utensilios/espatula.webp',
+  faca: 'assets/images/utensilios/faca.webp',
+  forma: 'assets/images/utensilios/forma.webp',
+  formas: 'assets/images/utensilios/Formas.webp',
+  fouet: 'assets/images/utensilios/fouet.webp',
+  frigideira: 'assets/images/utensilios/frigideira.webp',
+  liquidificador: 'assets/images/utensilios/liquidificador.webp',
+  panela: 'assets/images/utensilios/panela.webp',
+  panelas: 'assets/images/utensilios/panelas.webp',
+  recipiente: 'assets/images/utensilios/recipiente.webp',
+  refratario: 'assets/images/utensilios/refratario.webp',
+  'tabua de corte': 'assets/images/utensilios/tabua-de-corte.webp',
+  tigela: 'assets/images/utensilios/tigela.webp',
+  taca: 'assets/images/utensilios/taca.webp'
+});
 
-function renderRecipeCards(containerSelector, filterCallback = () => true) {
-  const container = document.querySelector(containerSelector);
+let recipeData = [];
+const RECIPE_PAGE_SIZE = 12;
 
-  if (!container) {
-    return;
-  }
+function getRecipePageUrl(recipeId) {
+  return new URL(`receitas/${encodeURIComponent(recipeId)}/`, document.baseURI).href;
+}
 
-  const filtered = recipeData.filter(filterCallback);
-
-  container.innerHTML = filtered
+function renderRecipeCards(container, recipes) {
+  container.innerHTML = recipes
     .map(
       (recipe) => `
         <article class="recipe-card" aria-label="${recipe.title}" data-recipe-card="${recipe.id}">
-          <a href="receita.html?id=${recipe.id}" class="recipe-card__link" aria-label="Abrir receita de ${recipe.title}">
+          <a href="${getRecipePageUrl(recipe.id)}" class="recipe-card__link" aria-label="Abrir receita de ${recipe.title}">
             <div class="recipe-card__media">
               <img src="${recipe.image}" alt="${recipe.title}" loading="lazy" />
             </div>
@@ -508,15 +106,13 @@ function setupRecipeSearch() {
   const clearButtons = Array.from(document.querySelectorAll('[data-recipe-search-clear]'));
   const emptyMessage = document.querySelector('[data-recipe-search-empty]');
   const recipeGrid = document.querySelector('[data-recipe-grid="featured"]');
+  const loadMoreButton = document.querySelector('[data-load-more-recipes]');
+  const loadMoreContainer = loadMoreButton?.closest('.recipe-load-more');
   const mobileSearchPanel = document.querySelector('[data-mobile-search-panel]');
   const mobileSearchToggle = document.querySelector('.header-search-toggle');
   const mobileSearchClose = document.querySelector('[data-mobile-search-close]');
-
-  if (inputs.length === 0) {
-    return;
-  }
-
   const queryParam = new URLSearchParams(window.location.search).get('q') || '';
+
   inputs.forEach((input) => {
     input.value = recipeGrid ? queryParam : '';
   });
@@ -562,9 +158,7 @@ function setupRecipeSearch() {
   };
 
   if (!recipeGrid || !emptyMessage) {
-    inputs.forEach((input) => {
-      input.addEventListener('input', () => syncSearchInputs(input));
-    });
+    inputs.forEach((input) => input.addEventListener('input', () => syncSearchInputs(input)));
     clearButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const input = button.closest('form')?.querySelector('[data-recipe-search-input]');
@@ -584,13 +178,13 @@ function setupRecipeSearch() {
   const searchableRecipes = recipeData.map((recipe) => {
     const terms = normalizeSearchText([
       recipe.title,
-      ...recipe.ingredients,
+      ...getRecipeIngredients(recipe),
       ...recipe.keywords,
       ...recipe.tags
     ].join(' ')).split(/[^a-z0-9]+/).filter(Boolean);
 
     return {
-      id: recipe.id,
+      recipe,
       terms,
       termSet: new Set(terms),
       categories: new Set([
@@ -599,87 +193,53 @@ function setupRecipeSearch() {
       ].map(normalizeSearchText))
     };
   });
-  const categoryCounts = new Map(recipeCategories.map(({ name }) => [
-    normalizeSearchText(name),
-    searchableRecipes.filter((recipe) => recipe.categories.has(normalizeSearchText(name))).length
-  ]));
-  const cards = new Map(
-    Array.from(recipeGrid.querySelectorAll('[data-recipe-card]')).map((card) => [
-      card.dataset.recipeCard,
-      card
-    ])
-  );
   const categoryParam = new URLSearchParams(window.location.search).get('categoria');
   const initialCategory = recipeCategories.find(({ name }) => getCategorySlug(name) === categoryParam);
   let selectedCategory = initialCategory ? normalizeSearchText(initialCategory.name) : 'all';
+  let visibleCount = RECIPE_PAGE_SIZE;
   let hasScrolledForSearch = false;
-  let previousQuery = null;
-  let previousCategory = null;
 
   const scrollToFeatured = () => {
     recipeGrid.closest('#featured')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const syncCategoryUrl = () => {
-    const url = new URL(window.location.href);
-
-    if (selectedCategory === 'all') {
-      url.searchParams.delete('categoria');
-      url.searchParams.delete('q');
-    } else {
-      const category = recipeCategories.find(({ name }) => normalizeSearchText(name) === selectedCategory);
-      if (category) {
-        url.searchParams.set('categoria', getCategorySlug(category.name));
-      }
-    }
-
-    window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
-  };
-
-  const updateSearchResults = () => {
-    const query = normalizeSearchText(inputs[0].value);
-
-    if (query === previousQuery && selectedCategory === previousCategory) {
-      return;
-    }
-    previousQuery = query;
-    previousCategory = selectedCategory;
-
+  const updateSearchResults = (resetVisibleCount = true) => {
+    const query = normalizeSearchText(inputs[0]?.value || '');
     const queryTerms = query.split(/\s+/).filter(Boolean);
-    const hasExactMatch = queryTerms.length > 0 && searchableRecipes.some((recipe) =>
-      queryTerms.every((term) => recipe.termSet.has(term))
+    const hasExactMatch = queryTerms.length > 0 && searchableRecipes.some(({ termSet }) =>
+      queryTerms.every((term) => termSet.has(term))
     );
-    let resultCount = 0;
+    const filteredRecipes = searchableRecipes
+      .filter(({ categories, terms, termSet }) => {
+        const categoryMatches = selectedCategory === 'all' || categories.has(selectedCategory);
+        const queryMatches = queryTerms.length === 0 || queryTerms.every((term) =>
+          hasExactMatch ? termSet.has(term) : terms.some((recipeTerm) => recipeTerm.startsWith(term))
+        );
+        return categoryMatches && queryMatches;
+      })
+      .map(({ recipe }) => recipe);
 
-    searchableRecipes.forEach((recipe) => {
-      const card = cards.get(recipe.id);
-      if (!card) {
-        return;
-      }
-
-      const categoryMatches = selectedCategory === 'all' || recipe.categories.has(selectedCategory);
-      const queryMatches = queryTerms.length === 0 || queryTerms.every((term) =>
-        hasExactMatch
-          ? recipe.termSet.has(term)
-          : recipe.terms.some((recipeTerm) => recipeTerm.startsWith(term))
-      );
-      const isMatch = categoryMatches && queryMatches;
-      card.hidden = !isMatch;
-      if (isMatch) {
-        resultCount += 1;
-      }
-    });
+    if (resetVisibleCount) {
+      visibleCount = RECIPE_PAGE_SIZE;
+    }
+    renderRecipeCards(recipeGrid, filteredRecipes.slice(0, visibleCount));
+    const hasMoreRecipes = filteredRecipes.length > visibleCount;
+    if (loadMoreButton) loadMoreButton.hidden = !hasMoreRecipes;
+    if (loadMoreContainer) loadMoreContainer.hidden = !hasMoreRecipes;
 
     clearButtons.forEach((button) => {
       button.hidden = query.length === 0;
     });
-    const selectedCategoryCount = categoryCounts.get(selectedCategory) || 0;
-    emptyMessage.textContent = selectedCategory !== 'all' && selectedCategoryCount === 0
+    emptyMessage.textContent = selectedCategory !== 'all' && filteredRecipes.length === 0 && query.length === 0
       ? 'Novas receitas serão adicionadas a esta categoria em breve.'
       : 'Nenhuma receita encontrada. Tente outra busca.';
-    emptyMessage.hidden = resultCount !== 0;
+    emptyMessage.hidden = filteredRecipes.length !== 0;
   };
 
+  loadMoreButton?.addEventListener('click', () => {
+    visibleCount += RECIPE_PAGE_SIZE;
+    updateSearchResults(false);
+  });
   document.querySelectorAll('a[href$="#featured"]').forEach((link) => {
     link.addEventListener('click', () => {
       if (link.getAttribute('href').includes('?categoria=')) {
@@ -693,7 +253,6 @@ function setupRecipeSearch() {
       clearButtons.forEach((button) => {
         button.hidden = true;
       });
-      syncCategoryUrl();
       updateSearchResults();
     });
   });
@@ -788,13 +347,164 @@ function setupSmoothScroll() {
 }
 
 function initHomePage() {
-  renderRecipeCards('[data-recipe-grid="featured"]', () => true);
-  renderRecipeCards('[data-recipe-grid="quick"]', (recipe) => recipe.quick === true);
+  const quickRecipes = recipeData.filter((recipe) => recipe.quick === true);
+  const quickGrid = document.querySelector('[data-recipe-grid="quick"]');
+
+  if (quickGrid) {
+    renderRecipeCards(quickGrid, quickRecipes.slice(0, RECIPE_PAGE_SIZE));
+  }
+}
+
+function getRecipeIngredients(recipe) {
+  if (Array.isArray(recipe.stages)) {
+    return recipe.stages.flatMap((stage) => stage.ingredients || []);
+  }
+
+  return recipe.ingredients || [];
+}
+
+function normalizeUtensilName(name) {
+  return name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLocaleLowerCase('pt-BR')
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+function getRecipeUtensils(recipe) {
+  const utensils = Array.isArray(recipe.stages)
+    ? recipe.stages.flatMap((stage) => Array.isArray(stage.utensils) ? stage.utensils : [])
+    : Array.isArray(recipe.utensils)
+      ? recipe.utensils
+      : [];
+  const cleanedUtensils = utensils
+    .filter((utensil) => typeof utensil === 'string')
+    .map((utensil) => utensil.trim().replace(/\s+/g, ' '))
+    .filter(Boolean);
+  const panUtensils = new Set(
+    cleanedUtensils
+      .map(normalizeUtensilName)
+      .filter((name) => ['panela', 'panelas', 'panela grande', 'panela para refogado', 'panela para banho-maria'].includes(name))
+  );
+  const recipeUsesMultiplePans = panUtensils.size > 1 || panUtensils.has('panelas');
+  const formUtensilNames = new Set(
+    cleanedUtensils
+      .map(normalizeUtensilName)
+      .filter((name) => ['forma', 'formas', 'forma para bolo', 'forma para brownie', 'forma de pudim'].includes(name))
+  );
+  const recipeUsesMultipleForms = formUtensilNames.size > 1 || formUtensilNames.has('formas');
+  const seenUtensils = new Set();
+
+  return cleanedUtensils.reduce((uniqueUtensils, label) => {
+    const normalizedName = normalizeUtensilName(label);
+    const displayName = utensilDisplayNames[normalizedName] || label;
+    const standardizedName = displayName === 'Panela' && recipeUsesMultiplePans
+      ? 'Panelas'
+      : displayName === 'Forma' && recipeUsesMultipleForms
+        ? 'Formas'
+        : displayName;
+    const standardizedKey = normalizeUtensilName(standardizedName);
+
+    if (!seenUtensils.has(standardizedKey)) {
+      seenUtensils.add(standardizedKey);
+      uniqueUtensils.push(standardizedName);
+    }
+
+    return uniqueUtensils;
+  }, []);
+}
+
+function updateRecipeSeo(recipe) {
+  const descriptionMeta = document.querySelector('meta[name="description"]');
+  if (descriptionMeta) {
+    descriptionMeta.content = recipe.description;
+  }
+
+  document.title = `${recipe.title} | Bora na Cozinha!`;
+  const canonicalUrl = new URL(`receitas/${encodeURIComponent(recipe.id)}/`, document.baseURI);
+  let canonicalLink = document.querySelector('link[rel="canonical"]');
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link');
+    canonicalLink.rel = 'canonical';
+    document.head.append(canonicalLink);
+  }
+  canonicalLink.href = canonicalUrl.href;
+
+  const socialMetadata = {
+    'meta[property="og:title"]': recipe.title,
+    'meta[property="og:description"]': recipe.description,
+    'meta[property="og:url"]': canonicalUrl.href,
+    'meta[property="og:image"]': new URL(recipe.image, document.baseURI).href,
+    'meta[name="twitter:title"]': recipe.title,
+    'meta[name="twitter:description"]': recipe.description,
+    'meta[name="twitter:image"]': new URL(recipe.image, document.baseURI).href
+  };
+  Object.entries(socialMetadata).forEach(([selector, content]) => {
+    const meta = document.querySelector(selector);
+    if (meta) {
+      meta.content = content;
+    }
+  });
+
+  const stages = Array.isArray(recipe.stages) ? recipe.stages : null;
+  const recipeInstructions = stages
+    ? stages.map((stage) => ({
+      '@type': 'HowToSection',
+      name: stage.name,
+      itemListElement: stage.instructions.map((text, index) => ({
+        '@type': 'HowToStep',
+        position: index + 1,
+        text
+      }))
+    }))
+    : recipe.instructions.map((text, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      text
+    }));
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name: recipe.title,
+    description: recipe.description,
+    image: new URL(recipe.image, document.baseURI).href,
+    recipeCategory: recipe.category,
+    recipeCuisine: recipe.cuisine || undefined,
+    recipeYield: recipe.yield,
+    keywords: [...recipe.keywords, ...recipe.tags].join(', '),
+    recipeIngredient: getRecipeIngredients(recipe),
+    recipeInstructions
+  };
+
+  if (recipe.prepTime) {
+    structuredData.prepTime = recipe.prepTime;
+  }
+  if (recipe.cookTime) {
+    structuredData.cookTime = recipe.cookTime;
+  }
+  if (recipe.totalTime) {
+    structuredData.totalTime = recipe.totalTime;
+  }
+
+  let jsonLd = document.querySelector('script[data-recipe-json-ld]');
+  if (!jsonLd) {
+    jsonLd = document.createElement('script');
+    jsonLd.type = 'application/ld+json';
+    jsonLd.dataset.recipeJsonLd = 'true';
+    document.head.append(jsonLd);
+  }
+  jsonLd.textContent = JSON.stringify(structuredData);
 }
 
 function renderRecipePage() {
-  const recipeId = new URLSearchParams(window.location.search).get('id') || recipeData[0].id;
-  const recipe = recipeData.find((item) => item.id === recipeId) || recipeData[0];
+  const legacyRecipeId = new URLSearchParams(window.location.search).get('id');
+  const staticRecipePath = window.location.pathname.match(/(?:^|\/)receitas\/([^/]+)\/?$/);
+  const staticRecipeId = staticRecipePath ? decodeURIComponent(staticRecipePath[1]) : '';
+  const recipeId = legacyRecipeId || staticRecipeId;
+  const recipe = recipeId
+    ? recipeData.find((item) => item.id === recipeId)
+    : recipeData[0];
 
   const image = document.querySelector('[data-recipe-image]');
   const title = document.querySelector('[data-recipe-name]');
@@ -805,15 +515,29 @@ function renderRecipePage() {
   const difficulty = document.querySelector('[data-recipe-difficulty]');
   const breadcrumb = document.querySelector('[data-breadcrumb-current]');
   const ingredients = document.querySelector('[data-ingredients]');
+  const utensilsPanel = document.querySelector('[data-utensils-panel]');
+  const utensils = document.querySelector('[data-utensils]');
   const instructions = document.querySelector('[data-instructions]');
   const tips = document.querySelector('[data-tips]');
   const related = document.querySelector('[data-related-recipes]');
 
   if (!recipe) {
+    document.title = 'Receita não encontrada | Bora na Cozinha!';
+    if (title) title.textContent = 'Receita não encontrada';
+    if (description) {
+      description.textContent = 'Não encontramos essa receita. Volte para os destaques e escolha outra opção.';
+      description.setAttribute('role', 'alert');
+    }
+    document.querySelector('link[rel="canonical"]')?.remove();
     return;
   }
 
-  document.title = `${recipe.title} | Bora na Cozinha!`;
+  if (!staticRecipePath) {
+    window.location.replace(getRecipePageUrl(recipe.id));
+    return;
+  }
+
+  updateRecipeSeo(recipe);
   if (image) image.src = recipe.image;
   if (image) image.alt = recipe.title;
   if (title) title.textContent = recipe.title;
@@ -825,9 +549,15 @@ function renderRecipePage() {
   if (breadcrumb) breadcrumb.textContent = recipe.title;
 
   if (ingredients) {
-    ingredients.innerHTML = recipe.ingredients
-      .map((item) => `<li><label class="ingredient-item"><input type="checkbox" /><span>${item}</span></label></li>`)
-      .join('');
+    const recipeIngredients = getRecipeIngredients(recipe);
+    ingredients.innerHTML = Array.isArray(recipe.stages)
+      ? recipe.stages.map((stage) => `
+          <li class="recipe-stage-heading"><h3>${stage.name}</h3></li>
+          ${stage.ingredients.map((item) => `<li><label class="ingredient-item"><input type="checkbox" /><span>${item}</span></label></li>`).join('')}
+        `).join('')
+      : recipeIngredients
+        .map((item) => `<li><label class="ingredient-item"><input type="checkbox" /><span>${item}</span></label></li>`)
+        .join('');
 
     const progress = document.querySelector('[data-ingredient-progress]');
     const progressLabel = document.querySelector('[data-ingredient-progress-label]');
@@ -835,7 +565,7 @@ function renderRecipePage() {
     const completionMark = document.querySelector('[data-ingredient-complete]');
     const updateIngredientProgress = () => {
       const checkedCount = ingredients.querySelectorAll('input[type="checkbox"]:checked').length;
-      const totalIngredients = recipe.ingredients.length;
+      const totalIngredients = recipeIngredients.length;
       const percentage = totalIngredients === 0 ? 0 : Math.round((checkedCount / totalIngredients) * 100);
 
       if (progress) {
@@ -850,8 +580,63 @@ function renderRecipePage() {
     updateIngredientProgress();
   }
 
+  if (utensilsPanel && utensils) {
+    const recipeUtensils = getRecipeUtensils(recipe);
+
+    if (recipeUtensils.length > 0) {
+      const list = document.createElement('ul');
+      list.className = 'utensils-items';
+
+      recipeUtensils.forEach((utensil) => {
+        const item = document.createElement('li');
+        item.className = 'utensil-card';
+
+        const normalizedName = normalizeUtensilName(utensil);
+        const imageKey = utensilImageAliases[normalizedName] || normalizedName;
+        const imageSource = utensilImages[imageKey];
+        const image = document.createElement(imageSource ? 'img' : 'span');
+        image.className = 'utensil-card__image';
+        image.setAttribute('aria-hidden', 'true');
+
+        if (imageSource) {
+          image.src = imageSource;
+          image.alt = '';
+          image.loading = 'lazy';
+          image.decoding = 'async';
+          image.addEventListener('error', () => {
+            const placeholder = document.createElement('span');
+            placeholder.className = 'utensil-card__image';
+            placeholder.setAttribute('aria-hidden', 'true');
+            image.replaceWith(placeholder);
+          }, { once: true });
+        }
+
+        const label = document.createElement('span');
+        label.textContent = utensil;
+
+        item.append(image, label);
+        list.append(item);
+      });
+
+      utensils.replaceChildren(list);
+      utensilsPanel.hidden = false;
+    } else {
+      utensils.replaceChildren();
+      utensilsPanel.hidden = true;
+    }
+  }
+
   if (instructions) {
-    instructions.innerHTML = recipe.instructions.map((step) => `<li>${step}</li>`).join('');
+    instructions.innerHTML = Array.isArray(recipe.stages)
+      ? recipe.stages.map((stage) => `
+          <li class="instruction-stage">
+            <h3>${stage.name}</h3>
+            <ol class="instruction-stage-steps">
+              ${stage.instructions.map((step) => `<li>${step}</li>`).join('')}
+            </ol>
+          </li>
+        `).join('')
+      : recipe.instructions.map((step) => `<li>${step}</li>`).join('');
   }
 
   if (tips) {
@@ -877,12 +662,12 @@ function renderRecipePage() {
     .slice(0, 3)
     .map(({ recipe: item }) => item);
 
-  if (related) {
+  if (related && !document.body.hasAttribute('data-static-recipe-page')) {
     related.innerHTML = relatedRecipes
       .map(
         (item) => `
           <article class="recipe-card">
-            <a href="receita.html?id=${item.id}" class="recipe-card__link" aria-label="Abrir receita de ${item.title}">
+            <a href="${getRecipePageUrl(item.id)}" class="recipe-card__link" aria-label="Abrir receita de ${item.title}">
               <div class="recipe-card__media">
                 <img src="${item.image}" alt="${item.title}" loading="lazy" />
               </div>
@@ -912,9 +697,148 @@ function updateRecipeCount() {
   });
 }
 
-function initPage() {
+function validateRecipeCatalog(catalog) {
+  const errors = [];
+  const warnings = [];
+  const ids = new Set();
+
+  if (!Array.isArray(catalog) || catalog.length === 0) {
+    return { errors: ['O catálogo deve ser uma lista não vazia.'], warnings };
+  }
+
+  catalog.forEach((recipe, index) => {
+    const location = `Receita ${index + 1}`;
+
+    if (!recipe || typeof recipe !== 'object' || Array.isArray(recipe)) {
+      errors.push(`${location}: registro inválido.`);
+      return;
+    }
+
+    ['id', 'title', 'category', 'description', 'image', 'time', 'yield', 'difficulty'].forEach((field) => {
+      if (typeof recipe[field] !== 'string' || recipe[field].trim() === '') {
+        errors.push(`${location}: campo obrigatório "${field}" ausente ou inválido.`);
+      }
+    });
+
+    if (typeof recipe.id === 'string') {
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipe.id)) {
+        errors.push(`${location}: ID deve usar letras minúsculas, números e hífens.`);
+      }
+      if (ids.has(recipe.id)) {
+        errors.push(`${location}: ID duplicado "${recipe.id}".`);
+      }
+      ids.add(recipe.id);
+    }
+
+    if (!Array.isArray(recipe.keywords) || !Array.isArray(recipe.tags) || !Array.isArray(recipe.tips) ||
+        [recipe.keywords, recipe.tags, recipe.tips].some((values) =>
+          !Array.isArray(values) || values.some((value) => typeof value !== 'string' || value.trim() === '')
+        )) {
+      errors.push(`${location}: keywords, tags e tips devem ser listas.`);
+    }
+
+    const stages = Array.isArray(recipe.stages) ? recipe.stages : null;
+    const ingredients = stages
+      ? stages.flatMap((stage) => Array.isArray(stage.ingredients) ? stage.ingredients : [])
+      : recipe.ingredients;
+    const instructions = stages
+      ? stages.flatMap((stage) => Array.isArray(stage.instructions) ? stage.instructions : [])
+      : recipe.instructions;
+    const utensils = stages
+      ? stages.flatMap((stage) => Array.isArray(stage.utensils) ? stage.utensils : [])
+      : recipe.utensils;
+
+    if (!Array.isArray(ingredients) || ingredients.length === 0) {
+      errors.push(`${location}: ingredientes ausentes ou inválidos.`);
+    } else if (ingredients.some((item) => typeof item !== 'string' || item.trim() === '')) {
+      errors.push(`${location}: há ingrediente vazio ou inválido.`);
+    } else if (ingredients.some((item) => !/\d|a gosto|opcional/i.test(item))) {
+      warnings.push(`${location}: confira se todos os ingredientes têm quantidade ou indicação de uso a gosto/opcional.`);
+    }
+
+    if (!Array.isArray(instructions) || instructions.length === 0 ||
+        instructions.some((item) => typeof item !== 'string' || item.trim() === '')) {
+      errors.push(`${location}: modo de preparo ausente ou inválido.`);
+    }
+    if (!Array.isArray(utensils) || utensils.length === 0 ||
+        utensils.some((item) => typeof item !== 'string' || item.trim() === '')) {
+      errors.push(`${location}: utensílios ausentes ou inválidos.`);
+    }
+    if (stages && stages.some((stage) =>
+      typeof stage.name !== 'string' || stage.name.trim() === '' ||
+      !Array.isArray(stage.ingredients) || stage.ingredients.length === 0 ||
+      !Array.isArray(stage.instructions) || stage.instructions.length === 0 ||
+      !Array.isArray(stage.utensils)
+    )) {
+      errors.push(`${location}: etapa sem nome, ingredientes ou instruções válidos.`);
+    }
+    ['prepTime', 'cookTime', 'totalTime'].forEach((field) => {
+      if (recipe[field] !== null && recipe[field] !== undefined &&
+          (typeof recipe[field] !== 'string' ||
+            !/^P(?=\d|T)(?:\d+Y)?(?:\d+M)?(?:\d+W)?(?:\d+D)?(?:T(?:\d+H)?(?:\d+M)?(?:\d+(?:\.\d+)?S)?)?$/.test(recipe[field]))) {
+        warnings.push(`${location}: "${field}" deve usar duração ISO 8601 ou null.`);
+      }
+    });
+  });
+
+  return { errors, warnings };
+}
+
+function showRecipeCatalogError() {
+  const message = 'Não foi possível carregar as receitas. Verifique sua conexão e tente novamente.';
+  const recipeGrid = document.querySelector('[data-recipe-grid="featured"]');
+  const recipeTitle = document.querySelector('[data-recipe-name]');
+  const errorMessage = document.createElement('p');
+  errorMessage.className = 'recipe-search__empty';
+  errorMessage.setAttribute('role', 'alert');
+  errorMessage.textContent = message;
+
+  if (recipeGrid) {
+    recipeGrid.replaceChildren(errorMessage);
+  } else if (recipeTitle) {
+    if (document.body.hasAttribute('data-static-recipe-page')) {
+      document.querySelector('.recipe-summary')?.prepend(errorMessage);
+      return;
+    }
+
+    recipeTitle.textContent = 'Receita indisponível';
+    const description = document.querySelector('[data-recipe-description]');
+    if (description) {
+      description.textContent = message;
+      description.setAttribute('role', 'alert');
+    }
+  }
+}
+
+async function initPage() {
   setupNavigation();
   setupSmoothScroll();
+
+  try {
+    const staticRecipeData = document.querySelector('[data-static-recipe-data]');
+    let catalog;
+    if (staticRecipeData) {
+      catalog = [JSON.parse(staticRecipeData.textContent)];
+    } else {
+      const response = await fetch('data/recipes.json');
+      if (!response.ok) {
+        throw new Error(`Falha ao carregar o catálogo de receitas (${response.status}).`);
+      }
+      catalog = await response.json();
+    }
+
+    const validation = validateRecipeCatalog(catalog);
+    if (validation.errors.length > 0) {
+      throw new Error(`Catálogo inválido: ${validation.errors.join(' ')}`);
+    }
+    validation.warnings.forEach((warning) => console.warn(`[Validação de receitas] ${warning}`));
+    recipeData = catalog;
+  } catch (error) {
+    console.error('Não foi possível inicializar o catálogo de receitas.', error);
+    showRecipeCatalogError();
+    return;
+  }
+
   updateRecipeCount();
 
   if (document.querySelector('[data-recipe-grid="featured"]')) {
@@ -928,4 +852,4 @@ function initPage() {
   setupRecipeSearch();
 }
 
-document.addEventListener('DOMContentLoaded', initPage);
+document.addEventListener('DOMContentLoaded', initPage, { once: true });

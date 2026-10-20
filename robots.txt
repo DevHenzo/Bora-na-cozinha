@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devhenzo.github.io/Bora-na-cozinha/sitemap.xml

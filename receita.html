@@ -9,6 +9,18 @@
       name="description"
       content="Receita detalhada com ingredientes, passos de preparo, dicas e receitas relacionadas."
     />
+    <meta name="robots" content="noindex,follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bora na Cozinha!" />
+    <meta property="og:title" content="Bora na Cozinha!" />
+    <meta property="og:description" content="Receita detalhada com ingredientes, passos de preparo, dicas e receitas relacionadas." />
+    <meta property="og:url" content="receita.html" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bora na Cozinha!" />
+    <meta name="twitter:description" content="Receita detalhada com ingredientes, passos de preparo, dicas e receitas relacionadas." />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+    <!-- STATIC_RECIPE_CANONICAL -->
 
     <title>Bora na Cozinha!</title>
     <link rel="icon" type="image/png" href="assets/icons/ico.ico" /> <!-- Ícone do site -->
@@ -111,14 +123,14 @@
           </div>
 
           <div class="recipe-summary">
-            <p class="eyebrow eyebrow--muted" data-recipe-category>Categoria</p>
-            <h1 id="recipe-title" data-recipe-name>Receita</h1>
-            <p class="recipe-description" data-recipe-description></p>
+            <p class="eyebrow eyebrow--muted" data-recipe-category>__RECIPE_CATEGORY__</p>
+            <h1 id="recipe-title" data-recipe-name>__RECIPE_TITLE__</h1>
+            <p class="recipe-description" data-recipe-description>__RECIPE_DESCRIPTION__</p>
 
             <ul class="recipe-meta-list" aria-label="Informações da receita">
-              <li><span>Tempo</span><strong data-recipe-time>--</strong></li>
-              <li><span>Rendimento</span><strong data-recipe-yield>--</strong></li>
-              <li><span>Dificuldade</span><strong data-recipe-difficulty>--</strong></li>
+              <li><span>Tempo</span><strong data-recipe-time>__RECIPE_TIME__</strong></li>
+              <li><span>Rendimento</span><strong data-recipe-yield>__RECIPE_YIELD__</strong></li>
+              <li><span>Dificuldade</span><strong data-recipe-difficulty>__RECIPE_DIFFICULTY__</strong></li>
             </ul>
           </div>
         </div>
@@ -145,21 +157,28 @@
                 </div>
               </div>
             </div>
-            <ul class="ingredient-list" data-ingredients></ul>
+            <ul class="ingredient-list" data-ingredients><!-- STATIC_RECIPE_INGREDIENTS --></ul>
+          </section>
+
+          <section class="recipe-panel" aria-labelledby="utensils-title" data-utensils-panel hidden>
+            <div class="panel-heading">
+              <h2 id="utensils-title">Utensílios necessários</h2>
+            </div>
+            <div class="utensils-list" data-utensils><!-- STATIC_RECIPE_UTENSILS --></div>
           </section>
 
           <section class="recipe-panel" aria-labelledby="instructions-title">
             <div class="panel-heading">
               <h2 id="instructions-title">Modo de preparo</h2>
             </div>
-            <ol class="instructions-list" data-instructions></ol>
+            <ol class="instructions-list" data-instructions><!-- STATIC_RECIPE_INSTRUCTIONS --></ol>
           </section>
 
           <aside class="recipe-panel" aria-labelledby="tips-title">
             <div class="panel-heading">
               <h2 id="tips-title">Dicas do chef</h2>
             </div>
-            <ul class="tips-list" data-tips></ul>
+            <ul class="tips-list" data-tips><!-- STATIC_RECIPE_TIPS --></ul>
           </aside>
         </div>
       </article>
@@ -173,7 +192,7 @@
             </div>
             <a class="text-link" href="index.html#featured">Ver tudo</a>
           </div>
-          <div class="recipe-grid recipe-grid--compact" data-related-recipes></div>
+          <div class="recipe-grid recipe-grid--compact" data-related-recipes><!-- STATIC_RELATED_RECIPES --></div>
         </div>
       </section>
     </main>
@@ -234,6 +253,8 @@
       </div>
     </footer>
 
+    <!-- STATIC_RECIPE_JSONLD -->
+    <!-- STATIC_RECIPE_DATA -->
     <script src="js/script.js"></script>
   </body>
 </html>

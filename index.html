@@ -9,6 +9,17 @@
       name="description"
       content="Descubra receitas inspiradas, elegantes e práticas para transformar ingredientes simples em momentos especiais."
     />
+    <link rel="canonical" href="https://devhenzo.github.io/Bora-na-cozinha/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bora na Cozinha!" />
+    <meta property="og:title" content="Bora na Cozinha!" />
+    <meta property="og:description" content="Descubra receitas inspiradas, elegantes e práticas para transformar ingredientes simples em momentos especiais." />
+    <meta property="og:url" content="https://devhenzo.github.io/Bora-na-cozinha/" />
+    <meta property="og:image" content="https://devhenzo.github.io/Bora-na-cozinha/assets/images/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bora na Cozinha!" />
+    <meta name="twitter:description" content="Descubra receitas inspiradas, elegantes e práticas para transformar ingredientes simples em momentos especiais." />
+    <meta name="twitter:image" content="https://devhenzo.github.io/Bora-na-cozinha/assets/images/logo.png" />
     <title>Bora na Cozinha!</title>
     <link rel="icon" type="image/png" href="assets/icons/ico.ico"> <!-- Ícone do site -->
     <link rel="stylesheet" href="css/style.css" />
@@ -100,7 +111,7 @@
             loop
             playsinline
             preload="metadata"
-            poster="assets/images/hero-fallback.webp"
+            poster="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1600&q=80"
           >
           
             <source src="https://www.pexels.com/download/video/36082303/" type="video/mp4" />
@@ -130,7 +141,7 @@
 <!--DESTAQUE PRINCIPAL-->
 
           <aside class="hero-panel" aria-label="Resumo em destaque">
-            <a class="panel-card panel-card--feature" href="receita.html?id=bolo-de-cenoura-com-cobertura-de-chocolate" aria-label="Ver receita de Bolo de cenoura com cobertura de chocolate">
+            <a class="panel-card panel-card--feature" href="receitas/bolo-de-cenoura-com-cobertura-de-chocolate/" aria-label="Ver receita de Bolo de cenoura com cobertura de chocolate">
               <p class="panel-label">Receita da semana</p>
               <h2>Bolo de cenoura com cobertura de chocolate</h2>
               <p>Bolo fofinho de cenoura com massa macia e cobertura de chocolate para um sabor clássico e irresistível.</p>
@@ -155,6 +166,11 @@
             Nenhuma receita encontrada. Tente outra busca.
           </p>
           <div class="recipe-grid" id="featured-recipes" data-recipe-grid="featured"></div>
+          <div class="recipe-load-more" hidden>
+            <button class="btn btn-primary" type="button" data-load-more-recipes hidden>
+              Carregar mais
+            </button>
+          </div>
         </div>
       </section>
 

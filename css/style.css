@@ -667,6 +667,16 @@ ol {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.recipe-load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.recipe-load-more[hidden] {
+  display: none;
+}
+
 .recipe-card {
   display: block;
   background: var(--color-surface);
@@ -1112,9 +1122,18 @@ ol {
 
 .recipe-content {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr 0.7fr;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
   gap: 1.4rem;
   margin-top: 2rem;
+}
+
+.recipe-content > [aria-labelledby="ingredients-title"],
+.recipe-content > [aria-labelledby="utensils-title"] {
+  grid-column: 1 / -1;
+}
+
+.recipe-panel[hidden] {
+  display: none;
 }
 
 .recipe-panel {
@@ -1218,6 +1237,26 @@ ol {
   display: none;
 }
 
+.ingredient-list .recipe-stage-heading {
+  margin-top: 0.45rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.ingredient-list .recipe-stage-heading:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.recipe-stage-heading h3,
+.instruction-stage h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
 .ingredient-item {
   display: flex;
   align-items: flex-start;
@@ -1247,6 +1286,68 @@ ol {
 }
 
 .instructions-list li::marker {
+  color: var(--color-primary-strong);
+  font-weight: 700;
+}
+
+.utensils-list {
+  min-width: 0;
+}
+
+.utensils-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.utensil-card {
+  display: flex;
+  min-width: 0;
+  min-height: 64px;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-text-soft);
+  font-size: 0.94rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.utensil-card__image {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 3px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.instructions-list > .instruction-stage {
+  list-style: none;
+}
+
+.instruction-stage {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.instruction-stage-steps {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--color-text-soft);
+}
+
+.instruction-stage-steps li::marker {
   color: var(--color-primary-strong);
   font-weight: 700;
 }
@@ -1344,7 +1445,8 @@ ol {
     left: 50%;
     transform: translateX(-50%);
     width: min(92vw, 420px);
-    background: rgba(21, 18, 16, 0.94);
+    z-index: 1;
+    background: var(--color-background-dark);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 22px;
     padding: 1rem;
@@ -1353,6 +1455,10 @@ ol {
     align-items: flex-start;
     gap: 0.8rem;
     box-shadow: var(--shadow-soft);
+  }
+
+  .site-nav .nav-link {
+    color: var(--color-text-inverse);
   }
 
   .site-nav.is-open {
@@ -1406,6 +1512,22 @@ ol {
 
   .header-inner {
     gap: 0.35rem;
+  }
+
+  .utensils-items {
+    grid-template-columns: 1fr;
+  }
+
+  .utensil-card {
+    min-height: 60px;
+    gap: 0.6rem;
+    padding: 0.55rem 0.65rem;
+  }
+
+  .utensil-card__image {
+    flex-basis: 44px;
+    width: 44px;
+    height: 44px;
   }
 
   .brand {
