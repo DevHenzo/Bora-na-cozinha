@@ -11,6 +11,64 @@ function ConvertTo-HtmlText {
   return [System.Net.WebUtility]::HtmlEncode($Value)
 }
 
+function Get-DisplayRecipeTime {
+  param([AllowNull()][string]$Value)
+
+  if ([string]::IsNullOrWhiteSpace($Value)) {
+    return ''
+  }
+
+  $normalizedValue = $Value.Trim()
+  if ($normalizedValue -match '(?i)(informado|não informado|sem divis|tempo exato de forno|mínimo decorrido|dessalgue de \d+h|refrigeração)') {
+    return ''
+  }
+
+  $matches = [regex]::Matches($normalizedValue, '(\d+)\s*(h|hr|hora|horas|min|mins|minuto|minutos|minute|minutes)', 'IgnoreCase')
+  if ($matches.Count -eq 0) {
+    return $normalizedValue
+  }
+
+  $useOnlyFirst = $normalizedValue.Contains('+') -or $normalizedValue.Contains('ou mais') -or ($normalizedValue -match '(?i)preparo')
+  if ($useOnlyFirst) {
+    $firstMatch = $matches[0]
+    $amount = [int]$firstMatch.Groups[1].Value
+    $unit = $firstMatch.Groups[2].Value.ToLowerInvariant()
+    if ($unit.StartsWith('h')) {
+      return '{0} min' -f ($amount * 60)
+    }
+
+    return '{0} min' -f $amount
+  }
+
+  $totalMinutes = 0
+  foreach ($match in $matches) {
+    $amount = [int]$match.Groups[1].Value
+    $unit = $match.Groups[2].Value.ToLowerInvariant()
+    if ($unit.StartsWith('h')) {
+      $totalMinutes += $amount * 60
+    } else {
+      $totalMinutes += $amount
+    }
+  }
+
+  return '{0} min' -f $totalMinutes
+}
+
+function Test-DisplayableRecipeTime {
+  param([AllowNull()][string]$Value)
+
+  if ([string]::IsNullOrWhiteSpace($Value)) {
+    return $false
+  }
+
+  $normalizedValue = $Value.Trim()
+  if ($normalizedValue -match '(?i)(informado|não informado|sem divis|tempo exato de forno|mínimo decorrido|dessalgue de \d+h|refrigeração)') {
+    return $false
+  }
+
+  return ([regex]::IsMatch($normalizedValue, '(\d+)\s*(h|hr|hora|horas|min|mins|minuto|minutos|minute|minutes)', 'IgnoreCase'))
+}
+
 function Get-RecipeIngredients {
   param($Recipe)
 
@@ -155,10 +213,11 @@ function Get-RecipeCardMarkup {
   $id = [uri]::EscapeDataString($Recipe.id)
   $title = ConvertTo-HtmlText $Recipe.title
   $category = ConvertTo-HtmlText $Recipe.category
-  $time = ConvertTo-HtmlText $Recipe.time
+  $time = if (Test-DisplayableRecipeTime $Recipe.time) { ConvertTo-HtmlText (Get-DisplayRecipeTime $Recipe.time) } else { $null }
   $description = ConvertTo-HtmlText $Recipe.description
   $difficulty = ConvertTo-HtmlText $Recipe.difficulty
   $image = ConvertTo-HtmlText $Recipe.image
+  $timeMarkup = if ($time) { '<span class="recipe-card__time">{0}</span>' -f $time } else { '' }
   @"
           <article class="recipe-card">
             <a href="receitas/$id/" class="recipe-card__link" aria-label="Abrir receita de $title">
@@ -166,10 +225,7 @@ function Get-RecipeCardMarkup {
                 <img src="$image" alt="$title" loading="lazy" />
               </div>
               <div class="recipe-card__body">
-                <div class="recipe-card__topline">
-                  <span class="recipe-card__category">$category</span>
-                  <span class="recipe-card__time">$time</span>
-                </div>
+                <div class="recipe-card__topline"><span class="recipe-card__category">$category</span>$timeMarkup</div>
                 <h3>$title</h3>
                 <p>$description</p>
                 <div class="recipe-card__meta">
@@ -298,15 +354,21 @@ foreach ($recipe in $recipesToGenerate) {
   $html = $html.Replace('<title>Bora na Cozinha!</title>', '<title>' + (ConvertTo-HtmlText $recipe.title) + ' | Bora na Cozinha!</title>')
   $html = $html.Replace('<body class="recipe-page">', '<body class="recipe-page" data-static-recipe-page>')
 
+  $timeMarkup = if (Test-DisplayableRecipeTime $recipe.time) {
+    '<li><span>Tempo</span><strong data-recipe-time>{0}</strong></li>' -f (ConvertTo-HtmlText $recipe.time)
+  } else {
+    ''
+  }
+
   $html = [regex]::Replace($html, '(?s)<img\s+src="[^"]+"\s+alt="[^"]+"\s+data-recipe-image\s+loading="eager"\s*/>', '<img src="' + (ConvertTo-HtmlText $recipe.image) + '" alt="' + (ConvertTo-HtmlText $recipe.title) + '" data-recipe-image loading="eager" />', 1)
   $replacements = @{
     '__RECIPE_CATEGORY__' = ConvertTo-HtmlText $recipe.category
     '__RECIPE_TITLE__' = ConvertTo-HtmlText $recipe.title
     '__RECIPE_DESCRIPTION__' = ConvertTo-HtmlText $recipe.description
     '>Receita</span>' = '>' + (ConvertTo-HtmlText $recipe.title) + '</span>'
-    '__RECIPE_TIME__' = ConvertTo-HtmlText $recipe.time
     '__RECIPE_YIELD__' = ConvertTo-HtmlText $recipe.yield
     '__RECIPE_DIFFICULTY__' = ConvertTo-HtmlText $recipe.difficulty
+    '<!-- STATIC_RECIPE_TIME -->' = $timeMarkup
     '<!-- STATIC_RECIPE_INGREDIENTS -->' = Get-RecipeIngredientsMarkup $recipe
     '<!-- STATIC_RECIPE_UTENSILS -->' = Get-RecipeUtensilsMarkup $recipe
     '<!-- STATIC_RECIPE_INSTRUCTIONS -->' = Get-RecipeInstructionsMarkup $recipe

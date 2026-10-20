@@ -58,10 +58,50 @@ function getRecipePageUrl(recipeId) {
   return new URL(`receitas/${encodeURIComponent(recipeId)}/`, document.baseURI).href;
 }
 
+function getRecipeTimeDisplay(recipe) {
+  const value = typeof recipe?.time === 'string' ? recipe.time.trim() : '';
+  if (!value) {
+    return '';
+  }
+
+  const blockedPatterns = /(informado|não informado|sem divis|tempo exato de forno|mínimo decorrido|dessalgue de \d+h|refrigeração)/i;
+  if (blockedPatterns.test(value)) {
+    return '';
+  }
+
+  const timeFragments = [...value.matchAll(/(\d+)\s*(h|hr|hora|horas|min|mins|minuto|minutos|minute|minutes)/gi)];
+  if (timeFragments.length === 0) {
+    return value;
+  }
+
+  const useOnlyFirst = value.includes('+') || value.includes('ou mais') || value.toLowerCase().includes('preparo');
+  if (useOnlyFirst) {
+    const [, amountText, unitText] = timeFragments[0];
+    const amount = Number(amountText);
+    const unit = unitText.toLowerCase();
+    return `${unit.startsWith('h') ? amount * 60 : amount} min`;
+  }
+
+  let totalMinutes = 0;
+  timeFragments.forEach((match) => {
+    const amount = Number(match[1]);
+    const unit = match[2].toLowerCase();
+    if (unit.startsWith('h')) {
+      totalMinutes += amount * 60;
+    } else {
+      totalMinutes += amount;
+    }
+  });
+
+  return `${totalMinutes} min`;
+}
+
 function renderRecipeCards(container, recipes) {
   container.innerHTML = recipes
-    .map(
-      (recipe) => `
+    .map((recipe) => {
+      const recipeTime = getRecipeTimeDisplay(recipe);
+
+      return `
         <article class="recipe-card" aria-label="${recipe.title}" data-recipe-card="${recipe.id}">
           <a href="${getRecipePageUrl(recipe.id)}" class="recipe-card__link" aria-label="Abrir receita de ${recipe.title}">
             <div class="recipe-card__media">
@@ -70,7 +110,7 @@ function renderRecipeCards(container, recipes) {
             <div class="recipe-card__body">
               <div class="recipe-card__topline">
                 <span class="recipe-card__category">${recipe.category}</span>
-                <span class="recipe-card__time">${recipe.time}</span>
+                ${recipeTime ? `<span class="recipe-card__time">${recipeTime}</span>` : ''}
               </div>
               <h3>${recipe.title}</h3>
               <p>${recipe.description}</p>
@@ -81,8 +121,8 @@ function renderRecipeCards(container, recipes) {
             </div>
           </a>
         </article>
-      `
-    )
+      `;
+    })
     .join('');
 }
 
@@ -514,6 +554,8 @@ function renderRecipePage() {
   const yieldField = document.querySelector('[data-recipe-yield]');
   const difficulty = document.querySelector('[data-recipe-difficulty]');
   const breadcrumb = document.querySelector('[data-breadcrumb-current]');
+
+  const displayTime = getRecipeTimeDisplay(recipe);
   const ingredients = document.querySelector('[data-ingredients]');
   const utensilsPanel = document.querySelector('[data-utensils-panel]');
   const utensils = document.querySelector('[data-utensils]');
@@ -543,7 +585,13 @@ function renderRecipePage() {
   if (title) title.textContent = recipe.title;
   if (category) category.textContent = recipe.category;
   if (description) description.textContent = recipe.description;
-  if (time) time.textContent = recipe.time;
+  if (time) {
+    if (displayTime) {
+      time.textContent = displayTime;
+    } else {
+      time.closest('li')?.remove();
+    }
+  }
   if (yieldField) yieldField.textContent = recipe.yield;
   if (difficulty) difficulty.textContent = recipe.difficulty;
   if (breadcrumb) breadcrumb.textContent = recipe.title;
@@ -664,8 +712,10 @@ function renderRecipePage() {
 
   if (related && !document.body.hasAttribute('data-static-recipe-page')) {
     related.innerHTML = relatedRecipes
-      .map(
-        (item) => `
+      .map((item) => {
+        const itemTime = getRecipeTimeDisplay(item);
+
+        return `
           <article class="recipe-card">
             <a href="${getRecipePageUrl(item.id)}" class="recipe-card__link" aria-label="Abrir receita de ${item.title}">
               <div class="recipe-card__media">
@@ -674,7 +724,7 @@ function renderRecipePage() {
               <div class="recipe-card__body">
                 <div class="recipe-card__topline">
                   <span class="recipe-card__category">${item.category}</span>
-                  <span class="recipe-card__time">${item.time}</span>
+                  ${itemTime ? `<span class="recipe-card__time">${itemTime}</span>` : ''}
                 </div>
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
@@ -685,8 +735,8 @@ function renderRecipePage() {
               </div>
             </a>
           </article>
-        `
-      )
+        `;
+      })
       .join('');
   }
 }
@@ -714,11 +764,15 @@ function validateRecipeCatalog(catalog) {
       return;
     }
 
-    ['id', 'title', 'category', 'description', 'image', 'time', 'yield', 'difficulty'].forEach((field) => {
+    ['id', 'title', 'category', 'description', 'image', 'yield', 'difficulty'].forEach((field) => {
       if (typeof recipe[field] !== 'string' || recipe[field].trim() === '') {
         errors.push(`${location}: campo obrigatório "${field}" ausente ou inválido.`);
       }
     });
+
+    if (recipe.time !== null && recipe.time !== undefined && typeof recipe.time !== 'string') {
+      errors.push(`${location}: campo "time" deve ser string, null ou undefined.`);
+    }
 
     if (typeof recipe.id === 'string') {
       if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipe.id)) {
