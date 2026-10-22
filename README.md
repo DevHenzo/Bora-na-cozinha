@@ -23,6 +23,7 @@ site-receitas/
 ├── data/
 │   └── recipes.json
 ├── scripts/
+│   ├── recipe-admin-server.ps1
 │   ├── generate-static-recipes.ps1
 │   └── generate-sitemap.ps1
 ├── css/
@@ -82,10 +83,20 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\generate-sitemap.p
 ## Imagens dos utensílios
 O catálogo `utensilImages`, em `js/script.js`, associa nomes padronizados às imagens WebP locais existentes em `assets/images/utensilios/`. Variações equivalentes são normalizadas durante a renderização; “Panelas” reutiliza a imagem de “Panela” quando não há uma associação específica. Se uma imagem associada não carregar, a interface mantém um espaço neutro no cartão.
 
+## Painel local de receitas
+
+No terminal do VS Code, na pasta do projeto, inicie o painel com:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\recipe-admin-server.ps1
+```
+
+Abra `http://127.0.0.1:8765/` no navegador. O servidor aceita conexões somente pelo endereço local, não usa banco de dados e não é ligado ao site público. Preencha o formulário e clique em **Salvar receita**; a imagem WebP será copiada para `assets/images/receitas/`, o catálogo será atualizado e a página individual será gerada. Ingredientes podem ser informados em uma lista simples ou organizados em grupos nomeados; cada grupo precisa ter ao menos um ingrediente. **Dicas do Chef** são opcionais e aceitam uma dica por linha. O tempo é opcional e aceita valores como `40 min`, `1 h 30 min` ou `2 horas`; preparo e cozimento não são presumidos. Imagens acima de 150 KB exibem um aviso. O painel pede utensílios porque esse campo é exigido pela validação atual do catálogo. Se a geração falhar, o cadastro é revertido. Encerre o servidor com `Ctrl+C`.
+
 ## Próximos passos possíveis
 - Expandir gradualmente o catálogo, mantendo IDs exclusivos e os campos documentados
 - Integrar dados vindos de uma API ou serviço de catálogo
-- Criar painel administrativo para cadastro e edição de receitas
+- Adicionar edição de receitas no painel local
 - Permitir upload de imagens e organização por usuário
 - Avaliar uma arquitetura com backend e banco de dados quando o projeto precisar de edição dinâmica
 

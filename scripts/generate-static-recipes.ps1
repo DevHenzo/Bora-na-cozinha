@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$SiteBaseUrl = 'https://devhenzo.github.io/Bora-na-cozinha/',
   [string[]]$RecipeIds
 )
@@ -19,6 +19,10 @@ function Get-DisplayRecipeTime {
   }
 
   $normalizedValue = $Value.Trim()
+  $simpleDurationPattern = '^(?=.*\d)(?:(?:\d+)\s*(?:h|hr|hrs|hora|horas))?(?:\s*(?:\d+)\s*(?:m|min|mins|minuto|minutos))?$'
+  if ($normalizedValue -match $simpleDurationPattern) {
+    return $normalizedValue
+  }
   if ($normalizedValue -match '(?i)(informado|não informado|sem divis|tempo exato de forno|mínimo decorrido|dessalgue de \d+h|refrigeração)') {
     return ''
   }
@@ -72,6 +76,10 @@ function Test-DisplayableRecipeTime {
 function Get-RecipeIngredients {
   param($Recipe)
 
+  if ($Recipe.ingredientGroups -and $Recipe.ingredientGroups.Count -gt 0) {
+    return @($Recipe.ingredientGroups | ForEach-Object { $_.ingredients })
+  }
+
   if ($Recipe.stages) {
     return @($Recipe.stages | ForEach-Object { $_.ingredients })
   }
@@ -81,6 +89,17 @@ function Get-RecipeIngredients {
 
 function Get-RecipeIngredientsMarkup {
   param($Recipe)
+
+  if ($Recipe.ingredientGroups -and $Recipe.ingredientGroups.Count -gt 0) {
+    $sections = foreach ($group in $Recipe.ingredientGroups) {
+      $items = foreach ($ingredient in $group.ingredients) {
+        '<li><label class="ingredient-item"><input type="checkbox" /><span>{0}</span></label></li>' -f (ConvertTo-HtmlText $ingredient)
+      }
+      '<li class="recipe-stage-heading"><h3>{0}</h3></li>{1}' -f `
+        (ConvertTo-HtmlText $group.name), ($items -join "`n")
+    }
+    return $sections -join "`n"
+  }
 
   if ($Recipe.stages) {
     $sections = foreach ($stage in $Recipe.stages) {
@@ -100,6 +119,16 @@ function Get-RecipeIngredientsMarkup {
 
 function Get-RecipeInstructionsMarkup {
   param($Recipe)
+
+  if ($Recipe.preparationGroups -and $Recipe.preparationGroups.Count -gt 0) {
+    $sections = foreach ($group in $Recipe.preparationGroups) {
+      $steps = foreach ($step in $group.instructions) {
+        '              <li>{0}</li>' -f (ConvertTo-HtmlText $step)
+      }
+      '<li class="instruction-stage"><h3>{0}</h3><ol class="instruction-stage-steps">{1}</ol></li>' -f (ConvertTo-HtmlText $group.name), ($steps -join "`n")
+    }
+    return $sections -join "`n"
+  }
 
   if ($Recipe.stages) {
     $sections = foreach ($stage in $Recipe.stages) {
@@ -215,6 +244,7 @@ function Get-RecipeCardMarkup {
   $category = ConvertTo-HtmlText $Recipe.category
   $time = if (Test-DisplayableRecipeTime $Recipe.time) { ConvertTo-HtmlText (Get-DisplayRecipeTime $Recipe.time) } else { $null }
   $description = ConvertTo-HtmlText $Recipe.description
+  $yield = ConvertTo-HtmlText $Recipe.yield
   $difficulty = ConvertTo-HtmlText $Recipe.difficulty
   $image = ConvertTo-HtmlText $Recipe.image
   $timeMarkup = if ($time) { '<span class="recipe-card__time">{0}</span>' -f $time } else { '' }
@@ -229,6 +259,7 @@ function Get-RecipeCardMarkup {
                 <h3>$title</h3>
                 <p>$description</p>
                 <div class="recipe-card__meta">
+                  <span>$yield</span>
                   <span>$difficulty</span>
                   <span class="recipe-card__cta" aria-hidden="true">&#8594;</span>
                 </div>
@@ -241,7 +272,19 @@ function Get-RecipeCardMarkup {
 function Get-StructuredRecipeData {
   param($Recipe, [uri]$RecipeUrl)
 
-  $instructions = if ($Recipe.stages) {
+  $instructions = if ($Recipe.preparationGroups -and $Recipe.preparationGroups.Count -gt 0) {
+    @($Recipe.preparationGroups | ForEach-Object {
+      $group = $_
+      [ordered]@{
+        '@type' = 'HowToSection'
+        name = $group.name
+        itemListElement = @($group.instructions | ForEach-Object -Begin { $position = 0 } -Process {
+          $position++
+          [ordered]@{ '@type' = 'HowToStep'; position = $position; text = $_ }
+        })
+      }
+    })
+  } elseif ($Recipe.stages) {
     @($Recipe.stages | ForEach-Object {
       [ordered]@{
         '@type' = 'HowToSection'
@@ -379,6 +422,9 @@ foreach ($recipe in $recipesToGenerate) {
   }
   if ((Get-RecipeUtensilsMarkup $recipe).Length -gt 0) {
     $html = $html.Replace('data-utensils-panel hidden', 'data-utensils-panel')
+  }
+  if (@($recipe.tips | Where-Object { $_ -is [string] -and -not [string]::IsNullOrWhiteSpace($_) }).Count -gt 0) {
+    $html = $html.Replace('data-tips-panel hidden', 'data-tips-panel')
   }
 
   $related = @($catalog |

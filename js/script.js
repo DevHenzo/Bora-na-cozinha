@@ -64,6 +64,11 @@ function getRecipeTimeDisplay(recipe) {
     return '';
   }
 
+  const simpleDurationPattern = /^(?=.*\d)(?:(?:\d+)\s*(?:h|hr|hrs|hora|horas))?(?:\s*(?:\d+)\s*(?:m|min|mins|minuto|minutos))?$/i;
+  if (simpleDurationPattern.test(value)) {
+    return value;
+  }
+
   const blockedPatterns = /(informado|não informado|sem divis|tempo exato de forno|mínimo decorrido|dessalgue de \d+h|refrigeração)/i;
   if (blockedPatterns.test(value)) {
     return '';
@@ -115,6 +120,7 @@ function renderRecipeCards(container, recipes) {
               <h3>${recipe.title}</h3>
               <p>${recipe.description}</p>
               <div class="recipe-card__meta">
+                <span>${recipe.yield}</span>
                 <span>${recipe.difficulty}</span>
                 <span class="recipe-card__cta" aria-hidden="true">→</span>
               </div>
@@ -396,11 +402,25 @@ function initHomePage() {
 }
 
 function getRecipeIngredients(recipe) {
+  if (Array.isArray(recipe.ingredientGroups) && recipe.ingredientGroups.length > 0) {
+    return recipe.ingredientGroups.flatMap((group) => group.ingredients || []);
+  }
+
   if (Array.isArray(recipe.stages)) {
     return recipe.stages.flatMap((stage) => stage.ingredients || []);
   }
 
   return recipe.ingredients || [];
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[character]));
 }
 
 function normalizeUtensilName(name) {
@@ -488,7 +508,14 @@ function updateRecipeSeo(recipe) {
   });
 
   const stages = Array.isArray(recipe.stages) ? recipe.stages : null;
-  const recipeInstructions = stages
+  const prepGroups = Array.isArray(recipe.preparationGroups) && recipe.preparationGroups.length ? recipe.preparationGroups : null;
+  const recipeInstructions = prepGroups
+    ? prepGroups.map((group) => ({
+        '@type': 'HowToSection',
+        name: group.name,
+        itemListElement: group.instructions.map((text, index) => ({ '@type': 'HowToStep', position: index + 1, text }))
+      }))
+    : stages
     ? stages.map((stage) => ({
       '@type': 'HowToSection',
       name: stage.name,
@@ -561,6 +588,7 @@ function renderRecipePage() {
   const utensils = document.querySelector('[data-utensils]');
   const instructions = document.querySelector('[data-instructions]');
   const tips = document.querySelector('[data-tips]');
+  const tipsPanel = tips?.closest('[data-tips-panel]') || tips?.closest('aside');
   const related = document.querySelector('[data-related-recipes]');
 
   if (!recipe) {
@@ -598,7 +626,12 @@ function renderRecipePage() {
 
   if (ingredients) {
     const recipeIngredients = getRecipeIngredients(recipe);
-    ingredients.innerHTML = Array.isArray(recipe.stages)
+    ingredients.innerHTML = Array.isArray(recipe.ingredientGroups) && recipe.ingredientGroups.length > 0
+      ? recipe.ingredientGroups.map((group) => `
+          <li class="recipe-stage-heading"><h3>${escapeHtml(group.name)}</h3></li>
+          ${group.ingredients.map((item) => `<li><label class="ingredient-item"><input type="checkbox" /><span>${escapeHtml(item)}</span></label></li>`).join('')}
+        `).join('')
+      : Array.isArray(recipe.stages)
       ? recipe.stages.map((stage) => `
           <li class="recipe-stage-heading"><h3>${stage.name}</h3></li>
           ${stage.ingredients.map((item) => `<li><label class="ingredient-item"><input type="checkbox" /><span>${item}</span></label></li>`).join('')}
@@ -675,7 +708,13 @@ function renderRecipePage() {
   }
 
   if (instructions) {
-    instructions.innerHTML = Array.isArray(recipe.stages)
+    const prepGroups = Array.isArray(recipe.preparationGroups) && recipe.preparationGroups.length ? recipe.preparationGroups : null;
+    instructions.innerHTML = prepGroups
+      ? prepGroups.map((group) => `
+          <li class="instruction-stage"><h3>${escapeHtml(group.name)}</h3>
+            <ol class="instruction-stage-steps">${group.instructions.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
+          </li>`).join('')
+      : Array.isArray(recipe.stages)
       ? recipe.stages.map((stage) => `
           <li class="instruction-stage">
             <h3>${stage.name}</h3>
@@ -688,7 +727,8 @@ function renderRecipePage() {
   }
 
   if (tips) {
-    tips.innerHTML = recipe.tips.map((tip) => `<li>${tip}</li>`).join('');
+    tips.innerHTML = recipe.tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join('');
+    if (tipsPanel) tipsPanel.hidden = recipe.tips.length === 0;
   }
 
   const recipeTags = Array.isArray(recipe.tags) ? recipe.tags : [];
@@ -729,6 +769,7 @@ function renderRecipePage() {
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
                 <div class="recipe-card__meta">
+                  <span>${item.yield}</span>
                   <span>${item.difficulty}</span>
                   <span class="recipe-card__cta" aria-hidden="true">→</span>
                 </div>

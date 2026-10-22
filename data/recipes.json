@@ -536,25 +536,25 @@
                            "ingredients":  [
                                                "250 ml de leite",
                                                "3/4 de xícara (chá) de óleo",
-                                            "2 ovos",
-                                            "1 e 1/2 xícara (chá) de farinha de trigo",
-                                            "Sal a gosto",
-                                            "1 colher (sopa) de fermento em pó químico",
-                                            "Queijo ralado a gosto"
-                                        ],
+                                               "2 ovos",
+                                               "1 e 1/2 xícara (chá) de farinha de trigo",
+                                               "Sal a gosto",
+                                               "1 colher (sopa) de fermento em pó químico",
+                                               "Queijo ralado a gosto"
+                                           ],
                            "utensils":  [
-                                         "Liquidificador",
-                                         "Espátula",
-                                         "Espátula para bolo",
-                                         "Prato raso",
-                                         "Forma de bolo"
+                                            "Liquidificador",
+                                            "Espátula",
+                                            "Espátula para bolo",
+                                            "Prato raso",
+                                            "Forma de bolo"
                                         ],
                            "instructions":  [
-                                             "Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.",
-                                             "Acrescente aos poucos a farinha de trigo, o sal e o fermento em pó e misture até incorporar.",
-                                             "Despeje metade da massa em uma forma untada e distribua o recheio por cima.",
-                                             "Cubra com o restante da massa e finalize com queijo ralado a gosto.",
-                                             "Leve ao forno preaquecido a 180 °C e asse até a superfície dourar e a massa estar assada."
+                                                "Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.",
+                                                "Acrescente aos poucos a farinha de trigo, o sal e o fermento em pó e misture até incorporar.",
+                                                "Despeje metade da massa em uma forma untada e distribua o recheio por cima.",
+                                                "Cubra com o restante da massa e finalize com queijo ralado a gosto.",
+                                                "Leve ao forno preaquecido a 180 °C e asse até a superfície dourar e a massa estar assada."
                                             ]
                        }
                    ],
@@ -804,5 +804,127 @@
                  ],
         "quick":  false,
         "totalTime":  null
+    },
+    {
+        "id":  "torta-de-limao",
+        "title":  "Torta de limão",
+        "category":  "Sobremesas",
+        "time":  "60 min",
+        "yield":  "15 porções",
+        "difficulty":  "Média",
+        "description":  "Torta de limão com base crocante de biscoito de maisena, recheio cremoso e levemente cítrico, finalizada com cobertura de merengue dourado e raspas de limão.",
+        "keywords":  [
+                         "Torta de limão",
+                         "Sobremesas"
+                     ],
+        "tags":  [
+                     "Sobremesas"
+                 ],
+        "prepTime":  "PT15M",
+        "cookTime":  "PT15M",
+        "cuisine":  "Brasileira",
+        "image":  "assets/images/receitas/torta-de-limao.webp",
+        "ingredients":  [
+                            "200 g de biscoito de maisena",
+                            "150 g de margarina",
+                            "1 lata de leite condensado (395 g)",
+                            "1 caixa de creme de leite (200 g)",
+                            "Suco de 4 limões",
+                            "Raspas de 2 limões",
+                            "3 ou 4 claras de ovo",
+                            "3 colheres (sopa) de açúcar",
+                            "Raspas de 2 limões para decorar"
+                        ],
+        "utensils":  [
+                         "Assadeira",
+                         "Liquidificador",
+                         "Colher para sobremesa",
+                         "Fouet"
+                     ],
+        "instructions":  [
+                             "Triture os biscoitos de maisena no liquidificador ou processador até obter uma farofa fina.",
+                             "Acrescente a margarina e bata novamente até formar uma massa úmida e homogênea.",
+                             "Transfira a massa para uma forma de fundo removível de 27 cm de diâmetro.",
+                             "Com as mãos, pressione a massa no fundo e nas laterais da forma, distribuindo uniformemente.",
+                             "Leve ao forno preaquecido a 180 °C por aproximadamente 10 minutos, até ficar levemente dourada. Retire e deixe esfriar.",
+                             "Coloque o leite condensado, o creme de leite e o suco dos limões no liquidificador.",
+                             "Bata até obter um creme liso, firme e homogêneo.",
+                             "Acrescente as raspas de limão e misture delicadamente.",
+                             "Despeje o recheio sobre a massa já assada e fria, espalhando uniformemente.",
+                             "Leve à geladeira por aproximadamente 30 minutos para firmar.",
+                             "Bata as claras em neve até ficarem firmes.",
+                             "Acrescente o açúcar aos poucos, continuando a bater até obter um merengue consistente e brilhante.",
+                             "Espalhe o merengue sobre o recheio da torta.",
+                             "Leve ao forno preaquecido a 180 °C por alguns minutos, apenas até dourar levemente a cobertura.",
+                             "Retire do forno, deixe esfriar e finalize com as raspas de limão.",
+                             "Desenforme cuidadosamente, mantendo a base removível, e sirva gelada."
+                         ],
+        "tips":  [
+                     "Massa crocante: Triture os biscoitos até obter uma farofa fina e pressione bem a mistura no fundo e nas laterais da forma. Asse pelo tempo indicado para ajudar a formar uma base firme e evitar que esfarele ao cortar.",
+                     "Recheio consistente: Bata o leite condensado, o creme de leite e o suco de limão até obter uma mistura homogênea. Respeite o tempo de refrigeração para que o recheio adquira mais firmeza antes de servir.",
+                     "Merengue perfeito: Utilize claras sem nenhum vestígio de gema e um recipiente completamente limpo, seco e livre de gordura. A presença de gordura dificulta a formação de um merengue volumoso e estável.",
+                     "Dourado na medida certa: Observe atentamente o merengue durante o tempo de forno. Retire quando apresentar uma coloração levemente dourada, evitando que escureça excessivamente."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT60M",
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "200 g de biscoito de maisena",
+                                                         "150 g de margarina"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Recheio",
+                                     "ingredients":  [
+                                                         "1 lata de leite condensado (395 g)",
+                                                         "1 caixa de creme de leite (200 g)",
+                                                         "Suco de 4 limões",
+                                                         "Raspas de 2 limões"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Cobertura",
+                                     "ingredients":  [
+                                                         "3 ou 4 claras de ovo",
+                                                         "3 colheres (sopa) de açúcar",
+                                                         "Raspas de 2 limões para decorar"
+                                                     ]
+                                 }
+                             ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Triture os biscoitos de maisena no liquidificador ou processador até obter uma farofa fina.",
+                                                           "Acrescente a margarina e bata novamente até formar uma massa úmida e homogênea.",
+                                                           "Transfira a massa para uma forma de fundo removível de 27 cm de diâmetro.",
+                                                           "Com as mãos, pressione a massa no fundo e nas laterais da forma, distribuindo uniformemente.",
+                                                           "Leve ao forno preaquecido a 180 °C por aproximadamente 10 minutos, até ficar levemente dourada. Retire e deixe esfriar."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Recheio",
+                                      "instructions":  [
+                                                           "Coloque o leite condensado, o creme de leite e o suco dos limões no liquidificador.",
+                                                           "Bata até obter um creme liso, firme e homogêneo.",
+                                                           "Acrescente as raspas de limão e misture delicadamente.",
+                                                           "Despeje o recheio sobre a massa já assada e fria, espalhando uniformemente.",
+                                                           "Leve à geladeira por aproximadamente 30 minutos para firmar."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Cobertura",
+                                      "instructions":  [
+                                                           "Bata as claras em neve até ficarem firmes.",
+                                                           "Acrescente o açúcar aos poucos, continuando a bater até obter um merengue consistente e brilhante.",
+                                                           "Espalhe o merengue sobre o recheio da torta.",
+                                                           "Leve ao forno preaquecido a 180 °C por alguns minutos, apenas até dourar levemente a cobertura.",
+                                                           "Retire do forno, deixe esfriar e finalize com as raspas de limão.",
+                                                           "Desenforme cuidadosamente, mantendo a base removível, e sirva gelada."
+                                                       ]
+                                  }
+                              ]
     }
 ]
