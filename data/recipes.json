@@ -8,72 +8,94 @@
         "difficulty":  "Média",
         "description":  "Bolo fofinho de cenoura com massa macia e cobertura de chocolate para um sabor clássico e irresistível.",
         "keywords":  [
-                         "bolo de cenoura",
-                         "bolo com cobertura de chocolate",
-                         "bolo fofinho",
-                         "cenoura",
-                         "sobremesa"
+                         "Bolo de cenoura com cobertura de chocolate",
+                         "Bolos"
                      ],
         "tags":  [
-                     "Bolos",
-                     "Sobremesas",
-                     "forno",
-                     "vegetariano"
+                     "Bolos"
                  ],
         "prepTime":  null,
         "cookTime":  "PT40M",
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/37711037/pexels-photo-37711037.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
-        "stages":  [
-                       {
-                           "name":  "Massa",
-                           "ingredients":  [
-                                               "1/2 xícara (chá) de óleo",
-                                               "3 cenouras médias raladas",
-                                               "4 ovos",
-                                               "2 xícaras (chá) de açúcar",
-                                               "2 e 1/2 xícaras (chá) de farinha de trigo",
-                                               "1 colher (sopa) de fermento em pó químico"
-                                           ],
-                           "utensils":  [
-                                            "Batedeira",
-                                            "Liquidificador",
-                                            "Forma de bolo",
-                                            "Colher"
-                                        ],
-                           "instructions":  [
-                                                "No liquidificador, coloque a cenoura, os ovos e o óleo. Bata até misturar.",
-                                                "Acrescente o açúcar e bata novamente por aproximadamente 5 minutos.",
-                                                "Transfira a mistura para uma tigela ou batedeira, acrescente a farinha de trigo e misture.",
-                                                "Adicione o fermento e misture delicadamente com uma colher.",
-                                                "Coloque a massa na forma de bolo e asse em forno preaquecido a 180 °C por aproximadamente 40 minutos."
-                                            ]
-                       },
-                       {
-                           "name":  "Cobertura de chocolate",
-                           "ingredients":  [
-                                               "1 colher (sopa) de manteiga",
-                                               "3 colheres (sopa) de chocolate em pó",
-                                               "1 xícara (chá) de açúcar",
-                                               "1 xícara (chá) de leite"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Prato de sobremesa"
-                                        ],
-                           "instructions":  [
-                                                "Em uma panela, misture a manteiga, o chocolate em pó, o açúcar e o leite.",
-                                                "Leve ao fogo, mexendo até obter uma consistência cremosa.",
-                                                "Despeje a cobertura sobre o bolo."
-                                            ]
-                       }
-                   ],
+        "image":  "assets/images/receitas/bolo-de-cenoura-com-cobertura-de-chocolate.webp",
         "tips":  [
                      "A proporção de cenoura e farinha ajuda a evitar que o bolo fique solado.",
                      "Se a massa ficar pesada para o liquidificador, bata apenas cenoura, ovos e óleo; depois misture os ingredientes secos em uma tigela."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredients":  [
+                            "1/2 xícara (chá) de óleo",
+                            "3 cenouras médias raladas",
+                            "4 ovos",
+                            "2 xícaras (chá) de açúcar",
+                            "2 e 1/2 xícaras (chá) de farinha de trigo",
+                            "1 colher (sopa) de fermento em pó químico",
+                            "1 colher (sopa) de manteiga",
+                            "3 colheres (sopa) de chocolate em pó",
+                            "1 xícara (chá) de açúcar",
+                            "1 xícara (chá) de leite"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "1/2 xícara (chá) de óleo",
+                                                         "3 cenouras médias raladas",
+                                                         "4 ovos",
+                                                         "2 xícaras (chá) de açúcar",
+                                                         "2 e 1/2 xícaras (chá) de farinha de trigo",
+                                                         "1 colher (sopa) de fermento em pó químico"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Cobertura de chocolate",
+                                     "ingredients":  [
+                                                         "1 colher (sopa) de manteiga",
+                                                         "3 colheres (sopa) de chocolate em pó",
+                                                         "1 xícara (chá) de açúcar",
+                                                         "1 xícara (chá) de leite"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Batedeira",
+                         "Liquidificador",
+                         "Forma de bolo",
+                         "Colher",
+                         "Panela",
+                         "Prato de sobremesa"
+                     ],
+        "instructions":  [
+                             "No liquidificador, coloque a cenoura, os ovos e o óleo. Bata até misturar.",
+                             "Acrescente o açúcar e bata novamente por aproximadamente 5 minutos.",
+                             "Transfira a mistura para uma tigela ou batedeira, acrescente a farinha de trigo e misture.",
+                             "Adicione o fermento e misture delicadamente com uma colher.",
+                             "Coloque a massa na forma de bolo e asse em forno preaquecido a 180 °C por aproximadamente 40 minutos.",
+                             "Em uma panela, misture a manteiga, o chocolate em pó, o açúcar e o leite.",
+                             "Leve ao fogo, mexendo até obter uma consistência cremosa.",
+                             "Despeje a cobertura sobre o bolo."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "No liquidificador, coloque a cenoura, os ovos e o óleo. Bata até misturar.",
+                                                           "Acrescente o açúcar e bata novamente por aproximadamente 5 minutos.",
+                                                           "Transfira a mistura para uma tigela ou batedeira, acrescente a farinha de trigo e misture.",
+                                                           "Adicione o fermento e misture delicadamente com uma colher.",
+                                                           "Coloque a massa na forma de bolo e asse em forno preaquecido a 180 °C por aproximadamente 40 minutos."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Cobertura de chocolate",
+                                      "instructions":  [
+                                                           "Em uma panela, misture a manteiga, o chocolate em pó, o açúcar e o leite.",
+                                                           "Leve ao fogo, mexendo até obter uma consistência cremosa.",
+                                                           "Despeje a cobertura sobre o bolo."
+                                                       ]
+                                  }
+                              ]
     },
     {
         "id":  "pudim-de-leite-condensado",
@@ -84,20 +106,16 @@
         "difficulty":  "Fácil",
         "description":  "Pudim cremoso e delicado com calda caramelizada, clássico e sempre bem aceito.",
         "keywords":  [
-                         "pudim de leite condensado",
-                         "pudim",
-                         "sobremesa",
-                         "calda caramelizada"
+                         "Pudim de leite condensado",
+                         "Sobremesas"
                      ],
         "tags":  [
-                     "Doces",
-                     "geladeira",
-                     "vegetariano"
+                     "Sobremesas"
                  ],
         "prepTime":  "PT5M",
         "cookTime":  "PT45M",
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/34234275/pexels-photo-34234275.png?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/pudim-de-leite-condensado.webp",
         "ingredients":  [
                             "1 lata de leite condensado",
                             "1 lata de leite (medida da lata de leite condensado)",
@@ -128,7 +146,13 @@
                      "Deixe o pudim gelar por algumas horas antes de servir para melhor textura."
                  ],
         "quick":  false,
-        "totalTime":  "PT1H5M"
+        "totalTime":  "PT1H5M",
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "lasanha-a-bolonhesa",
@@ -139,97 +163,121 @@
         "difficulty":  "Média",
         "description":  "Camadas de massa com molho bolonhesa, queijo e molho bechamel, muito saborosa e reconfortante.",
         "keywords":  [
-                         "lasanha à bolonhesa",
-                         "lasanha",
-                         "massa",
-                         "carne moída",
-                         "molho bechamel"
+                         "Lasanha à bolonhesa",
+                         "Massas"
                      ],
         "tags":  [
-                     "Almoço e Janta",
-                     "Carnes",
-                     "prato principal",
-                     "forno",
-                     "carne"
+                     "Massas"
                  ],
         "prepTime":  "PT50M",
         "cookTime":  "PT20M",
         "cuisine":  "Italiana",
-        "image":  "https://images.pexels.com/photos/31119077/pexels-photo-31119077.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
-        "stages":  [
-                       {
-                           "name":  "Massa",
-                           "ingredients":  [
-                                               "500 g de massa de lasanha"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Recipiente"
-                                        ],
-                           "instructions":  [
-                                                "Cozinhe a massa de lasanha conforme as instruções do fabricante. Coloque-a em um recipiente com água gelada para evitar que grude e reserve."
-                                            ]
-                       },
-                       {
-                           "name":  "Molho à bolonhesa",
-                           "ingredients":  [
-                                               "500 g de carne moída",
-                                               "1 cebola ralada",
-                                               "3 colheres de óleo",
-                                               "1 caixa de molho de tomate",
-                                               "3 dentes de alho amassados",
-                                               "Sal a gosto"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Espátula"
-                                        ],
-                           "instructions":  [
-                                                "Aqueça o óleo em uma panela e refogue o alho e a cebola. Acrescente a carne moída e cozinhe até ficar bem cozida. Adicione o molho de tomate, tempere com sal a gosto, cozinhe por mais aproximadamente 3 minutos e reserve."
-                                            ]
-                       },
-                       {
-                           "name":  "Molho branco",
-                           "ingredients":  [
-                                               "2 caixas de creme de leite",
-                                               "3 colheres de manteiga",
-                                               "3 colheres de farinha de trigo",
-                                               "2 copos de leite"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Espátula"
-                                        ],
-                           "instructions":  [
-                                                "Em outra panela, derreta a manteiga, acrescente as 3 colheres de farinha de trigo e mexa.",
-                                                "Adicione o leite aos poucos, mexendo continuamente para evitar grumos.",
-                                                "Acrescente o creme de leite, mexa por aproximadamente 1 minuto e desligue o fogo."
-                                            ]
-                       },
-                       {
-                           "name":  "Montagem",
-                           "ingredients":  [
-                                               "500 g de presunto",
-                                               "500 g de mussarela",
-                                               "1 pacote de queijo ralado"
-                                           ],
-                           "utensils":  [
-                                            "Concha",
-                                            "Travessa de vidro"
-                                        ],
-                           "instructions":  [
-                                                "Espalhe parte do molho à bolonhesa no fundo de uma travessa refratária. Distribua uma camada de massa, presunto e mussarela. Acrescente o molho branco e continue a montagem com os ingredientes restantes.",
-                                                "Repita as camadas conforme o espaço disponível, distribuindo os ingredientes para finalizar a montagem.",
-                                                "Finalize com o queijo ralado e leve ao forno preaquecido a 220 °C por aproximadamente 20 minutos."
-                                            ]
-                       }
-                   ],
+        "image":  "assets/images/receitas/lasanha-a-bolonhesa.webp",
         "tips":  [
                      "Reserve um pouco de molho de tomate para cobrir a última camada.",
                      "A lasanha fica ainda melhor quando descansa alguns minutos antes de servir."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredients":  [
+                            "500 g de massa de lasanha",
+                            "500 g de carne moída",
+                            "1 cebola ralada",
+                            "3 colheres de óleo",
+                            "1 caixa de molho de tomate",
+                            "3 dentes de alho amassados",
+                            "Sal a gosto",
+                            "2 caixas de creme de leite",
+                            "3 colheres de manteiga",
+                            "3 colheres de farinha de trigo",
+                            "2 copos de leite",
+                            "500 g de presunto",
+                            "500 g de mussarela",
+                            "1 pacote de queijo ralado"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "500 g de massa de lasanha"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Molho à bolonhesa",
+                                     "ingredients":  [
+                                                         "500 g de carne moída",
+                                                         "1 cebola ralada",
+                                                         "3 colheres de óleo",
+                                                         "1 caixa de molho de tomate",
+                                                         "3 dentes de alho amassados",
+                                                         "Sal a gosto"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Molho branco",
+                                     "ingredients":  [
+                                                         "2 caixas de creme de leite",
+                                                         "3 colheres de manteiga",
+                                                         "3 colheres de farinha de trigo",
+                                                         "2 copos de leite"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Montagem",
+                                     "ingredients":  [
+                                                         "500 g de presunto",
+                                                         "500 g de mussarela",
+                                                         "1 pacote de queijo ralado"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Recipiente",
+                         "Espátula",
+                         "Concha",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Cozinhe a massa de lasanha conforme as instruções do fabricante. Coloque-a em um recipiente com água gelada para evitar que grude e reserve.",
+                             "Aqueça o óleo em uma panela e refogue o alho e a cebola. Acrescente a carne moída e cozinhe até ficar bem cozida. Adicione o molho de tomate, tempere com sal a gosto, cozinhe por mais aproximadamente 3 minutos e reserve.",
+                             "Em outra panela, derreta a manteiga, acrescente as 3 colheres de farinha de trigo e mexa.",
+                             "Adicione o leite aos poucos, mexendo continuamente para evitar grumos.",
+                             "Acrescente o creme de leite, mexa por aproximadamente 1 minuto e desligue o fogo.",
+                             "Espalhe parte do molho à bolonhesa no fundo de uma travessa refratária. Distribua uma camada de massa, presunto e mussarela. Acrescente o molho branco e continue a montagem com os ingredientes restantes.",
+                             "Repita as camadas conforme o espaço disponível, distribuindo os ingredientes para finalizar a montagem.",
+                             "Finalize com o queijo ralado e leve ao forno preaquecido a 220 °C por aproximadamente 20 minutos."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Cozinhe a massa de lasanha conforme as instruções do fabricante. Coloque-a em um recipiente com água gelada para evitar que grude e reserve."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Molho à bolonhesa",
+                                      "instructions":  [
+                                                           "Aqueça o óleo em uma panela e refogue o alho e a cebola. Acrescente a carne moída e cozinhe até ficar bem cozida. Adicione o molho de tomate, tempere com sal a gosto, cozinhe por mais aproximadamente 3 minutos e reserve."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Molho branco",
+                                      "instructions":  [
+                                                           "Em outra panela, derreta a manteiga, acrescente as 3 colheres de farinha de trigo e mexa.",
+                                                           "Adicione o leite aos poucos, mexendo continuamente para evitar grumos.",
+                                                           "Acrescente o creme de leite, mexa por aproximadamente 1 minuto e desligue o fogo."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Montagem",
+                                      "instructions":  [
+                                                           "Espalhe parte do molho à bolonhesa no fundo de uma travessa refratária. Distribua uma camada de massa, presunto e mussarela. Acrescente o molho branco e continue a montagem com os ingredientes restantes.",
+                                                           "Repita as camadas conforme o espaço disponível, distribuindo os ingredientes para finalizar a montagem.",
+                                                           "Finalize com o queijo ralado e leve ao forno preaquecido a 220 °C por aproximadamente 20 minutos."
+                                                       ]
+                                  }
+                              ]
     },
     {
         "id":  "strogonoff-de-frango",
@@ -240,22 +288,16 @@
         "difficulty":  "Fácil",
         "description":  "Frango em cubos com ketchup, mostarda, cogumelos e creme de leite, servido com batata palha.",
         "keywords":  [
-                         "strogonoff de frango",
-                         "estrogonofe",
-                         "frango cremoso",
-                         "frango",
-                         "ketchup"
+                         "Strogonoff de frango",
+                         "Carnes"
                      ],
         "tags":  [
-                     "Almoço e Janta",
-                     "frango",
-                     "prato principal",
-                     "rápidas"
+                     "Carnes"
                  ],
         "prepTime":  null,
         "cookTime":  null,
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/30700761/pexels-photo-30700761.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/strogonoff-de-frango.webp",
         "ingredients":  [
                             "3 peitos de frango cortados em cubos",
                             "1 dente de alho picado",
@@ -290,7 +332,13 @@
                      "Sirva com arroz branco como acompanhamento sugerido."
                  ],
         "quick":  true,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "brownie-de-chocolate",
@@ -301,22 +349,16 @@
         "difficulty":  "Fácil",
         "description":  "Brownie úmido, com casca crocante por fora e centro macio, ideal para qualquer momento.",
         "keywords":  [
-                         "brownie de chocolate",
-                         "brownie",
-                         "chocolate",
-                         "sobremesa",
-                         "bolo úmido"
+                         "Brownie de chocolate",
+                         "Sobremesas"
                      ],
         "tags":  [
-                     "Doces",
-                     "chocolate",
-                     "forno",
-                     "vegetariano"
+                     "Sobremesas"
                  ],
         "prepTime":  null,
         "cookTime":  "PT30M",
         "cuisine":  "Americana",
-        "image":  "https://images.pexels.com/photos/17488699/pexels-photo-17488699.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/brownie-de-chocolate.webp",
         "ingredients":  [
                             "5 colheres de manteiga",
                             "3 ovos",
@@ -344,7 +386,13 @@
                      "Sirva com uma bola de sorvete para um toque especial."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "bolo-de-chocolate",
@@ -355,72 +403,93 @@
         "difficulty":  "Média",
         "description":  "Bolo de chocolate macio e aromático, perfeito para aniversários e sobremesas em família.",
         "keywords":  [
-                         "bolo de chocolate",
-                         "bolo",
-                         "chocolate",
-                         "aniversário",
-                         "sobremesa"
+                         "Bolo de chocolate",
+                         "Bolos"
                      ],
         "tags":  [
-                     "Bolos",
-                     "Sobremesas",
-                     "chocolate",
-                     "forno",
-                     "vegetariano"
+                     "Bolos"
                  ],
         "prepTime":  "PT10M",
         "cookTime":  "PT40M",
         "cuisine":  null,
-        "image":  "https://images.pexels.com/photos/29538417/pexels-photo-29538417.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
-        "stages":  [
-                       {
-                           "name":  "Massa",
-                           "ingredients":  [
-                                               "3 ovos",
-                                               "1 e 1/2 xícara (chá) de açúcar",
-                                               "2 xícaras (chá) de farinha de trigo",
-                                               "1 xícara (chá) de chocolate em pó ou achocolatado",
-                                               "1/2 xícara (chá) de óleo",
-                                               "1 colher (sopa) de fermento em pó químico",
-                                               "1 pitada de sal",
-                                               "1 xícara (chá) de água quente"
-                                           ],
-                           "utensils":  [
-                                            "Liquidificador",
-                                            "Bowl (tigela)",
-                                            "Forma de bolo",
-                                            "Fouet"
-                                        ],
-                           "instructions":  [
-                                                "No liquidificador, bata os ovos, o açúcar, o óleo, o chocolate em pó ou achocolatado e a farinha de trigo. Se o liquidificador não for potente, adicione a farinha aos poucos e, quando a massa ficar densa, transfira para uma tigela e misture o restante manualmente com um fouet.",
-                                                "Transfira a massa para uma tigela, acrescente a água quente, o sal e o fermento e misture bem.",
-                                                "Despeje a massa em uma forma untada e asse em forno preaquecido a 200 °C por aproximadamente 40 minutos.",
-                                                "Desenforme o bolo ainda quente, com cuidado."
-                                            ]
-                       },
-                       {
-                           "name":  "Cobertura",
-                           "ingredients":  [
-                                               "4 colheres (sopa) de leite",
-                                               "1/2 xícara (chá) de chocolate em pó",
-                                               "1 colher (sopa) de manteiga",
-                                               "1 xícara (chá) de açúcar"
-                                           ],
-                           "utensils":  [
-                                            "Panela"
-                                        ],
-                           "instructions":  [
-                                                "Coloque o leite, o chocolate em pó, a manteiga e o açúcar em uma panela. Leve ao fogo e mexa até levantar fervura.",
-                                                "Despeje a cobertura ainda quente sobre o bolo."
-                                            ]
-                       }
-                   ],
+        "image":  "assets/images/receitas/bolo-de-chocolate.webp",
         "tips":  [
                      "Use cacau de boa qualidade para um sabor mais intenso.",
                      "Para um bolo mais úmido, use leite integral."
                  ],
         "quick":  false,
-        "totalTime":  "PT50M"
+        "totalTime":  "PT50M",
+        "ingredients":  [
+                            "3 ovos",
+                            "1 e 1/2 xícara (chá) de açúcar",
+                            "2 xícaras (chá) de farinha de trigo",
+                            "1 xícara (chá) de chocolate em pó ou achocolatado",
+                            "1/2 xícara (chá) de óleo",
+                            "1 colher (sopa) de fermento em pó químico",
+                            "1 pitada de sal",
+                            "1 xícara (chá) de água quente",
+                            "4 colheres (sopa) de leite",
+                            "1/2 xícara (chá) de chocolate em pó",
+                            "1 colher (sopa) de manteiga",
+                            "1 xícara (chá) de açúcar"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "3 ovos",
+                                                         "1 e 1/2 xícara (chá) de açúcar",
+                                                         "2 xícaras (chá) de farinha de trigo",
+                                                         "1 xícara (chá) de chocolate em pó ou achocolatado",
+                                                         "1/2 xícara (chá) de óleo",
+                                                         "1 colher (sopa) de fermento em pó químico",
+                                                         "1 pitada de sal",
+                                                         "1 xícara (chá) de água quente"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Cobertura",
+                                     "ingredients":  [
+                                                         "4 colheres (sopa) de leite",
+                                                         "1/2 xícara (chá) de chocolate em pó",
+                                                         "1 colher (sopa) de manteiga",
+                                                         "1 xícara (chá) de açúcar"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Bowl (tigela)",
+                         "Forma de bolo",
+                         "Fouet",
+                         "Panela"
+                     ],
+        "instructions":  [
+                             "No liquidificador, bata os ovos, o açúcar, o óleo, o chocolate em pó ou achocolatado e a farinha de trigo. Se o liquidificador não for potente, adicione a farinha aos poucos e, quando a massa ficar densa, transfira para uma tigela e misture o restante manualmente com um fouet.",
+                             "Transfira a massa para uma tigela, acrescente a água quente, o sal e o fermento e misture bem.",
+                             "Despeje a massa em uma forma untada e asse em forno preaquecido a 200 °C por aproximadamente 40 minutos.",
+                             "Desenforme o bolo ainda quente, com cuidado.",
+                             "Coloque o leite, o chocolate em pó, a manteiga e o açúcar em uma panela. Leve ao fogo e mexa até levantar fervura.",
+                             "Despeje a cobertura ainda quente sobre o bolo."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "No liquidificador, bata os ovos, o açúcar, o óleo, o chocolate em pó ou achocolatado e a farinha de trigo. Se o liquidificador não for potente, adicione a farinha aos poucos e, quando a massa ficar densa, transfira para uma tigela e misture o restante manualmente com um fouet.",
+                                                           "Transfira a massa para uma tigela, acrescente a água quente, o sal e o fermento e misture bem.",
+                                                           "Despeje a massa em uma forma untada e asse em forno preaquecido a 200 °C por aproximadamente 40 minutos.",
+                                                           "Desenforme o bolo ainda quente, com cuidado."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Cobertura",
+                                      "instructions":  [
+                                                           "Coloque o leite, o chocolate em pó, a manteiga e o açúcar em uma panela. Leve ao fogo e mexa até levantar fervura.",
+                                                           "Despeje a cobertura ainda quente sobre o bolo."
+                                                       ]
+                                  }
+                              ]
     },
     {
         "id":  "farofa",
@@ -431,21 +500,16 @@
         "difficulty":  "Fácil",
         "description":  "Farofa dourada de mandioca com bacon, cebola e ovos, um acompanhamento brasileiro crocante e saboroso.",
         "keywords":  [
-                         "farofa",
-                         "farinha de mandioca",
-                         "acompanhamento brasileiro",
-                         "bacon",
-                         "cebola"
+                         "Farofa",
+                         "Almoço e Janta"
                      ],
         "tags":  [
-                     "brasileira",
-                     "frigideira",
-                     "rápidas"
+                     "Almoço e Janta"
                  ],
         "prepTime":  null,
         "cookTime":  null,
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/16976659/pexels-photo-16976659.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/farofa.webp",
         "ingredients":  [
                             "50 g de bacon cortado em cubinhos ou tirinhas",
                             "1 cebola bem picada",
@@ -478,7 +542,13 @@
                      "Para uma versão sem bacon, refogue a cebola no azeite."
                  ],
         "quick":  true,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "torta-de-frango",
@@ -489,81 +559,108 @@
         "difficulty":  "Média",
         "description":  "Torta crocante por fora e cremosa por dentro, com recheio de frango bem temperado.",
         "keywords":  [
-                         "torta de frango",
-                         "frango desfiado",
-                         "torta salgada",
-                         "lanche",
-                         "frango cremoso"
+                         "Torta de frango",
+                         "Lanche"
                      ],
         "tags":  [
-                     "Almoço e Janta",
-                     "Carnes",
-                     "frango",
-                     "tortas",
-                     "forno"
+                     "Lanche"
                  ],
         "prepTime":  null,
         "cookTime":  null,
         "cuisine":  null,
-        "image":  "https://images.pexels.com/photos/39070762/pexels-photo-39070762.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
-        "stages":  [
-                       {
-                           "name":  "Recheio",
-                           "ingredients":  [
-                                               "500 g de peito de frango sem pele",
-                                               "1/2 litro de caldo de galinha",
-                                               "4 colheres (sopa) de óleo",
-                                               "1 dente de alho amassado",
-                                               "1 cebola picada",
-                                               "3 tomates sem pele e sem sementes",
-                                               "1 xícara (chá) de ervilhas",
-                                               "Sal a gosto",
-                                               "Pimenta-do-reino a gosto"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Espátula"
-                                        ],
-                           "instructions":  [
-                                                "Cozinhe o peito de frango no caldo de galinha até ficar completamente cozido e macio.",
-                                                "Separe 1 xícara (chá) do caldo do cozimento e reserve.",
-                                                "Em uma panela, aqueça o óleo e refogue o alho e a cebola. Acrescente os tomates, tempere com sal e pimenta-do-reino a gosto e adicione as ervilhas por último.",
-                                                "Desfie o frango, misture-o ao refogado e acrescente o caldo reservado. Cozinhe até reduzir o líquido, evitando que o recheio fique excessivamente úmido."
-                                            ]
-                       },
-                       {
-                           "name":  "Massa",
-                           "ingredients":  [
-                                               "250 ml de leite",
-                                               "3/4 de xícara (chá) de óleo",
-                                               "2 ovos",
-                                               "1 e 1/2 xícara (chá) de farinha de trigo",
-                                               "Sal a gosto",
-                                               "1 colher (sopa) de fermento em pó químico",
-                                               "Queijo ralado a gosto"
-                                           ],
-                           "utensils":  [
-                                            "Liquidificador",
-                                            "Espátula",
-                                            "Espátula para bolo",
-                                            "Prato raso",
-                                            "Forma de bolo"
-                                        ],
-                           "instructions":  [
-                                                "Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.",
-                                                "Acrescente aos poucos a farinha de trigo, o sal e o fermento em pó e misture até incorporar.",
-                                                "Despeje metade da massa em uma forma untada e distribua o recheio por cima.",
-                                                "Cubra com o restante da massa e finalize com queijo ralado a gosto.",
-                                                "Leve ao forno preaquecido a 180 °C e asse até a superfície dourar e a massa estar assada."
-                                            ]
-                       }
-                   ],
+        "image":  "assets/images/receitas/torta-de-frango.webp",
         "tips":  [
                      "Use massa pronta para agilizar o preparo.",
                      "A torta fica melhor se descansar alguns minutos antes de servir."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredients":  [
+                            "500 g de peito de frango sem pele",
+                            "1/2 litro de caldo de galinha",
+                            "4 colheres (sopa) de óleo",
+                            "1 dente de alho amassado",
+                            "1 cebola picada",
+                            "3 tomates sem pele e sem sementes",
+                            "1 xícara (chá) de ervilhas",
+                            "Sal a gosto",
+                            "Pimenta-do-reino a gosto",
+                            "250 ml de leite",
+                            "3/4 de xícara (chá) de óleo",
+                            "2 ovos",
+                            "1 e 1/2 xícara (chá) de farinha de trigo",
+                            "Sal a gosto",
+                            "1 colher (sopa) de fermento em pó químico",
+                            "Queijo ralado a gosto"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Recheio",
+                                     "ingredients":  [
+                                                         "500 g de peito de frango sem pele",
+                                                         "1/2 litro de caldo de galinha",
+                                                         "4 colheres (sopa) de óleo",
+                                                         "1 dente de alho amassado",
+                                                         "1 cebola picada",
+                                                         "3 tomates sem pele e sem sementes",
+                                                         "1 xícara (chá) de ervilhas",
+                                                         "Sal a gosto",
+                                                         "Pimenta-do-reino a gosto"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "250 ml de leite",
+                                                         "3/4 de xícara (chá) de óleo",
+                                                         "2 ovos",
+                                                         "1 e 1/2 xícara (chá) de farinha de trigo",
+                                                         "Sal a gosto",
+                                                         "1 colher (sopa) de fermento em pó químico",
+                                                         "Queijo ralado a gosto"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Espátula",
+                         "Liquidificador",
+                         "Espátula para bolo",
+                         "Prato raso",
+                         "Forma de bolo"
+                     ],
+        "instructions":  [
+                             "Cozinhe o peito de frango no caldo de galinha até ficar completamente cozido e macio.",
+                             "Separe 1 xícara (chá) do caldo do cozimento e reserve.",
+                             "Em uma panela, aqueça o óleo e refogue o alho e a cebola. Acrescente os tomates, tempere com sal e pimenta-do-reino a gosto e adicione as ervilhas por último.",
+                             "Desfie o frango, misture-o ao refogado e acrescente o caldo reservado. Cozinhe até reduzir o líquido, evitando que o recheio fique excessivamente úmido.",
+                             "Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.",
+                             "Acrescente aos poucos a farinha de trigo, o sal e o fermento em pó e misture até incorporar.",
+                             "Despeje metade da massa em uma forma untada e distribua o recheio por cima.",
+                             "Cubra com o restante da massa e finalize com queijo ralado a gosto.",
+                             "Leve ao forno preaquecido a 180 °C e asse até a superfície dourar e a massa estar assada."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Recheio",
+                                      "instructions":  [
+                                                           "Cozinhe o peito de frango no caldo de galinha até ficar completamente cozido e macio.",
+                                                           "Separe 1 xícara (chá) do caldo do cozimento e reserve.",
+                                                           "Em uma panela, aqueça o óleo e refogue o alho e a cebola. Acrescente os tomates, tempere com sal e pimenta-do-reino a gosto e adicione as ervilhas por último.",
+                                                           "Desfie o frango, misture-o ao refogado e acrescente o caldo reservado. Cozinhe até reduzir o líquido, evitando que o recheio fique excessivamente úmido."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.",
+                                                           "Acrescente aos poucos a farinha de trigo, o sal e o fermento em pó e misture até incorporar.",
+                                                           "Despeje metade da massa em uma forma untada e distribua o recheio por cima.",
+                                                           "Cubra com o restante da massa e finalize com queijo ralado a gosto.",
+                                                           "Leve ao forno preaquecido a 180 °C e asse até a superfície dourar e a massa estar assada."
+                                                       ]
+                                  }
+                              ]
     },
     {
         "id":  "bolo-de-fuba",
@@ -572,25 +669,18 @@
         "time":  "45 min",
         "yield":  "8 porções",
         "difficulty":  "Fácil",
-        "description":  "Bolo de fubá tradicional, macio e com leve sabor de milho bem equilibrado.",
+        "description":  "Bolo de fubá simples e tradicional, preparado no liquidificador com ingredientes básicos.",
         "keywords":  [
-                         "bolo de fubá",
-                         "bolo de milho",
-                         "fubá",
-                         "café da tarde",
-                         "bolo caseiro"
+                         "Bolo de fubá",
+                         "Bolos"
                      ],
         "tags":  [
-                     "Bolos",
-                     "Sobremesas",
-                     "café da tarde",
-                     "forno",
-                     "vegetariano"
+                     "Bolos"
                  ],
         "prepTime":  "PT5M",
         "cookTime":  "PT40M",
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/27135309/pexels-photo-27135309.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/bolo-de-fuba-2.webp",
         "ingredients":  [
                             "3 ovos",
                             "2 xícaras (chá) de açúcar",
@@ -598,7 +688,7 @@
                             "3 colheres (sopa) rasas de farinha de trigo",
                             "1/2 copo (americano) de óleo",
                             "1 copo de leite",
-                            "1 colher (sopa) de fermento em pó químico"
+                            "1 colher (sopa) de fermento em pó"
                         ],
         "utensils":  [
                          "Liquidificador",
@@ -607,16 +697,28 @@
                          "Prato de sobremesa"
                      ],
         "instructions":  [
-                             "Coloque os ovos, o açúcar, o fubá, a farinha de trigo, o óleo, o leite e o fermento no liquidificador. Bata até obter uma mistura homogênea.",
-                             "Despeje a massa em uma forma untada e enfarinhada.",
-                             "Leve ao forno preaquecido e asse por aproximadamente 40 minutos, até o bolo estar assado."
+                             "Preaqueça o forno antes de começar o preparo da massa.",
+                             "Coloque os ovos, o açúcar, o fubá, a farinha de trigo, o óleo e o leite no liquidificador.",
+                             "Bata todos os ingredientes até obter uma mistura homogênea.",
+                             "Acrescente o fermento em pó e misture para incorporá-lo à massa.",
+                             "Prepare uma forma de bolo, untando com óleo ou outra gordura e polvilhando farinha de trigo.",
+                             "Despeje toda a massa na forma preparada, espalhando uniformemente.",
+                             "Leve ao forno preaquecido e deixe assar por aproximadamente 40 minutos.",
+                             "Após o tempo de forno, retire o bolo e deixe esfriar antes de servir."
                          ],
         "tips":  [
-                     "A massa fica mais úmida se você bater pouco.",
-                     "Sirva com café ou chá para combinar bem."
+                     "Utilize os ingredientes em temperatura ambiente para facilitar a mistura da massa.",
+                     "Bata bem os ingredientes para deixar a massa homogênea.",
+                     "Evite abrir o forno antes de o bolo completar boa parte do tempo de assamento."
                  ],
         "quick":  true,
-        "totalTime":  "PT45M"
+        "totalTime":  "PT45M",
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "mousse-de-maracuja",
@@ -627,43 +729,46 @@
         "difficulty":  "Fácil",
         "description":  "Mousse cremosa de maracujá feita com suco concentrado para uma sobremesa de sabor cítrico.",
         "keywords":  [
-                         "mousse de maracujá",
-                         "maracujá",
-                         "sobremesa",
-                         "mousse cremosa",
-                         "doce tropical"
+                         "Mousse de maracujá",
+                         "Sobremesas"
                      ],
         "tags":  [
-                     "Doces",
-                     "frutas",
-                     "geladeira",
-                     "rápidas"
+                     "Sobremesas"
                  ],
         "prepTime":  "PT5M",
         "cookTime":  null,
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/24247238/pexels-photo-24247238.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/mousse-de-maracuja.webp",
         "ingredients":  [
                             "1 lata de leite condensado",
-                            "1 lata de suco concentrado de maracujá, utilizando a lata de leite condensado como medida",
+                            "1 lata de suco concentrado de maracujá (use a lata de leite condensado como medida)",
                             "1 lata de creme de leite sem soro"
                         ],
         "utensils":  [
                          "Liquidificador",
-                         "Colher para sobremesa",
+                         "Colher",
                          "Copo medidor",
                          "Travessa de vidro"
                      ],
         "instructions":  [
-                             "No liquidificador, bata o creme de leite sem soro, o leite condensado e o suco concentrado de maracujá até obter uma mistura homogênea.",
-                             "Transfira a mistura para uma travessa e leve à geladeira por, no mínimo, 4 horas antes de servir."
+                             "Coloque o creme de leite, o leite condensado e o suco concentrado de maracujá no liquidificador.",
+                             "Bata até obter uma mistura cremosa e homogênea.",
+                             "Despeje a mistura em uma tigela ou travessa de vidro.",
+                             "Leve à geladeira por, no mínimo, 4 horas, para firmar.",
+                             "Sirva gelado."
                          ],
         "tips":  [
-                     "Acrescente o suco aos poucos e prove para ajustar o equilíbrio entre doce e cítrico.",
-                     "Mantenha a mousse refrigerada até o momento de servir."
+                     "Utilize o suco concentrado de maracujá para manter o sabor característico da receita.",
+                     "Respeite o tempo mínimo de geladeira para que a mousse fique firme e cremosa."
                  ],
         "quick":  true,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "feijoada",
@@ -674,74 +779,101 @@
         "difficulty":  "Média",
         "description":  "Feijoada brasileira feita com feijão-preto, carnes suínas e temperos, cozida lentamente até ficar encorpada.",
         "keywords":  [
-                         "feijoada",
-                         "feijão-preto",
-                         "comida brasileira",
-                         "carne suína",
-                         "prato tradicional"
+                         "Feijoada",
+                         "Almoço e Janta"
                      ],
         "tags":  [
-                     "Carnes",
-                     "brasileira",
-                     "prato principal",
-                     "cozimento lento"
+                     "Almoço e Janta"
                  ],
         "prepTime":  null,
         "cookTime":  null,
         "cuisine":  "Brasileira",
-        "image":  "https://images.pexels.com/photos/34234280/pexels-photo-34234280.png?auto=compress\u0026cs=tinysrgb\u0026w=1200",
-        "stages":  [
-                       {
-                           "name":  "Ingredientes principais",
-                           "ingredients":  [
-                                               "1 kg de feijão preto",
-                                               "100 g de carne-seca",
-                                               "70 g de orelha de porco",
-                                               "70 g de rabo de porco",
-                                               "70 g de pé de porco",
-                                               "100 g de costelinha de porco",
-                                               "50 g de lombo de porco",
-                                               "100 g de paio",
-                                               "150 g de linguiça portuguesa",
-                                               "Água, conforme necessário para dessalgue e cozimento"
-                                           ],
-                           "utensils":  [
-                                            "Panela",
-                                            "Concha"
-                                        ],
-                           "instructions":  [
-                                                "Coloque as carnes salgadas de molho por 36 horas ou mais para dessalgar, trocando a água várias vezes. Mantenha as carnes refrigeradas durante todo o dessalgue.",
-                                                "Cozinhe as carnes por etapas, começando pelas mais duras e acrescentando depois as mais macias. Certifique-se de que todas fiquem completamente cozidas.",
-                                                "Quando as carnes estiverem macias, retire-as temporariamente e acrescente o feijão preto ao preparo, cozinhando até ficar macio. Ajuste a quantidade de água conforme necessário para o cozimento."
-                                            ]
-                       },
-                       {
-                           "name":  "Tempero",
-                           "ingredients":  [
-                                               "2 cebolas grandes picadinhas",
-                                               "1 maço de cebolinha verde picadinha",
-                                               "3 folhas de louro",
-                                               "6 dentes de alho",
-                                               "Pimenta-do-reino a gosto",
-                                               "1 ou 2 laranjas",
-                                               "Sal, se necessário"
-                                           ],
-                           "utensils":  [
-                                            "Faca",
-                                            "Tábua de corte"
-                                        ],
-                           "instructions":  [
-                                                "Tempere o feijão com a cebola, o alho, a cebolinha, o louro e a pimenta-do-reino. Utilize sal apenas se necessário, considerando o sal das carnes.",
-                                                "Reúna novamente as carnes e o feijão, deixando cozinhar até os sabores se integrarem e tudo estar completamente cozido.",
-                                                "Sirva a feijoada com a laranja como acompanhamento."
-                                            ]
-                       }
-                   ],
+        "image":  "assets/images/receitas/feijoada.webp",
         "tips":  [
                      "Sugestões de acompanhamento: couve, arroz branco, laranja, bistecas, farofa, quibebe de abóbora, baião de dois, bacon, torresmo, linguiça e caldinho temperado."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredients":  [
+                            "1 kg de feijão preto",
+                            "100 g de carne-seca",
+                            "70 g de orelha de porco",
+                            "70 g de rabo de porco",
+                            "70 g de pé de porco",
+                            "100 g de costelinha de porco",
+                            "50 g de lombo de porco",
+                            "100 g de paio",
+                            "150 g de linguiça portuguesa",
+                            "Água, conforme necessário para dessalgue e cozimento",
+                            "2 cebolas grandes picadinhas",
+                            "1 maço de cebolinha verde picadinha",
+                            "3 folhas de louro",
+                            "6 dentes de alho",
+                            "Pimenta-do-reino a gosto",
+                            "1 ou 2 laranjas",
+                            "Sal, se necessário"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Ingredientes principais",
+                                     "ingredients":  [
+                                                         "1 kg de feijão preto",
+                                                         "100 g de carne-seca",
+                                                         "70 g de orelha de porco",
+                                                         "70 g de rabo de porco",
+                                                         "70 g de pé de porco",
+                                                         "100 g de costelinha de porco",
+                                                         "50 g de lombo de porco",
+                                                         "100 g de paio",
+                                                         "150 g de linguiça portuguesa",
+                                                         "Água, conforme necessário para dessalgue e cozimento"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Tempero",
+                                     "ingredients":  [
+                                                         "2 cebolas grandes picadinhas",
+                                                         "1 maço de cebolinha verde picadinha",
+                                                         "3 folhas de louro",
+                                                         "6 dentes de alho",
+                                                         "Pimenta-do-reino a gosto",
+                                                         "1 ou 2 laranjas",
+                                                         "Sal, se necessário"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Concha",
+                         "Faca",
+                         "Tábua de corte"
+                     ],
+        "instructions":  [
+                             "Coloque as carnes salgadas de molho por 36 horas ou mais para dessalgar, trocando a água várias vezes. Mantenha as carnes refrigeradas durante todo o dessalgue.",
+                             "Cozinhe as carnes por etapas, começando pelas mais duras e acrescentando depois as mais macias. Certifique-se de que todas fiquem completamente cozidas.",
+                             "Quando as carnes estiverem macias, retire-as temporariamente e acrescente o feijão preto ao preparo, cozinhando até ficar macio. Ajuste a quantidade de água conforme necessário para o cozimento.",
+                             "Tempere o feijão com a cebola, o alho, a cebolinha, o louro e a pimenta-do-reino. Utilize sal apenas se necessário, considerando o sal das carnes.",
+                             "Reúna novamente as carnes e o feijão, deixando cozinhar até os sabores se integrarem e tudo estar completamente cozido.",
+                             "Sirva a feijoada com a laranja como acompanhamento."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Ingredientes principais",
+                                      "instructions":  [
+                                                           "Coloque as carnes salgadas de molho por 36 horas ou mais para dessalgar, trocando a água várias vezes. Mantenha as carnes refrigeradas durante todo o dessalgue.",
+                                                           "Cozinhe as carnes por etapas, começando pelas mais duras e acrescentando depois as mais macias. Certifique-se de que todas fiquem completamente cozidas.",
+                                                           "Quando as carnes estiverem macias, retire-as temporariamente e acrescente o feijão preto ao preparo, cozinhando até ficar macio. Ajuste a quantidade de água conforme necessário para o cozimento."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Tempero",
+                                      "instructions":  [
+                                                           "Tempere o feijão com a cebola, o alho, a cebolinha, o louro e a pimenta-do-reino. Utilize sal apenas se necessário, considerando o sal das carnes.",
+                                                           "Reúna novamente as carnes e o feijão, deixando cozinhar até os sabores se integrarem e tudo estar completamente cozido.",
+                                                           "Sirva a feijoada com a laranja como acompanhamento."
+                                                       ]
+                                  }
+                              ]
     },
     {
         "id":  "pao-de-queijo",
@@ -752,23 +884,16 @@
         "difficulty":  "Média",
         "description":  "Pão de queijo com casquinha levemente dourada, interior macio e uma combinação de queijos ralados.",
         "keywords":  [
-                         "pão de queijo",
-                         "pão de queijo mineiro",
-                         "polvilho",
-                         "queijo meia-cura",
-                         "lanche"
+                         "Pão de queijo",
+                         "Lanche"
                      ],
         "tags":  [
-                     "Café da Manhã",
-                     "brasileira",
-                     "mineira",
-                     "forno",
-                     "congelável"
+                     "Lanche"
                  ],
         "prepTime":  null,
         "cookTime":  null,
         "cuisine":  "Mineira",
-        "image":  "https://images.pexels.com/photos/20450299/pexels-photo-20450299.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1200",
+        "image":  "assets/images/receitas/pao-de-queijo.webp",
         "ingredients":  [
                             "500 g de polvilho doce",
                             "250 ml de leite integral",
@@ -803,7 +928,13 @@
                      "Congele as bolinhas cruas na assadeira e depois armazene em um saco bem fechado."
                  ],
         "quick":  false,
-        "totalTime":  null
+        "totalTime":  null,
+        "ingredientGroups":  [
+
+                             ],
+        "preparationGroups":  [
+
+                              ]
     },
     {
         "id":  "torta-de-limao",
@@ -812,7 +943,7 @@
         "time":  "60 min",
         "yield":  "15 porções",
         "difficulty":  "Média",
-        "description":  "Torta de limão com base crocante de biscoito de maisena, recheio cremoso e levemente cítrico, finalizada com cobertura de merengue dourado e raspas de limão.",
+        "description":  "Sobremesa que combina uma base crocante com um recheio cremoso de limão. Tem sabor cítrico e equilibrado, sendo uma ótima opção para servir gelada.",
         "keywords":  [
                          "Torta de limão",
                          "Sobremesas"
@@ -823,7 +954,7 @@
         "prepTime":  "PT15M",
         "cookTime":  "PT15M",
         "cuisine":  "Brasileira",
-        "image":  "assets/images/receitas/torta-de-limao.webp",
+        "image":  "assets/images/receitas/torta-de-limao-2.webp",
         "ingredients":  [
                             "200 g de biscoito de maisena",
                             "150 g de margarina",
@@ -926,5 +1057,2270 @@
                                                        ]
                                   }
                               ]
+    },
+    {
+        "id":  "pao-de-batata",
+        "title":  "Pão de batata",
+        "category":  "Lanche",
+        "time":  "1 h 30 min",
+        "yield":  "20 porções",
+        "difficulty":  "Média",
+        "description":  "Pãezinhos macios feitos com batata, com massa preparada no liquidificador e finalizada com farinha de trigo. Uma opção saborosa para lanches e cafés.",
+        "keywords":  [
+                         "Pão de batata",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pao-de-batata.webp",
+        "ingredients":  [
+                            "2 ovos",
+                            "2 batatas grandes",
+                            "2 tabletes de fermento (15 g)",
+                            "2 colheres de óleo (sobremesa)",
+                            "1 colher de margarina (sopa)",
+                            "1/2 colher de sal (sobremesa)",
+                            "1/2 copo de leite",
+                            "1/2 xícara de açúcar",
+                            "700 g de farinha de trigo (colocar até não grudar nas mãos)"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Pincel de silicone",
+                         "Bowl",
+                         "Forma"
+                     ],
+        "instructions":  [
+                             "Coloque no liquidificador os ovos, as batatas, o fermento, o óleo, a margarina, o sal, o leite e o açúcar.",
+                             "Bata todos os ingredientes até obter uma mistura homogênea.",
+                             "Transfira a mistura para uma vasilha e comece a acrescentar a farinha de trigo aos poucos, misturando bem.",
+                             "Continue adicionando a farinha e misturando até formar uma massa que não grude nas mãos.",
+                             "Divida a massa em pequenas porções e modele bolinhas com as mãos.",
+                             "Coloque as bolinhas em uma forma e deixe descansar por 30 minutos embaixo de uma lâmpada acesa.",
+                             "Após o descanso, leve ao forno médio e asse por aproximadamente 30 a 40 minutos."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Acrescente a farinha aos poucos para facilitar o preparo da massa.",
+                     "Procure deixar as bolinhas com tamanhos semelhantes para assarem por igual.",
+                     "Respeite o tempo de descanso da massa para obter pãezinhos mais macios."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT90M"
+    },
+    {
+        "id":  "mousse-de-chocolate",
+        "title":  "Mousse de chocolate",
+        "category":  "Sobremesas",
+        "time":  "1 h 10 min",
+        "yield":  "12 porções",
+        "difficulty":  "Fácil",
+        "description":  "Sobremesa cremosa preparada com chocolate em pó, leite condensado, creme de leite e claras em neve. Depois de gelada, fica leve e aerada, ideal para servir como sobremesa.",
+        "keywords":  [
+                         "Mousse de chocolate",
+                         "Sobremesas"
+                     ],
+        "tags":  [
+                     "Sobremesas"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/mousse-de-chocolate.webp",
+        "ingredients":  [
+                            "1 lata de leite condensado",
+                            "1 colher (chá) de manteiga ou margarina",
+                            "1 lata de creme de leite gelado",
+                            "3 claras em neve",
+                            "4 colheres de achocolatado em pó"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Espatula",
+                         "Refratario",
+                         "Fouet"
+                     ],
+        "instructions":  [
+                             "Em uma panela, coloque o leite condensado, a manteiga ou margarina e o achocolatado em pó.",
+                             "Leve ao fogo, mexendo sem parar para evitar que a mistura grude no fundo da panela.",
+                             "Continue mexendo até a mistura engrossar e começar a soltar do fundo da panela.",
+                             "Desligue o fogo, transfira a mistura para outro recipiente e deixe esfriar completamente.",
+                             "Depois que a mistura estiver fria, acrescente o creme de leite gelado e misture delicadamente.",
+                             "Adicione as claras em neve e mexa cuidadosamente até obter uma mistura homogênea.",
+                             "Despeje a mousse em um refratário, espalhando bem para nivelar a superfície.",
+                             "Leve ao congelador por aproximadamente 50 minutos.",
+                             "Retire e sirva bem gelada."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Espere a mistura de chocolate esfriar antes de adicionar o creme de leite e as claras em neve.",
+                     "Misture as claras delicadamente para preservar a leveza da mousse.",
+                     "Sirva a sobremesa bem gelada para aproveitar melhor sua textura cremosa."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT70M"
+    },
+    {
+        "id":  "cueca-virada",
+        "title":  "Cueca virada",
+        "category":  "Lanche",
+        "time":  "30 minutos",
+        "yield":  "65 porções",
+        "difficulty":  "Fácil",
+        "description":  "Doce caseiro feito com uma massa simples de farinha de trigo, leite, açúcar e outros ingredientes. Depois de cortada e torcida, a massa é frita e finalizada com açúcar e canela.",
+        "keywords":  [
+                         "Cueca virada",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/cueca-virada.webp",
+        "ingredients":  [
+                            "3 xícaras (chá) de farinha de trigo",
+                            "6 colheres (sopa) de açúcar",
+                            "1/2 xícara (chá) de leite",
+                            "1 pitada de sal",
+                            "1 ovo",
+                            "1 colher (sopa) de margarina",
+                            "1 colher (sopa) de vinagre ou pinga",
+                            "1 colher (sobremesa) de fermento em pó",
+                            "Açúcar e canela misturados para polvilhar",
+                            "Óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Bowl",
+                         "Colher de silicone",
+                         "Faca",
+                         "Rolo de massa"
+                     ],
+        "instructions":  [
+                             "Em um bowl, coloque a farinha de trigo, o açúcar, o leite, o sal, o ovo, a margarina, o vinagre ou a pinga e o fermento em pó.",
+                             "Misture todos os ingredientes até formar uma massa homogênea que não grude nas mãos. Se necessário, acrescente um pouco mais de farinha de trigo.",
+                             "Polvilhe farinha de trigo sobre uma superfície limpa e abra a massa com o auxílio de um rolo, deixando-a com uma espessura uniforme.",
+                             "Com uma faca, corte a massa em tiras do tamanho desejado.",
+                             "Faça um pequeno corte no meio de cada tira.",
+                             "Pegue uma das pontas da massa e passe por dentro do corte, virando-a para formar o formato tradicional da cueca virada.",
+                             "Aqueça o óleo em uma panela, tomando cuidado para não deixá-lo muito quente.",
+                             "Coloque as cuecas viradas no óleo e frite até ficarem douradas.",
+                             "Retire-as da panela e coloque sobre papel-toalha para escorrer o excesso de óleo.",
+                             "Depois de fritas, polvilhe a mistura de açúcar e canela por cima.",
+                             "Sirva em seguida."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Se a massa estiver grudando nas mãos, acrescente farinha de trigo aos poucos.",
+                     "Evite deixar o óleo muito quente para que as cuecas viradas fritem por igual.",
+                     "Polvilhe o açúcar e a canela enquanto ainda estiverem mornas, para facilitar a aderência."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "molho-para-cachorro-quente",
+        "title":  "Molho para cachorro-quente",
+        "category":  "Lanche",
+        "time":  "30 min",
+        "yield":  "20 porções",
+        "difficulty":  "Fácil",
+        "description":  "Molho saboroso preparado com salsichas, molho de tomate, tomates, milho e temperos. É uma opção prática para acompanhar pães e preparar cachorros-quentes em casa.",
+        "keywords":  [
+                         "Molho para cachorro-quente",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/molho-para-cachorro-quente.webp",
+        "ingredients":  [
+                            "1 kg de salsicha",
+                            "400 g de molho de tomate",
+                            "4 tomates sem sementes picados",
+                            "1 cebola grande ralada",
+                            "1 pimentão picado",
+                            "3 dentes de alho amassados",
+                            "2 latas de milho-verde",
+                            "3 colheres de óleo",
+                            "Sal a gosto",
+                            "Cheiro-verde a gosto"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Colher de pau",
+                         "Faca",
+                         "Tábua de corte",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Descasque e amasse os dentes de alho, rale a cebola, pique o pimentão e os tomates sem sementes e reserve.",
+                             "Em uma panela, coloque o óleo e leve ao fogo.",
+                             "Acrescente o alho amassado e a cebola ralada, refogando até ficarem levemente dourados.",
+                             "Adicione o pimentão picado, os tomates, o sal e o cheiro-verde a gosto.",
+                             "Misture bem todos os ingredientes e deixe ferver por aproximadamente 5 minutos, para que os legumes comecem a cozinhar.",
+                             "Acrescente o molho de tomate e o milho-verde, misturando para incorporar ao refogado.",
+                             "Adicione as salsichas, que podem ser colocadas inteiras ou cortadas em rodelas, conforme sua preferência.",
+                             "Misture delicadamente e deixe cozinhar por aproximadamente 10 minutos, para que as salsichas absorvam o sabor do molho.",
+                             "Desligue o fogo e transfira o molho para uma travessa.",
+                             "Sirva quente, acompanhado de pãezinhos."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Corte as salsichas em rodelas para facilitar na hora de montar os cachorros-quentes.",
+                     "Pique os legumes em pedaços pequenos para que se misturem melhor ao molho.",
+                     "Deixe o molho cozinhar pelo tempo indicado para que os sabores dos ingredientes se incorporem."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "galinhada",
+        "title":  "Galinhada",
+        "category":  "Almoço e Janta",
+        "time":  "30 min",
+        "yield":  "5 porções",
+        "difficulty":  "Média",
+        "description":  "Prato tradicional feito com pedaços de frango cozidos junto com arroz, tomate, pimentão e temperos. Uma receita prática, saborosa e ideal para uma refeição completa.",
+        "keywords":  [
+                         "Galinhada",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/galinhada.webp",
+        "ingredients":  [
+                            "1 frango cortado em pedaços",
+                            "2 tabletes de caldo de galinha",
+                            "Suco de meio limão",
+                            "2 colheres (sopa) de azeite",
+                            "1 cebola média ralada",
+                            "2 xícaras (chá) de arroz lavado e escorrido",
+                            "2 colheres (sopa) de extrato de tomate",
+                            "1 pimentão verde cortado em cubinhos",
+                            "1 colher (sopa) de salsa picada",
+                            "4 xícaras e 1/2 (chá) de água"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Bowl",
+                         "Colher de pau",
+                         "Refratario"
+                     ],
+        "instructions":  [
+                             "Lave bem os pedaços de frango e coloque-os em um recipiente.",
+                             "Tempere o frango com os tabletes de caldo de galinha e o suco de meio limão. Misture bem para espalhar o tempero por todos os pedaços e deixe descansar para pegar sabor.",
+                             "Em uma panela grande, aqueça o azeite em fogo médio.",
+                             "Coloque os pedaços de frango na panela e deixe dourar, virando-os para que fiquem dourados de maneira uniforme.",
+                             "Acrescente a cebola ralada e refogue ligeiramente, misturando com o frango.",
+                             "Adicione o arroz lavado e escorrido, o extrato de tomate e o pimentão verde cortado em cubinhos.",
+                             "Acrescente as 4 xícaras e 1/2 de água e misture bem todos os ingredientes.",
+                             "Tampe a panela e aguarde começar a ferver.",
+                             "Assim que iniciar a fervura, abaixe o fogo e deixe cozinhar por aproximadamente 15 minutos, até que o arroz fique cozido, cremoso e úmido.",
+                             "Se perceber que a água está secando antes de o arroz ficar pronto, acrescente um pouco mais de água durante o cozimento.",
+                             "Retire a panela do fogo e transfira a galinhada para uma travessa.",
+                             "Finalize polvilhando a salsa picada por cima e sirva em seguida."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Doure bem os pedaços de frango para realçar o sabor da galinhada.",
+                     "Utilize água aos poucos, se necessário, para manter o arroz cremoso e úmido.",
+                     "Misture delicadamente durante o preparo para distribuir bem os ingredientes."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "vaca-atolada",
+        "title":  "Vaca atolada",
+        "category":  "Carnes",
+        "time":  "1 h 20 min",
+        "yield":  "12 porções",
+        "difficulty":  "Média",
+        "description":  "Prato típico da culinária brasileira, preparado com costela bovina cozida lentamente com mandioca e temperos. O resultado é uma refeição bem encorpada e cheia de sabor.",
+        "keywords":  [
+                         "Vaca atolada",
+                         "Carnes"
+                     ],
+        "tags":  [
+                     "Carnes"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/vaca-atolada.webp",
+        "ingredients":  [
+                            "1 kg de costela bovina",
+                            "500 g de mandioca cozida, sem o fio do centro",
+                            "Alho a gosto",
+                            "Cebola a gosto",
+                            "Sal a gosto",
+                            "Cheiro-verde a gosto",
+                            "Óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela de pressão",
+                         "Colher de pau",
+                         "Faca",
+                         "Tábua de corte"
+                     ],
+        "instructions":  [
+                             "Em uma panela de pressão, aqueça o óleo e frite as costelas até dourarem de todos os lados.",
+                             "Acrescente o alho amassado e frite por alguns instantes.",
+                             "Adicione a cebola fatiada ou picada e refogue.",
+                             "Coloque água suficiente para cozinhar as costelas e tempere com sal a gosto.",
+                             "Tampe a panela e cozinhe por aproximadamente 40 minutos após pegar pressão, ou até que os ossos se soltem da carne.",
+                             "Retire as costelas da panela, separe a carne e descarte os ossos.",
+                             "Transfira o caldo para uma panela grande.",
+                             "Acrescente a mandioca cozida e espremida, sem o fio central.",
+                             "Coloque a carne novamente na panela e cozinhe em fogo baixo por 15 minutos.",
+                             "Se o caldo ficar muito grosso, acrescente um pouco mais de água. A consistência deve ficar intermediária, nem muito rala nem muito espessa.",
+                             "Salpique cheiro-verde no momento de servir."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Retire o fio central da mandioca antes de amassá-la.",
+                     "Ajuste a quantidade de água aos poucos para controlar a consistência do caldo."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT80M"
+    },
+    {
+        "id":  "bolo-de-maca-com-canela",
+        "title":  "Bolo de maça com canela",
+        "category":  "Bolos",
+        "time":  "2 h 20 min",
+        "yield":  "10 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolo de maçã com canela, uma combinação deliciosa de sabores e aromas, com opção de acrescentar uvas-passas.",
+        "keywords":  [
+                         "Bolo de maça com canela",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolo-de-maca-com-canela.webp",
+        "ingredients":  [
+                            "2 xícaras de açúcar",
+                            "1 xícara de óleo, de preferência de milho ou canola",
+                            "4 ovos inteiros",
+                            "2 xícaras de farinha de trigo",
+                            "3 maçãs sem casca, picadas",
+                            "1 colher de sopa de fermento químico em pó",
+                            "1 colher de café de canela em pó",
+                            "1 punhado de uvas-passas (opcional, a gosto)",
+                            "Açúcar e canela para untar a forma"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Bowl",
+                         "Espátula para bolo",
+                         "Forma de bolo"
+                     ],
+        "instructions":  [
+                             "Preaqueça o forno.",
+                             "No liquidificador, bata o açúcar, os ovos e o óleo até obter uma mistura homogênea.",
+                             "Despeje a mistura em uma tigela.",
+                             "Acrescente a farinha de trigo e misture até a massa ficar uniforme.",
+                             "Adicione a canela em pó, as uvas-passas (se desejar), o fermento e as maçãs picadas. Misture delicadamente até incorporar os ingredientes.",
+                             "Unte uma forma de bolo com furo no meio usando açúcar e canela. Se preferir, unte apenas com farinha.",
+                             "Despeje a massa na forma preparada.",
+                             "Leve ao forno baixo e asse por aproximadamente 1 hora e 30 minutos.",
+                             "Verifique o ponto espetando uma faca no bolo. Se ela sair limpa, está pronto",
+                             "Considere que o tempo de forno pode variar de acordo com o fogão."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Se desejar, acrescente as uvas-passas para dar um toque especial ao bolo.",
+                     "Para verificar se está assado, espete uma faca no centro da massa: ela deve sair limpa."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT140M"
+    },
+    {
+        "id":  "pao-integral",
+        "title":  "Pão integral",
+        "category":  "Lanche",
+        "time":  "4 h",
+        "yield":  "20 porções",
+        "difficulty":  "Fácil",
+        "description":  "Pão integral caseiro preparado com farinha integral, aveia, gérmen de trigo e linhaça, resultando em uma receita nutritiva e saborosa.",
+        "keywords":  [
+                         "Pão integral",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pao-integral.webp",
+        "ingredients":  [
+                            "400 ml de água morna",
+                            "25 g de fermento biológico fresco",
+                            "100 ml de óleo",
+                            "1 colher de sobremesa de sal",
+                            "2 colheres de sopa de açúcar mascavo",
+                            "1 xícara de chá de aveia",
+                            "½ xícara de chá de gérmen de trigo",
+                            "1 xícara de café de sementes de linhaça",
+                            "2 copos de requeijão de farinha de trigo integral",
+                            "Farinha de trigo até dar o ponto"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Papel manteiga",
+                         "Bowl",
+                         "Forma de bolo",
+                         "Fouet"
+                     ],
+        "instructions":  [
+                             "Em uma vasilha, misture o fermento biológico fresco com o açúcar mascavo.",
+                             "Acrescente a água morna, o óleo, o sal, a aveia, o gérmen de trigo, a linhaça e a farinha de trigo integral.",
+                             "Misture bem e adicione a farinha de trigo aos poucos, até obter o ponto da massa.",
+                             "Transfira a massa para uma superfície lisa e enfarinhada.",
+                             "Sove bem até que fique homogênea.",
+                             "Coloque a massa em uma vasilha e deixe crescer até dobrar de volume.",
+                             "Modele os pães e acomode-os em formas de bolo inglês forradas com papel-manteiga.",
+                             "Deixe crescer novamente.",
+                             "Leve ao forno preaquecido a 200 °C por aproximadamente 25 a 30 minutos.",
+                             "Observe o tempo de forno, pois ele pode variar de acordo com o forno utilizado."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Acrescente a farinha de trigo aos poucos para controlar o ponto da massa.",
+                     "Respeite os dois períodos de crescimento para que os pães tenham tempo de crescer antes de assar."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT240M"
+    },
+    {
+        "id":  "pao-de-lo",
+        "title":  "Pão de ló",
+        "category":  "Bolos",
+        "time":  "45 min",
+        "yield":  "30 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolo tradicional feito com ovos, açúcar, farinha de trigo e leite. Sua massa fica leve e fofinha, sendo uma ótima opção para acompanhar um café ou servir como base para bolos recheados.",
+        "keywords":  [
+                         "Pão de ló",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pao-de-lo.webp",
+        "ingredients":  [
+                            "1 xícara de leite quente",
+                            "3 xícaras de farinha de trigo",
+                            "2 xícaras de açúcar",
+                            "3 gemas",
+                            "3 claras em neve",
+                            "1 colher de sopa de fermento químico em pó",
+                            "Farinha de trigo e manteiga para untar a forma"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Batedeira",
+                         "Copo medidor",
+                         "Espátula para bolo",
+                         "Forma de bolo",
+                         "Prato de sobremesa"
+                     ],
+        "instructions":  [
+                             "Separe as claras das gemas.",
+                             "Na batedeira, bata as claras até ficarem em neve e com consistência firme.",
+                             "Acrescente o açúcar e as gemas. Bata bem até obter uma mistura homogênea.",
+                             "Adicione a farinha de trigo e o fermento em pó, continuando a bater até incorporar os ingredientes.",
+                             "Aos poucos, acrescente o leite quente e misture até formar uma massa homogênea.",
+                             "Despeje a massa em uma forma untada e enfarinhada.",
+                             "Leve ao forno preaquecido a 180 °C por aproximadamente 30 a 40 minutos, ou até assar."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Bata bem as claras em neve para ajudar a deixar o bolo leve e macio.",
+                     "Acrescente o leite quente aos poucos para facilitar a incorporação à massa.",
+                     "Utilize o pão-de-ló como base para bolos recheados e cobertos."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT45M"
+    },
+    {
+        "id":  "pe-de-moleque",
+        "title":  "Pé de moleque",
+        "category":  "Doces",
+        "time":  "15 min",
+        "yield":  "20 porções",
+        "difficulty":  "Fácil",
+        "description":  "Doce tradicional preparado com amendoim torrado, açúcar, leite condensado e margarina. Fica firme e saboroso, combinando a crocância do amendoim com a doçura do leite condensado.",
+        "keywords":  [
+                         "Pé de moleque",
+                         "Doces"
+                     ],
+        "tags":  [
+                     "Doces"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pe-de-moleque.webp",
+        "ingredients":  [
+                            "½ kg de amendoim torrado e descascado",
+                            "½ kg de açúcar",
+                            "1 lata de leite condensado",
+                            "3 colheres de sopa de margarina",
+                            "Margarina para untar a forma"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Colher de pau",
+                         "Faca",
+                         "Forma"
+                     ],
+        "instructions":  [
+                             "Coloque o amendoim torrado, o açúcar e a margarina em uma panela.",
+                             "Leve ao fogo, mexendo sempre para misturar os ingredientes e evitar que grudem no fundo.",
+                             "Quando começar a formar uma calda, acrescente o leite condensado.",
+                             "Continue mexendo até a mistura desgrudar do fundo da panela, como acontece com o brigadeiro.",
+                             "Despeje a mistura em uma forma ou tabuleiro untado com margarina.",
+                             "Espalhe e deixe esfriar.",
+                             "Depois de frio, corte em pedaços."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Mexa constantemente durante o preparo para evitar que a mistura queime.",
+                     "Unte a forma antes de despejar o doce para facilitar na hora de retirar e cortar."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT15M"
+    },
+    {
+        "id":  "bolo-de-mandioca",
+        "title":  "Bolo de mandioca",
+        "category":  "Bolos",
+        "time":  "50 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolo caseiro preparado com mandioca ralada, leite, açúcar, ovos e coco. Tem uma textura úmida e macia, com o sabor característico da mandioca e do coco.",
+        "keywords":  [
+                         "Bolo de mandioca",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolo-de-mandioca.webp",
+        "ingredients":  [
+                            "1,5 kg de aipim (mandioca) ralado",
+                            "3 xícaras de chá de leite integral",
+                            "3 xícaras de chá de açúcar refinado",
+                            "3 ovos",
+                            "1 colher de chá de sal",
+                            "2 colheres de sopa de manteiga sem sal",
+                            "1 xícara de chá de coco ralado",
+                            "Manteiga e farinha de trigo para untar a forma"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Tigela",
+                         "Forma de bolo",
+                         "Forno"
+                     ],
+        "instructions":  [
+                             "Preaqueça o forno a 180 °C.",
+                             "Em uma tigela grande, coloque o aipim ralado, o leite, o açúcar, os ovos, o sal, a manteiga e o coco ralado.",
+                             "Misture muito bem todos os ingredientes até formar uma massa uniforme.",
+                             "Transfira a massa para uma forma retangular ou com furo no meio, untada e enfarinhada.",
+                             "Leve ao forno preaquecido a 180 °C por aproximadamente 35 minutos, ou até o bolo estar assado e dourado.",
+                             "Retire do forno e deixe esfriar antes de servir."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Utilize mandioca ralada bem fina e escorrida, retirando o excesso de líquido.",
+                     "Evite abrir o forno antes do tempo indicado para não prejudicar o cozimento.",
+                     "O coco ralado pode ser ajustado ou omitido, conforme sua preferência."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT50M"
+    },
+    {
+        "id":  "moqueca-de-peixe",
+        "title":  "Moqueca de peixe",
+        "category":  "Almoço e Janta",
+        "time":  "1 h 10 min",
+        "yield":  "4 porções",
+        "difficulty":  "Média",
+        "description":  "Moqueca de peixe preparada com pimentões, tomate, cebola, coentro, leite de coco e azeite de dendê. Um prato saboroso, inspirado na tradicional culinária baiana, ideal para refeições em família.",
+        "keywords":  [
+                         "Moqueca de peixe",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/moqueca-de-peixe.webp",
+        "ingredients":  [
+                            "4 postas de cação ou garoupa (700 g)",
+                            "Suco de 1 limão",
+                            "1 cebola grande cortada em rodelas",
+                            "1 pimentão vermelho cortado em rodelas",
+                            "1 pimentão verde cortado em rodelas",
+                            "2 tomates maduros cortados em rodelas",
+                            "2 colheres de sopa de coentro",
+                            "200 ml de leite de coco",
+                            "1 colher de sopa de azeite de dendê",
+                            "2 tabletes de caldo de camarão",
+                            "Sal a gosto"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela grande",
+                         "Colher de pau",
+                         "Copo medidor",
+                         "Faca",
+                         "Tábua de corte"
+                     ],
+        "instructions":  [
+                             "Lave bem as postas de peixe e regue com o suco de limão.",
+                             "Deixe o peixe descansar por aproximadamente 1 hora.",
+                             "Em uma panela grande, acomode as postas de peixe.",
+                             "Distribua por cima a cebola, os pimentões e os tomates em rodelas.",
+                             "Polvilhe o coentro sobre os ingredientes.",
+                             "Esfarele os tabletes de caldo de camarão e misture-os ao leite de coco.",
+                             "Regue o peixe e os demais ingredientes com essa mistura.",
+                             "Leve ao fogo baixo, com a panela parcialmente tampada, por aproximadamente 20 minutos.",
+                             "Durante o cozimento, mexa algumas vezes com cuidado para não desmanchar as postas de peixe.",
+                             "Quando o peixe estiver cozido, acrescente o azeite de dendê e ajuste o sal.",
+                             "Retire do fogo e sirva."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Cação, tilápia, badejo e linguado são boas opções para preparar a moqueca.",
+                     "Mexa delicadamente durante o cozimento para preservar as postas de peixe.",
+                     "Sirva acompanhada de arroz branco, pirão de peixe, batatas cozidas ou farofa."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT70M"
+    },
+    {
+        "id":  "canjica-com-leite-condensado",
+        "title":  "Canjica com leite condensado",
+        "category":  "Sobremesas",
+        "time":  "40 min",
+        "yield":  "10 porções",
+        "difficulty":  "Fácil",
+        "description":  "Canjica cremosa preparada com milho branco, leite condensado, leite de coco e coco ralado, finalizada com canela.",
+        "keywords":  [
+                         "Canjica com leite condensado",
+                         "Sobremesas"
+                     ],
+        "tags":  [
+                     "Sobremesas"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/canjica-com-leite-condensado.webp",
+        "ingredients":  [
+                            "500 g de canjica branca",
+                            "1 lata de leite condensado",
+                            "1 vidro de leite de coco",
+                            "50 g de coco ralado úmido e adoçado",
+                            "1 litro de leite",
+                            "8 colheres (sopa) de açúcar",
+                            "Canela em pó a gosto",
+                            "2 litros de água para o cozimento"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela de pressão",
+                         "Panela grande",
+                         "Colher de pau",
+                         "Copo medidor"
+                     ],
+        "instructions":  [
+                             "Lave a canjica em água corrente.",
+                             "Coloque a canjica de molho por aproximadamente 4 horas com o açúcar.",
+                             "Escorra a água do molho e coloque a canjica na panela de pressão com 2 litros de água.",
+                             "Cozinhe por aproximadamente 20 minutos ou até os grãos ficarem macios.",
+                             "Se necessário, transfira a canjica para uma panela maior.",
+                             "Acrescente o leite, o leite de coco, o leite condensado e o coco ralado.",
+                             "Deixe ferver por 10 minutos, mexendo sempre para não grudar no fundo da panela.",
+                             "Desligue o fogo quando a canjica estiver bem cremosa.",
+                             "Finalize polvilhando canela em pó."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Para uma canjica ainda mais cremosa, deixe descansar por algumas horas antes de servir.",
+                     "Sirva quente ou fria, conforme sua preferência.",
+                     "Mexa durante a fervura para evitar que grude no fundo da panela."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT40M"
+    },
+    {
+        "id":  "pave-de-chocolate",
+        "title":  "Pavê de chocolate",
+        "category":  "Sobremesas",
+        "time":  "55 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Pavê preparado com biscoitos maisena, creme branco, creme de chocolate e cobertura de claras em neve.",
+        "keywords":  [
+                         "Pavê de chocolate",
+                         "Sobremesas"
+                     ],
+        "tags":  [
+                     "Sobremesas"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pave-de-chocolate.webp",
+        "ingredients":  [
+                            "1 pacote de biscoito maisena",
+                            "1/2 copo de leite",
+                            "1 colher (sobremesa) de chocolate em pó",
+                            "1 lata de leite condensado",
+                            "1 lata de leite (use a lata de leite condensado como medida)",
+                            "1 colher (sobremesa) de amido de milho",
+                            "2 gemas",
+                            "1 lata de leite condensado",
+                            "1 lata de leite (use a lata de leite condensado como medida)",
+                            "1 colher (sobremesa) de amido de milho",
+                            "2 gemas",
+                            "4 colheres (sopa) de chocolate em pó",
+                            "4 claras",
+                            "4 colheres (sopa) de açúcar",
+                            "1 lata de creme de leite sem soro"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Biscoitos",
+                                     "ingredients":  [
+                                                         "1 pacote de biscoito maisena",
+                                                         "1/2 copo de leite",
+                                                         "1 colher (sobremesa) de chocolate em pó"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Creme branco",
+                                     "ingredients":  [
+                                                         "1 lata de leite condensado",
+                                                         "1 lata de leite (use a lata de leite condensado como medida)",
+                                                         "1 colher (sobremesa) de amido de milho",
+                                                         "2 gemas"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Creme de chocolate",
+                                     "ingredients":  [
+                                                         "1 lata de leite condensado",
+                                                         "1 lata de leite (use a lata de leite condensado como medida)",
+                                                         "1 colher (sobremesa) de amido de milho",
+                                                         "2 gemas",
+                                                         "4 colheres (sopa) de chocolate em pó"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Cobertura",
+                                     "ingredients":  [
+                                                         "4 claras",
+                                                         "4 colheres (sopa) de açúcar",
+                                                         "1 lata de creme de leite sem soro"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Batedeira",
+                         "Panelas",
+                         "Bowl",
+                         "Espátula de silicone",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Em uma tigela, misture o leite com o chocolate em pó até dissolver completamente.",
+                             "Passe os biscoitos maisena nessa mistura e reserve.",
+                             "Em uma panela, coloque o leite condensado, o leite, o amido de milho e as gemas.",
+                             "Leve ao fogo médio, mexendo até obter um creme espesso e homogêneo.",
+                             "Em outra panela, misture o leite condensado, o leite, o amido de milho, as gemas e o chocolate em pó.",
+                             "Leve ao fogo médio, mexendo até engrossar e formar um creme.",
+                             "Bata as claras em neve com o açúcar até obter uma mistura consistente.",
+                             "Acrescente o creme de leite sem soro e misture delicadamente.",
+                             "Em uma travessa, espalhe uma camada de creme branco.",
+                             "Faça uma camada com metade dos biscoitos.",
+                             "Acrescente o creme de chocolate e cubra com o restante dos biscoitos.",
+                             "Finalize com a cobertura de claras em neve.",
+                             "Repita as camadas, se necessário, até preencher a travessa.",
+                             "Leve à geladeira por 40 minutos antes de servir."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Biscoitos",
+                                      "instructions":  [
+                                                           "Em uma tigela, misture o leite com o chocolate em pó até dissolver completamente.",
+                                                           "Passe os biscoitos maisena nessa mistura e reserve."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Creme branco",
+                                      "instructions":  [
+                                                           "Em uma panela, coloque o leite condensado, o leite, o amido de milho e as gemas.",
+                                                           "Leve ao fogo médio, mexendo até obter um creme espesso e homogêneo."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Creme de chocolate",
+                                      "instructions":  [
+                                                           "Em outra panela, misture o leite condensado, o leite, o amido de milho, as gemas e o chocolate em pó.",
+                                                           "Leve ao fogo médio, mexendo até engrossar e formar um creme."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Cobertura",
+                                      "instructions":  [
+                                                           "Bata as claras em neve com o açúcar até obter uma mistura consistente.",
+                                                           "Acrescente o creme de leite sem soro e misture delicadamente."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Montagem",
+                                      "instructions":  [
+                                                           "Em uma travessa, espalhe uma camada de creme branco.",
+                                                           "Faça uma camada com metade dos biscoitos.",
+                                                           "Acrescente o creme de chocolate e cubra com o restante dos biscoitos.",
+                                                           "Finalize com a cobertura de claras em neve.",
+                                                           "Repita as camadas, se necessário, até preencher a travessa.",
+                                                           "Leve à geladeira por 40 minutos antes de servir."
+                                                       ]
+                                  }
+                              ],
+        "tips":  [
+                     "Molhe os biscoitos rapidamente para que não fiquem muito moles.",
+                     "Mexa os cremes durante o cozimento para evitar que grudem no fundo da panela.",
+                     "Mantenha o pavê refrigerado até o momento de servir."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT55M"
+    },
+    {
+        "id":  "bolinho-de-chuva",
+        "title":  "Bolinho de chuva",
+        "category":  "Lanche",
+        "time":  "30 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolinho de chuva feito com farinha de trigo, leite e ovos, frito até dourar e finalizado com açúcar e canela.",
+        "keywords":  [
+                         "Bolinho de chuva",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolinho-de-chuva.webp",
+        "ingredients":  [
+                            "2 ovos",
+                            "1 xícara (chá) de açúcar",
+                            "1 xícara (chá) de leite",
+                            "2 e 1/2 xícaras de farinha de trigo",
+                            "1 colher (sopa) de fermento em pó",
+                            "3 colheres (sopa) de açúcar para polvilhar",
+                            "1 colher (sopa) de canela em pó para polvilhar",
+                            "1 litro de óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Bowl",
+                         "Escumadeira",
+                         "Fouet",
+                         "Frigideira",
+                         "Copo medidor",
+                         "Colher"
+                     ],
+        "instructions":  [
+                             "Em um bowl, misture os ovos, o açúcar, o leite, a farinha de trigo e o fermento em pó até obter uma massa cremosa e homogênea.",
+                             "Coloque o óleo em uma panela funda e deixe aquecer até atingir aproximadamente 180 °C.",
+                             "Com o auxílio de uma colher, coloque pequenas porções de massa no óleo quente.",
+                             "Frite os bolinhos até ficarem dourados por inteiro, virando quando necessário.",
+                             "Retire com uma escumadeira e coloque sobre papel absorvente para retirar o excesso de óleo.",
+                             "Misture o açúcar com a canela em um recipiente.",
+                             "Passe os bolinhos ainda mornos na mistura de açúcar e canela."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Coloque pequenas porções de massa no óleo para facilitar o cozimento por dentro.",
+                     "Mantenha a temperatura do óleo para evitar que os bolinhos dourem por fora e fiquem crus por dentro.",
+                     "Sirva os bolinhos ainda mornos para aproveitar melhor a textura macia."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "pao-frances",
+        "title":  "Pão francês",
+        "category":  "Lanche",
+        "time":  "2 h 30 min",
+        "yield":  "20 porções",
+        "difficulty":  "Média",
+        "description":  "Pão francês caseiro preparado com farinha de trigo, fermento biológico e margarina, com miolo macio e casquinha crocante.",
+        "keywords":  [
+                         "Pão francês",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pao-frances.webp",
+        "ingredients":  [
+                            "500 g de farinha de trigo",
+                            "10 g de fermento biológico para pão",
+                            "15 g de sal",
+                            "20 g de açúcar",
+                            "1 colher (sopa) de margarina",
+                            "Água morna para dissolver o fermento e ajustar a massa"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Bowl",
+                         "Colher de pau",
+                         "Faca",
+                         "Forma"
+                     ],
+        "instructions":  [
+                             "Dissolva o fermento biológico em um copo de água morna com o açúcar.",
+                             "Em um bowl, coloque a farinha de trigo, o sal e a margarina. Acrescente o fermento dissolvido.",
+                             "Misture os ingredientes e comece a sovar a massa, empurrando-a para frente com a palma da mão e dobrando-a sobre si mesma.",
+                             "Se necessário, acrescente mais água ou farinha até obter uma massa leve, esponjosa e que não grude nas mãos.",
+                             "Cubra a massa e deixe descansar por aproximadamente 2 horas.",
+                             "Após o descanso, amasse novamente e modele os pães no formato desejado.",
+                             "Coloque os pães em uma forma untada. Se a massa estiver pegajosa, espalhe um pouco mais de farinha por cima.",
+                             "Deixe descansar por mais 1 hora.",
+                             "Aqueça o forno e pincele os pães com água antes de assar.",
+                             "Leve ao forno por aproximadamente 40 minutos ou até ficarem dourados."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Sove bem a massa para conseguir pães com miolo macio.",
+                     "Respeite os períodos de descanso para ajudar a massa a crescer.",
+                     "Pincelar água sobre os pães antes de assar ajuda a formar uma casquinha crocante."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT150M"
+    },
+    {
+        "id":  "cocada",
+        "title":  "Cocada.",
+        "category":  "Doces",
+        "time":  "40 min",
+        "yield":  "24 porções",
+        "difficulty":  "Fácil",
+        "description":  "Cocada preparada com coco ralado, açúcar e leite condensado, resultando em um doce macio e saboroso.",
+        "keywords":  [
+                         "Cocada.",
+                         "Doces"
+                     ],
+        "tags":  [
+                     "Doces"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/cocada.webp",
+        "ingredients":  [
+                            "2 medidas (da caixinha) de açúcar",
+                            "1 xícara (chá) de água",
+                            "1 pacote de coco em flocos seco (100 g) ou 1 coco fresco pequeno ralado grosso",
+                            "1 caixinha de leite condensado semidesnatado (395 g)"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Rolo de massa",
+                         "Forma",
+                         "Panela",
+                         "Colher"
+                     ],
+        "instructions":  [
+                             "Em uma panela, coloque o açúcar e a água.",
+                             "Leve ao fogo baixo por aproximadamente 10 minutos, sem mexer, até formar uma calda espessa, com consistência semelhante à de mel, mas ainda clara.",
+                             "Acrescente o coco ralado e o leite condensado. Misture bem e cozinhe por aproximadamente 10 minutos.",
+                             "Ao final do cozimento, bata bem a mistura.",
+                             "Transfira para uma superfície de mármore untada.",
+                             "Espalhe e nivele a cocada com uma colher ou um rolo de massa também untado.",
+                             "Deixe amornar, corte em quadrados e espere esfriar completamente antes de soltar os pedaços."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Utilize coco fresco para uma cocada com sabor mais intenso.",
+                     "Unte a superfície e o rolo de massa para facilitar na hora de espalhar.",
+                     "Espere esfriar completamente antes de separar os quadradinhos para evitar que quebrem."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT40M"
+    },
+    {
+        "id":  "pao-de-liquidificador",
+        "title":  "Pão de liquidificador",
+        "category":  "Café Da Manhã",
+        "time":  "1 h 45 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Pão caseiro preparado no liquidificador com leite, ovos e farinha de trigo, resultando em uma massa macia e fofinha.",
+        "keywords":  [
+                         "Pão de liquidificador",
+                         "Café Da Manhã"
+                     ],
+        "tags":  [
+                     "Café Da Manhã"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/pao-de-liquidificador.webp",
+        "ingredients":  [
+                            "2 ovos",
+                            "3 colheres (sopa) de açúcar",
+                            "3 colheres (sopa) de óleo",
+                            "1 colher (café) de sal",
+                            "1 e 1/2 xícara de leite morno",
+                            "3 e 1/2 xícaras de farinha de trigo",
+                            "1 sachê de fermento biológico seco (10 g)",
+                            "1 gema para pincelar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Vasilha",
+                         "Forma",
+                         "Colher",
+                         "Pincel culinário"
+                     ],
+        "instructions":  [
+                             "No liquidificador, coloque os ovos, o óleo, o sal, o leite morno e um pouco da farinha de trigo.",
+                             "Bata até obter uma mistura homogênea.",
+                             "Em uma vasilha, coloque o fermento biológico seco, o açúcar e o restante da farinha de trigo. Misture bem.",
+                             "Acrescente a mistura do liquidificador aos ingredientes secos e mexa até incorporar tudo. A massa deve ficar mais mole.",
+                             "Despeje a massa em uma forma untada.",
+                             "Cubra e deixe descansar por aproximadamente 40 minutos.",
+                             "Pincele a gema sobre a massa.",
+                             "Leve ao forno preaquecido a 180 °C por aproximadamente 40 minutos ou até dourar."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Utilize o leite morno, não quente, para não prejudicar a ação do fermento.",
+                     "Como a massa fica mais mole, não é necessário sovar.",
+                     "Espere alguns minutos antes de desenformar para facilitar o manuseio."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT105M"
+    },
+    {
+        "id":  "hamburguer-caseiro",
+        "title":  "Hambúrguer caseiro",
+        "category":  "Carnes",
+        "time":  "30 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Hambúrguer caseiro preparado com carne moída, creme de cebola, alho e temperos, formando bifes suculentos e saborosos.",
+        "keywords":  [
+                         "Hambúrguer caseiro",
+                         "Carnes"
+                     ],
+        "tags":  [
+                     "Carnes"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/hamburguer-caseiro.webp",
+        "ingredients":  [
+                            "1 kg de carne moída (preferencialmente patinho)",
+                            "1 sachê de creme de cebola",
+                            "1 cebola média picada",
+                            "4 dentes de alho picados",
+                            "Cebolinha a gosto",
+                            "Sal a gosto",
+                            "Orégano a gosto",
+                            "Pimenta-do-reino a gosto",
+                            "1 colher (sopa) de óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Frigideira",
+                         "Espátula",
+                         "Faca",
+                         "Tigela"
+                     ],
+        "instructions":  [
+                             "Em uma tigela, coloque a carne moída, o creme de cebola, a cebola picada, o alho, a cebolinha, o sal, o orégano e a pimenta-do-reino.",
+                             "Misture e amasse bem todos os ingredientes até formar uma massa uniforme.",
+                             "Divida a mistura em porções, faça bolinhas e achate cada uma para formar os hambúrgueres.",
+                             "Aqueça uma frigideira antiaderente e coloque uma colher de óleo.",
+                             "Frite os hambúrgueres dos dois lados até dourarem e atingirem o ponto desejado."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Modele os hambúrgueres com espessura semelhante para facilitar o cozimento.",
+                     "Evite apertar os hambúrgueres com a espátula durante a fritura para preservar a suculência.",
+                     "Sele os dois lados em fogo alto e depois reduza o fogo para terminar o cozimento."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "arroz-doce",
+        "title":  "Arroz doce",
+        "category":  "Doces",
+        "time":  "20 min",
+        "yield":  "8 porções",
+        "difficulty":  "Fácil",
+        "description":  "Arroz doce preparado com leite condensado, creme de leite e baunilha, resultando em uma sobremesa cremosa e tradicional.",
+        "keywords":  [
+                         "Arroz doce",
+                         "Doces"
+                     ],
+        "tags":  [
+                     "Doces"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/arroz-doce.webp",
+        "ingredients":  [
+                            "1 e ½ xícara de arroz",
+                            "2 e ½ xícaras de água",
+                            "5 xícaras de leite",
+                            "2 colheres de baunilha",
+                            "1 lata de leite condensado",
+                            "1 lata de creme de leite",
+                            "Açúcar a gosto",
+                            "Canela em pó ou em lascas"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Bowl",
+                         "Colher de silicone",
+                         "Colher",
+                         "Copo medidor"
+                     ],
+        "instructions":  [
+                             "Coloque a água, o arroz e a canela em uma panela. Deixe ferver até a água secar.",
+                             "Acrescente o leite, a baunilha, o açúcar e o leite condensado, mexendo sempre.",
+                             "Deixe ferver por 15 minutos.",
+                             "Adicione o creme de leite e misture.",
+                             "Ferva por mais 5 minutos.",
+                             "Polvilhe com canela e sirva quente ou frio, conforme sua preferência."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Para um arroz doce ainda mais cremoso, mexa com frequência durante o cozimento para evitar que grude no fundo da panela.",
+                     "Ajuste o açúcar ao seu gosto, lembrando que o leite condensado já adoça a receita.",
+                     "Polvilhe a canela somente no final, antes de servir.",
+                     "Sirva quente para uma sobremesa aconchegante ou gelado para uma opção refrescante."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT20M"
+    },
+    {
+        "id":  "curau-de-milho",
+        "title":  "Curau de milho",
+        "category":  "Doces",
+        "time":  "20 min",
+        "yield":  "15 porções",
+        "difficulty":  "Fácil",
+        "description":  "Curau preparado com milho verde, leite e açúcar, resultando em um creme doce e tradicional, finalizado com canela.",
+        "keywords":  [
+                         "Curau de milho",
+                         "Doces"
+                     ],
+        "tags":  [
+                     "Doces"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/curau-de-milho.webp",
+        "ingredients":  [
+                            "5 espigas de milho duras",
+                            "1 litro de leite",
+                            "1 e ½ xícara de açúcar",
+                            "1 pitada de sal",
+                            "Canela em pó (opcional, para finalizar)"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Panela",
+                         "Espátula",
+                         "Peneira fina",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Retire os grãos das espigas de milho com uma faca e descarte os sabugos.",
+                             "Coloque o milho no liquidificador, adicione o leite e bata por cerca de 3 minutos, até obter uma mistura homogênea.",
+                             "Coe o líquido usando uma peneira bem fina, separando o bagaço.",
+                             "Despeje o líquido coado em uma panela e misture o açúcar e a pitada de sal.",
+                             "Leve ao fogo baixo, mexendo continuamente até o creme começar a ganhar consistência. Depois, cozinhe por mais 10 minutos.",
+                             "Transfira o curau para uma travessa de vidro e finalize com canela em pó, se desejar.",
+                             "Espere esfriar e leve à geladeira antes de servir."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Use milho verde fresco para obter um sabor mais autêntico.",
+                     "Passe a mistura por uma peneira bem fina para deixar o curau com uma textura mais lisa.",
+                     "Mexa durante o cozimento para evitar que o creme grude no fundo da panela.",
+                     "Polvilhe a canela somente depois de colocar o curau na travessa."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT20M"
+    },
+    {
+        "id":  "doce-de-leite-caseiro",
+        "title":  "Doce de leite caseiro",
+        "category":  "Doces",
+        "time":  "1 h 30 min",
+        "yield":  "10 porções",
+        "difficulty":  "Fácil",
+        "description":  "Doce de leite feito com leite e açúcar, cozido lentamente até atingir uma textura cremosa e uma coloração dourada.",
+        "keywords":  [
+                         "Doce de leite caseiro",
+                         "Doces"
+                     ],
+        "tags":  [
+                     "Doces"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/doce-de-leite-caseiro.webp",
+        "ingredients":  [
+                            "2 litros de leite",
+                            "4 xícaras de açúcar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela grande",
+                         "Colher de pau",
+                         "Colher",
+                         "Prato de sobremesa",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Em uma panela grande e de fundo largo, misture o leite com o açúcar.",
+                             "Leve ao fogo médio e mexa constantemente com uma colher de pau até começar a ferver. Esse processo leva aproximadamente 15 minutos.",
+                             "Assim que levantar fervura, reduza o fogo e continue mexendo por cerca de 45 minutos, até o doce adquirir uma tonalidade marrom-clara e ficar cremoso.",
+                             "Desligue o fogo e transfira o doce de leite para uma travessa de vidro.",
+                             "Aguarde esfriar completamente e sirva em porções individuais. Se desejar, acompanhe com fatias de queijo branco."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Prefira uma panela de fundo largo para facilitar a evaporação e o cozimento do doce.",
+                     "Mexa sem parar durante o preparo para evitar que o leite grude ou queime no fundo.",
+                     "Tenha paciência durante o cozimento: a consistência cremosa se desenvolve aos poucos.",
+                     "Espere o doce esfriar antes de servir, pois ele ganha mais consistência depois de frio."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT90M"
+    },
+    {
+        "id":  "escondidinho-de-carne-seca",
+        "title":  "Escondidinho de carne seca",
+        "category":  "Almoço e Janta",
+        "time":  "1 h",
+        "yield":  "6 porções",
+        "difficulty":  "Média",
+        "description":  "Escondidinho de carne-seca desfiada com purê cremoso de mandioca e cobertura de queijo gratinado, ideal para uma refeição saborosa.",
+        "keywords":  [
+                         "Escondidinho de carne seca",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/escondidinho-de-carne-seca.webp",
+        "ingredients":  [
+                            "1 kg de mandioca cozida",
+                            "1 lata de creme de leite com soro",
+                            "2 colheres de margarina",
+                            "Sal a gosto",
+                            "½ kg de carne-seca dessalgada, cozida e desfiada",
+                            "1 cebola média picadinha",
+                            "4 dentes de alho amassados",
+                            "2 tomates sem pele e picados",
+                            "Sal a gosto",
+                            "Pimenta a gosto",
+                            "1 fio de azeite",
+                            "Queijo parmesão ralado a gosto"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Purê",
+                                     "ingredients":  [
+                                                         "1 kg de mandioca cozida",
+                                                         "1 lata de creme de leite com soro",
+                                                         "2 colheres de margarina",
+                                                         "Sal a gosto"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Recheio",
+                                     "ingredients":  [
+                                                         "½ kg de carne-seca dessalgada, cozida e desfiada",
+                                                         "1 cebola média picadinha",
+                                                         "4 dentes de alho amassados",
+                                                         "2 tomates sem pele e picados",
+                                                         "Sal a gosto",
+                                                         "Pimenta a gosto",
+                                                         "1 fio de azeite"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Finalizar",
+                                     "ingredients":  [
+                                                         "Queijo parmesão ralado a gosto"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Panela",
+                         "Bowl",
+                         "Colher de pau",
+                         "Espátula",
+                         "Espremedor de batatas",
+                         "Travessa de vidro"
+                     ],
+        "instructions":  [
+                             "Com a mandioca ainda quente, amasse bem até formar um purê. Coloque em uma panela junto com a margarina e o sal.",
+                             "Misture até incorporar os ingredientes e, em seguida, adicione o creme de leite. Mexa até obter um purê cremoso e reserve.",
+                             "Em outra panela, aqueça um fio de azeite e refogue a cebola com o alho até ficarem levemente dourados.",
+                             "Junte a carne-seca desfiada e deixe refogar por alguns minutos.",
+                             "Acrescente os tomates picados e cozinhe até que fiquem macios. Prove e ajuste o sal, se necessário. Tempere com pimenta a gosto.",
+                             "Em uma travessa untada com azeite, espalhe metade do purê de mandioca.",
+                             "Distribua o recheio de carne-seca por cima e cubra com o restante do purê.",
+                             "Finalize com queijo parmesão ralado e leve ao forno até a superfície ficar dourada e gratinada."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Certifique-se de dessalgar bem a carne-seca antes do preparo.",
+                     "Amasse a mandioca enquanto ainda estiver quente para facilitar o preparo do purê.",
+                     "Retire os fios centrais da mandioca para deixar o purê mais uniforme.",
+                     "Espalhe o queijo por toda a superfície para conseguir uma cobertura gratinada.",
+                     "Deixe o escondidinho descansar alguns minutos antes de servir."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT60M"
+    },
+    {
+        "id":  "caldo-verde",
+        "title":  "Caldo verde",
+        "category":  "Almoço e Janta",
+        "time":  "30 min",
+        "yield":  "5 porções",
+        "difficulty":  "Fácil",
+        "description":  "Caldo cremoso de batata com linguiça calabresa defumada e couve-manteiga, perfeito para aquecer os dias mais frios.",
+        "keywords":  [
+                         "Caldo verde",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/caldo-verde.webp",
+        "ingredients":  [
+                            "4 batatas médias",
+                            "1 tablete de caldo de galinha",
+                            "1 colher (sopa) de óleo",
+                            "1 colher (sopa) rasa de sal ou a gosto",
+                            "5 xícaras (chá) de água",
+                            "1 xícara (chá) de couve-manteiga cortada em tiras",
+                            "1 linguiça calabresa defumada cortada em rodelas",
+                            "Azeite ou croutons para finalizar (opcional)"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Panela",
+                         "Panela de pressão",
+                         "Colher de pau"
+                     ],
+        "instructions":  [
+                             "Descasque as batatas e corte-as em pedaços. Coloque-as na panela de pressão junto com o caldo de galinha, o óleo, a água e o sal.",
+                             "Tampe a panela e leve ao fogo. Depois que começar a chiar, deixe cozinhar por aproximadamente 10 minutos, até as batatas ficarem bem macias.",
+                             "Desligue o fogo, espere a pressão sair completamente e abra a panela com cuidado.",
+                             "Transfira as batatas e o caldo para o liquidificador. Bata até formar um creme homogêneo.",
+                             "Volte o creme para a panela, acrescente as rodelas de calabresa e deixe ferver por alguns minutos.",
+                             "Desligue o fogo e misture a couve-manteiga cortada em tiras.",
+                             "Sirva ainda quente. Se desejar, finalize com um fio de azeite ou alguns croutons."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Corte a couve em tiras bem fininhas para incorporá-la melhor ao caldo.",
+                     "Para um caldo mais encorpado, bata bem as batatas até obter uma textura cremosa.",
+                     "Acrescente a couve somente depois de desligar o fogo para preservar sua textura.",
+                     "Sirva acompanhado de pão ou torradinhas."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "bolo-formigueiro",
+        "title":  "Bolo formigueiro",
+        "category":  "Bolos",
+        "time":  "50 min",
+        "yield":  "16 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolo fofinho preparado com massa de baunilha e pepitas de chocolate, perfeito para acompanhar um café.",
+        "keywords":  [
+                         "Bolo formigueiro",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolo-formigueiro.webp",
+        "ingredients":  [
+                            "4 ovos",
+                            "2 xícaras (chá) de açúcar",
+                            "2 e ½ xícaras (chá) de farinha de trigo",
+                            "½ xícara (chá) de manteiga",
+                            "1 xícara (chá) de leite",
+                            "1 colher (sopa) de fermento químico em pó",
+                            "1 xícara (chá) de pepitas de chocolate4 ovos",
+                            "2 xícaras (chá) de açúcar",
+                            "2 e ½ xícaras (chá) de farinha de trigo",
+                            "½ xícara (chá) de manteiga",
+                            "1 xícara (chá) de leite",
+                            "1 colher (sopa) de fermento químico em pó",
+                            "1 xícara (chá) de pepitas de chocolate"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Batedeira",
+                         "Recipiente para misturar os ingredientes",
+                         "Espátula",
+                         "Assadeira",
+                         "Palito para verificar o cozimento"
+                     ],
+        "instructions":  [
+                             "Comece separando as claras das gemas. Reserve as claras para bater em neve.",
+                             "Na batedeira, coloque as gemas com 1 xícara de açúcar e bata até formar um creme claro e consistente.",
+                             "Acrescente a manteiga e continue batendo. Em seguida, adicione aos poucos o leite, a farinha de trigo e o restante do açúcar, misturando até obter uma massa uniforme.",
+                             "Em outro recipiente, bata as claras até ficarem em ponto de neve.",
+                             "Incorpore delicadamente as claras à massa. Depois, adicione o fermento e as pepitas de chocolate, misturando para distribuir bem.",
+                             "Despeje a massa em uma assadeira untada com manteiga e farinha. Espalhe as pepitas de maneira uniforme para que apareçam em todas as fatias.",
+                             "Leve ao forno preaquecido em temperatura média por aproximadamente 30 minutos.",
+                             "Faça o teste do palito para conferir se o bolo está assado. Retire do forno e espere amornar antes de desenformar."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Incorpore as claras em neve delicadamente para preservar a leveza da massa.",
+                     "Distribua bem as pepitas de chocolate para que todas as fatias fiquem recheadas.",
+                     "Evite abrir o forno antes dos primeiros 25 minutos de cozimento.",
+                     "Espere o bolo amornar antes de desenformar para evitar que se quebre."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT50M"
+    },
+    {
+        "id":  "bolo-de-limao",
+        "title":  "Bolo de limão",
+        "category":  "Bolos",
+        "time":  "40 min",
+        "yield":  "10 porções",
+        "difficulty":  "Média",
+        "description":  "Bolo fofinho feito com gelatina e suco de limão, coberto com um creme de leite condensado cítrico e refrescante.",
+        "keywords":  [
+                         "Bolo de limão",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolo-de-limao.webp",
+        "ingredients":  [
+                            "4 ovos",
+                            "½ copo de óleo",
+                            "2 copos de açúcar (não muito cheios",
+                            "1 copo de leite",
+                            "1 caixa de gelatina sabor limão",
+                            "2 xícaras de farinha de trigo",
+                            "1 colher (sopa) de fermento químico em pó",
+                            "1 lata de leite condensado",
+                            "1 caixa de creme de leite",
+                            "Suco de 3 limões"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "4 ovos",
+                                                         "½ copo de óleo",
+                                                         "2 copos de açúcar (não muito cheios",
+                                                         "1 copo de leite",
+                                                         "1 caixa de gelatina sabor limão",
+                                                         "2 xícaras de farinha de trigo",
+                                                         "1 colher (sopa) de fermento químico em pó"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Cobertura",
+                                     "ingredients":  [
+                                                         "1 lata de leite condensado",
+                                                         "1 caixa de creme de leite",
+                                                         "Suco de 3 limões"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Bowl",
+                         "Forma de bolo",
+                         "Fouet",
+                         "Garfo"
+                     ],
+        "instructions":  [
+                             "Coloque os ovos, o óleo e o açúcar no liquidificador. Bata até formar uma mistura homogênea.",
+                             "Adicione a gelatina de limão e bata novamente até dissolver.",
+                             "Transfira a mistura para uma tigela e acrescente a farinha aos poucos, intercalando com o leite.",
+                             "Junte o fermento e misture delicadamente.",
+                             "Despeje a massa em uma forma untada e polvilhada com farinha de trigo.",
+                             "Leve ao forno preaquecido até assar. Retire e faça alguns furos na superfície com um garfo enquanto ainda estiver quente.",
+                             "Misture o leite condensado, o creme de leite e o suco dos limões no liquidificador ou manualmente, até obter um creme uniforme.",
+                             "Espere o bolo esfriar completamente e espalhe a cobertura por cima."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Coloque os ovos, o óleo e o açúcar no liquidificador. Bata até formar uma mistura homogênea.",
+                                                           "Adicione a gelatina de limão e bata novamente até dissolver.",
+                                                           "Transfira a mistura para uma tigela e acrescente a farinha aos poucos, intercalando com o leite.",
+                                                           "Junte o fermento e misture delicadamente.",
+                                                           "Despeje a massa em uma forma untada e polvilhada com farinha de trigo.",
+                                                           "Leve ao forno preaquecido até assar. Retire e faça alguns furos na superfície com um garfo enquanto ainda estiver quente."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Cobertura",
+                                      "instructions":  [
+                                                           "Misture o leite condensado, o creme de leite e o suco dos limões no liquidificador ou manualmente, até obter um creme uniforme.",
+                                                           "Espere o bolo esfriar completamente e espalhe a cobertura por cima."
+                                                       ]
+                                  }
+                              ],
+        "tips":  [
+                     "Bata bem os ingredientes líquidos da massa para garantir uma mistura uniforme.",
+                     "Acrescente o fermento por último e mexa delicadamente.",
+                     "Faça os furos enquanto o bolo ainda estiver quente para ajudar na absorção da umidade.",
+                     "Mantenha o bolo na geladeira depois de colocar a cobertura para servi-lo bem fresquinho."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT40M"
+    },
+    {
+        "id":  "peixe-na-air-fryer",
+        "title":  "Peixe na air fryer",
+        "category":  "Almoço e Janta",
+        "time":  "30 min",
+        "yield":  "3 porções",
+        "difficulty":  "Fácil",
+        "description":  "Filés de peixe temperados com limão, azeite e especiarias, preparados na air fryer para ficarem dourados por fora e suculentos por dentro.",
+        "keywords":  [
+                         "Peixe na air fryer",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/peixe-na-air-fryer.webp",
+        "ingredients":  [
+                            "3 filés de peixe",
+                            "Azeite a gosto",
+                            "Suco de limão a gosto",
+                            "Sal a gosto",
+                            "Pimentão doce a gosto",
+                            "Salsa picada a gosto",
+                            "Pimenta a gosto",
+                            "Rodelas de limão para decorar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Air fryer",
+                         "vasilha",
+                         "Colher",
+                         "Faca"
+                     ],
+        "instructions":  [
+                             "Coloque os filés de peixe em um recipiente e tempere com azeite, suco de limão, sal, pimenta e pimentão doce.",
+                             "Espalhe a salsa picada sobre os filés, garantindo que o tempero fique bem distribuído.",
+                             "Acomode os filés no cesto da air fryer, sem sobrepor.",
+                             "Programe a air fryer a 200 °C e deixe preparar por aproximadamente 8 minutos, verificando o ponto do peixe.",
+                             "Retire com cuidado, finalize com mais salsa picada e decore com rodelas de limão."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Evite colocar os filés uns sobre os outros para que cozinhem por igual.",
+                     "Se os filés forem mais grossos, confira o cozimento e ajuste o tempo, se necessário.",
+                     "Sirva logo após o preparo para aproveitar a textura e a suculência do peixe.",
+                     "Experimente acompanhar com arroz, legumes ou salada."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT30M"
+    },
+    {
+        "id":  "bolinho-de-arroz",
+        "title":  "Bolinho de arroz",
+        "category":  "Lanche",
+        "time":  "15 minutos",
+        "yield":  "10 porções",
+        "difficulty":  "Média",
+        "description":  "Bolinhos preparados com arroz cozido, ovos, farinha de trigo e queijo parmesão, temperados e fritos até ficarem douradinhos e crocantes.",
+        "keywords":  [
+                         "Bolinho de arroz",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolinho-de-arroz.webp",
+        "ingredients":  [
+                            "3 xícaras (chá) de arroz cozido (450 g)",
+                            "3 ovos batidos",
+                            "1 e ½ xícara (chá) de farinha de trigo (165 g)",
+                            "½ xícara (chá) de leite (100 ml)",
+                            "1 e ½ colher (chá) de fermento em pó (5 g)",
+                            "2 colheres (sopa) de queijo parmesão ralado (opcional)",
+                            "2 sachês de tempero SAZÓN® Branco",
+                            "½ colher (chá) de sal",
+                            "Óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Tigela",
+                         "Colheres de sopa",
+                         "Panela funda",
+                         "Escumadeira",
+                         "Papel-toalha"
+                     ],
+        "instructions":  [
+                             "Em uma tigela, coloque o arroz cozido, os ovos batidos, a farinha de trigo e o leite.",
+                             "Acrescente o fermento, o queijo parmesão, o tempero SAZÓN® e o sal. Misture delicadamente até formar uma massa bem incorporada.",
+                             "Com a ajuda de duas colheres de sopa, modele pequenas porções da massa, formando os bolinhos.",
+                             "Aqueça o óleo em uma panela funda, mantendo a temperatura moderada para que os bolinhos fritem por dentro sem dourar rápido demais.",
+                             "Coloque os bolinhos no óleo quente, aos poucos, e frite por aproximadamente 3 minutos ou até ficarem dourados.",
+                             "Retire com uma escumadeira e coloque sobre papel-toalha para eliminar o excesso de óleo.",
+                             "Sirva em seguida."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Utilize arroz cozido que esteja frio para facilitar a mistura dos ingredientes.",
+                     "Evite deixar o óleo quente demais, pois os bolinhos podem dourar por fora antes de cozinhar por dentro.",
+                     "Frite pequenas quantidades por vez para manter a temperatura do óleo.",
+                     "O queijo parmesão é opcional, mas acrescenta um toque especial de sabor."
+                 ],
+        "quick":  true,
+        "totalTime":  "PT15M"
+    },
+    {
+        "id":  "carne-de-panela",
+        "title":  "Carne de panela",
+        "category":  "Carnes",
+        "time":  "45 min",
+        "yield":  "6 porções",
+        "difficulty":  "Fácil",
+        "description":  "Carne de acém cozida na pressão com vinho tinto, temperos e batatas, resultando em um prato suculento e cheio de sabor.",
+        "keywords":  [
+                         "Carne de panela",
+                         "Carnes"
+                     ],
+        "tags":  [
+                     "Carnes"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/carne-de-panela.webp",
+        "ingredients":  [
+                            "1 kg de miolo de acém cortado em cubos",
+                            "2 colheres (sopa) de óleo",
+                            "1 cebola picada",
+                            "2 dentes de alho picados",
+                            "Sal a gosto",
+                            "Pimenta-do-reino a gosto",
+                            "½ xícara (chá) de vinho tinto seco",
+                            "1 kg de batatas descascadas e cortadas em cubos",
+                            "Água suficiente para o cozimento",
+                            "Salsa picada a gosto"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Panela de pressão",
+                         "Faca",
+                         "Tábua de corte",
+                         "Colher de pau"
+                     ],
+        "instructions":  [
+                             "Aqueça o óleo na panela de pressão e refogue a cebola e o alho até começarem a dourar.",
+                             "Acrescente os cubos de acém e deixe refogar, mexendo para dourar a carne por igual.",
+                             "Tempere com sal e pimenta-do-reino. Adicione o vinho tinto e água suficiente para cobrir a carne.",
+                             "Tampe a panela e, depois que pegar pressão, cozinhe por aproximadamente 20 minutos.",
+                             "Desligue o fogo e aguarde a pressão sair completamente antes de abrir a panela.",
+                             "Coloque as batatas em cubos e acrescente mais água, se necessário. Misture e deixe cozinhar até que fiquem macias e o líquido seque.",
+                             "Finalize com salsa picada e sirva ainda quente."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Corte a carne em cubos de tamanho semelhante para garantir um cozimento uniforme.",
+                     "Doure bem a carne antes de adicionar os líquidos para intensificar o sabor do prato.",
+                     "Espere toda a pressão sair antes de abrir a panela.",
+                     "Acrescente as batatas somente depois do primeiro cozimento da carne para evitar que desmanchem.",
+                     "Se preferir um caldo mais encorpado, amasse alguns pedaços de batata durante o preparo."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT45M"
+    },
+    {
+        "id":  "quibe-assado",
+        "title":  "Quibe assado",
+        "category":  "Carnes",
+        "time":  "1 h 30 min",
+        "yield":  "8 pedaços",
+        "difficulty":  "Fácil",
+        "description":  "Kibe assado preparado com trigo e carne moída, recheado com cebola refogada e requeijão cremoso, formando uma combinação macia e saborosa.",
+        "keywords":  [
+                         "Quibe assado",
+                         "Carnes"
+                     ],
+        "tags":  [
+                     "Carnes"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/quibe-assado.webp",
+        "ingredients":  [
+                            "500 g de patinho moído",
+                            "500 g de trigo para quibe",
+                            "750 ml de água quente",
+                            "3 dentes de alho picados",
+                            "1 cebola picada",
+                            "4 colheres (sopa) de hortelã picada",
+                            "1 colher (sobremesa) de sal",
+                            "1 fio de azeite",
+                            "1 fio de azeite",
+                            "1 cebola cortada em rodelas",
+                            "500 g de requeijão cremoso",
+                            "Azeite a gosto"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "500 g de patinho moído",
+                                                         "500 g de trigo para quibe",
+                                                         "750 ml de água quente",
+                                                         "3 dentes de alho picados",
+                                                         "1 cebola picada",
+                                                         "4 colheres (sopa) de hortelã picada",
+                                                         "1 colher (sobremesa) de sal",
+                                                         "1 fio de azeite"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Recheio",
+                                     "ingredients":  [
+                                                         "1 fio de azeite",
+                                                         "1 cebola cortada em rodelas",
+                                                         "500 g de requeijão cremoso"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Finalizar",
+                                     "ingredients":  [
+                                                         "Azeite a gosto"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Tigela",
+                         "Panela",
+                         "Colher",
+                         "Refratário",
+                         "Faca"
+                     ],
+        "instructions":  [
+                             "Coloque o trigo para quibe em um recipiente e despeje a água quente por cima. Deixe descansar por aproximadamente 1 hora para hidratar.",
+                             "Após esse período, acrescente a carne moída, o alho, a cebola picada, a hortelã, o sal e um fio de azeite.",
+                             "Misture bem e amasse com as mãos até obter uma massa uniforme e com boa liga. Reserve.",
+                             "Aqueça um fio de azeite em uma panela e refogue a cebola em rodelas até ficar dourada.",
+                             "Unte um refratário com azeite e distribua metade da massa de quibe, espalhando para formar uma camada uniforme.",
+                             "Espalhe a cebola refogada sobre a massa e acrescente o requeijão cremoso por toda a superfície.",
+                             "Cubra com o restante da massa, nivelando bem para fechar o recheio.",
+                             "Com uma faca, faça alguns cortes superficiais na parte de cima e regue generosamente com azeite.",
+                             "Leve ao forno preaquecido a 180 °C por aproximadamente 30 minutos, até assar."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Coloque o trigo para quibe em um recipiente e despeje a água quente por cima. Deixe descansar por aproximadamente 1 hora para hidratar.",
+                                                           "Após esse período, acrescente a carne moída, o alho, a cebola picada, a hortelã, o sal e um fio de azeite.",
+                                                           "Misture bem e amasse com as mãos até obter uma massa uniforme e com boa liga. Reserve."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Recheio e Montagem",
+                                      "instructions":  [
+                                                           "Aqueça um fio de azeite em uma panela e refogue a cebola em rodelas até ficar dourada.",
+                                                           "Unte um refratário com azeite e distribua metade da massa de quibe, espalhando para formar uma camada uniforme.",
+                                                           "Espalhe a cebola refogada sobre a massa e acrescente o requeijão cremoso por toda a superfície.",
+                                                           "Cubra com o restante da massa, nivelando bem para fechar o recheio.",
+                                                           "Com uma faca, faça alguns cortes superficiais na parte de cima e regue generosamente com azeite.",
+                                                           "Leve ao forno preaquecido a 180 °C por aproximadamente 30 minutos, até assar."
+                                                       ]
+                                  }
+                              ],
+        "tips":  [
+                     "Respeite o tempo de hidratação do trigo para garantir uma massa macia.",
+                     "Amasse bem os ingredientes para que o quibe fique firme e não se desmanche ao cortar.",
+                     "Espalhe o recheio de maneira uniforme para que todas as porções tenham a mesma quantidade.",
+                     "Faça cortes na superfície antes de assar para facilitar na hora de dividir o quibe.",
+                     "Espere alguns minutos após retirar do forno antes de cortar e servir."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT90M"
+    },
+    {
+        "id":  "bacalhau-no-forno",
+        "title":  "Bacalhau no forno",
+        "category":  "Almoço e Janta",
+        "time":  "35 min",
+        "yield":  "5 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bacalhau de forno preparado com batatas, pimentão, tomate, azeitonas e ovos, formando um prato saboroso e colorido.",
+        "keywords":  [
+                         "Bacalhau no forno",
+                         "Almoço e Janta"
+                     ],
+        "tags":  [
+                     "Almoço e Janta"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bacalhau-no-forno.webp",
+        "ingredients":  [
+                            "1 cebola média cortada em rodelas",
+                            "2 batatas médias cozidas e cortadas em rodelas (400 g)",
+                            "500 g de bacalhau dessalgado, aferventado e separado em lascas",
+                            "1 pimentão amarelo médio cortado em rodelas",
+                            "2 tomates maduros grandes cortados em rodelas",
+                            "½ xícara (chá) de azeitonas verdes sem caroço",
+                            "4 colheres (sopa) de azeite de oliva",
+                            "1 sachê de tempero de preferencia de Limão",
+                            "2 ovos cozidos cortados em rodelas"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Refratário",
+                         "Papel alumínio",
+                         "Faca",
+                         "Tábua de corte",
+                         "Colher"
+                     ],
+        "instructions":  [
+                             "Preaqueça o forno a 180 °C.",
+                             "Em um refratário grande untado, distribua os ingredientes em camadas, começando pela cebola e seguindo com as batatas, o bacalhau, o pimentão, os tomates e as azeitonas.",
+                             "Misture o azeite com o Tempero SAZÓN® e regue toda a preparação.",
+                             "Cubra o refratário com papel-alumínio e leve ao forno por aproximadamente 20 minutos, ou até as batatas ficarem macias.",
+                             "Retire do forno, distribua as rodelas de ovos cozidos por cima e sirva em seguida."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Para dessalgar o bacalhau, deixe-o de molho na geladeira, coberto com água, por 48 horas.",
+                     "Durante o processo de dessalga, troque a água três vezes ao dia.",
+                     "Afervente o bacalhau antes de separá-lo em lascas.",
+                     "Cozinhe as batatas previamente, deixando-as firmes para não desmancharem durante o preparo."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT35M"
+    },
+    {
+        "id":  "bolo-de-laranja-com-cobertura-cremosa",
+        "title":  "Bolo de laranja",
+        "category":  "Bolos",
+        "time":  "40 min",
+        "yield":  "12 porções",
+        "difficulty":  "Fácil",
+        "description":  "Bolo de laranja preparado com suco e casca da fruta, resultando em uma massa fofinha, leve e perfumada.",
+        "keywords":  [
+                         "Bolo de laranja",
+                         "Bolos"
+                     ],
+        "tags":  [
+                     "Bolos"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/bolo-de-laranja-com-cobertura-cremosa.webp",
+        "ingredients":  [
+                            "4 ovos",
+                            "2 xícaras (chá) de açúcar",
+                            "1 xícara (chá) de óleo",
+                            "Suco de 2 laranjas",
+                            "Casca de 1 laranja",
+                            "2 xícaras (chá) de farinha de trigo",
+                            "1 colher (sopa) de fermento em pó",
+                            "Suco de laranja para molhar o bolo"
+                        ],
+        "ingredientGroups":  [
+
+                             ],
+        "utensils":  [
+                         "Liquidificador",
+                         "Tigela",
+                         "Espátula",
+                         "Forma de bolo"
+                     ],
+        "instructions":  [
+                             "No liquidificador, coloque os ovos, o açúcar, o óleo, o suco das duas laranjas e a casca de uma laranja. Bata até obter uma mistura homogênea.",
+                             "Transfira a mistura para uma tigela e acrescente a farinha de trigo e o fermento. Mexa até incorporar os ingredientes.",
+                             "Despeje a massa em uma forma com furo central, untada e enfarinhada.",
+                             "Leve ao forno preaquecido e asse por aproximadamente 30 minutos, ou até o bolo ficar assado.",
+                             "Retire do forno, desenforme e regue com suco de laranja."
+                         ],
+        "preparationGroups":  [
+
+                              ],
+        "tips":  [
+                     "Utilize laranjas frescas para deixar o bolo mais aromático.",
+                     "Retire a casca da laranja sem incluir a parte branca, que pode deixar um sabor amargo.",
+                     "Acrescente o suco aos poucos ao regar o bolo, para evitar que fique encharcado.",
+                     "Espere alguns minutos antes de desenformar para facilitar a retirada da forma."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT40M"
+    },
+    {
+        "id":  "coxinha-de-frango",
+        "title":  "Coxinha de frango",
+        "category":  "Lanche",
+        "time":  "1 h 10 min",
+        "yield":  "12 coxinhas",
+        "difficulty":  "Média",
+        "description":  "Coxinhas caseiras com massa macia e recheio suculento de frango temperado, empanadas e fritas até ficarem douradas e crocantes.",
+        "keywords":  [
+                         "Coxinha de frango",
+                         "Lanche"
+                     ],
+        "tags":  [
+                     "Lanche"
+                 ],
+        "prepTime":  null,
+        "cookTime":  null,
+        "cuisine":  null,
+        "image":  "assets/images/receitas/coxinha-de-frango.webp",
+        "ingredients":  [
+                            "2½ xícaras (chá) de caldo de frango",
+                            "2¼ xícaras (chá) de farinha de trigo",
+                            "50 g de manteiga",
+                            "1½ colher (chá) de sal",
+                            "2 xícaras (chá) de frango desfiado",
+                            "½ cebola picada",
+                            "2 tomates maduros picados",
+                            "3 dentes de alho picados",
+                            "1 pimenta dedo-de-moça",
+                            "¾ de xícara (chá) de caldo de frango",
+                            "2 colheres (sopa) de manteiga",
+                            "2 colheres (sopa) de farinha de trigo",
+                            "3 colheres (sopa) de coentro ou salsinha picada",
+                            "1 colher (chá) de colorau",
+                            "Sal e pimenta-do-reino a gosto",
+                            "2 claras de ovo",
+                            "4 colheres (sopa) de água",
+                            "2½ xícaras (chá) de farinha de rosca",
+                            "Óleo para fritar"
+                        ],
+        "ingredientGroups":  [
+                                 {
+                                     "name":  "Massa",
+                                     "ingredients":  [
+                                                         "2½ xícaras (chá) de caldo de frango",
+                                                         "2¼ xícaras (chá) de farinha de trigo",
+                                                         "50 g de manteiga",
+                                                         "1½ colher (chá) de sal"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Recheio",
+                                     "ingredients":  [
+                                                         "2 xícaras (chá) de frango desfiado",
+                                                         "½ cebola picada",
+                                                         "2 tomates maduros picados",
+                                                         "3 dentes de alho picados",
+                                                         "1 pimenta dedo-de-moça",
+                                                         "¾ de xícara (chá) de caldo de frango",
+                                                         "2 colheres (sopa) de manteiga",
+                                                         "2 colheres (sopa) de farinha de trigo",
+                                                         "3 colheres (sopa) de coentro ou salsinha picada",
+                                                         "1 colher (chá) de colorau",
+                                                         "Sal e pimenta-do-reino a gosto"
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Finalização",
+                                     "ingredients":  [
+                                                         "2 claras de ovo",
+                                                         "4 colheres (sopa) de água",
+                                                         "2½ xícaras (chá) de farinha de rosca",
+                                                         "Óleo para fritar"
+                                                     ]
+                                 }
+                             ],
+        "utensils":  [
+                         "Panela grande",
+                         "Panela de pressão",
+                         "Tigelas",
+                         "Colher",
+                         "Bancada para sovar a massa",
+                         "Escumadeira",
+                         "Prato ou recipiente para empanar"
+                     ],
+        "instructions":  [
+                             "Em uma panela grande, coloque o caldo de frango, a manteiga e o sal.",
+                             "Leve ao fogo e mexa até a manteiga derreter e o caldo começar a ferver.",
+                             "Acrescente a farinha de trigo aos poucos, mexendo rapidamente e sem parar, até formar uma massa uniforme.",
+                             "Transfira a massa para uma bancada e espalhe com uma colher para amornar.",
+                             "Quando estiver em uma temperatura adequada para manusear, sove até ficar lisa e fácil de modelar.",
+                             "Em uma panela grande, derreta a manteiga em fogo médio.",
+                             "Acrescente o alho e a cebola picados e refogue.",
+                             "Adicione os tomates, a pimenta dedo-de-moça e o colorau. Misture para incorporar os temperos.",
+                             "Coloque o frango desfiado e mexa bem.",
+                             "Despeje o caldo de frango e cozinhe até quase secar.",
+                             "Acrescente a farinha de trigo e misture por mais 1 minuto.",
+                             "Finalize com o coentro ou a salsinha picada. Reserve e deixe esfriar.",
+                             "Pegue pequenas porções de massa e abra na palma da mão.",
+                             "Coloque uma porção do recheio no centro e feche a massa, puxando a ponta para formar o formato tradicional de gota.",
+                             "Em um recipiente, misture as claras com a água.",
+                             "Passe as coxinhas nessa mistura e, em seguida, na farinha de rosca, cobrindo toda a superfície.",
+                             "Para um empanamento duplo, repita o processo.",
+                             "Aqueça o óleo a aproximadamente 180 °C e frite as coxinhas até ficarem douradas.",
+                             "Retire com uma escumadeira e deixe escorrer o excesso de óleo."
+                         ],
+        "preparationGroups":  [
+                                  {
+                                      "name":  "Massa",
+                                      "instructions":  [
+                                                           "Em uma panela grande, coloque o caldo de frango, a manteiga e o sal.",
+                                                           "Leve ao fogo e mexa até a manteiga derreter e o caldo começar a ferver.",
+                                                           "Acrescente a farinha de trigo aos poucos, mexendo rapidamente e sem parar, até formar uma massa uniforme.",
+                                                           "Transfira a massa para uma bancada e espalhe com uma colher para amornar.",
+                                                           "Quando estiver em uma temperatura adequada para manusear, sove até ficar lisa e fácil de modelar."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Recheio",
+                                      "instructions":  [
+                                                           "Em uma panela grande, derreta a manteiga em fogo médio.",
+                                                           "Acrescente o alho e a cebola picados e refogue.",
+                                                           "Adicione os tomates, a pimenta dedo-de-moça e o colorau. Misture para incorporar os temperos.",
+                                                           "Coloque o frango desfiado e mexa bem.",
+                                                           "Despeje o caldo de frango e cozinhe até quase secar.",
+                                                           "Acrescente a farinha de trigo e misture por mais 1 minuto.",
+                                                           "Finalize com o coentro ou a salsinha picada. Reserve e deixe esfriar."
+                                                       ]
+                                  },
+                                  {
+                                      "name":  "Modelagem e Finalização",
+                                      "instructions":  [
+                                                           "Pegue pequenas porções de massa e abra na palma da mão.",
+                                                           "Coloque uma porção do recheio no centro e feche a massa, puxando a ponta para formar o formato tradicional de gota.",
+                                                           "Em um recipiente, misture as claras com a água.",
+                                                           "Passe as coxinhas nessa mistura e, em seguida, na farinha de rosca, cobrindo toda a superfície.",
+                                                           "Para um empanamento duplo, repita o processo.",
+                                                           "Aqueça o óleo a aproximadamente 180 °C e frite as coxinhas até ficarem douradas.",
+                                                           "Retire com uma escumadeira e deixe escorrer o excesso de óleo."
+                                                       ]
+                                  }
+                              ],
+        "tips":  [
+                     "Deixe o recheio esfriar antes de montar as coxinhas para facilitar a modelagem.",
+                     "Sove a massa ainda morna, até ficar lisa e sem grumos.",
+                     "Evite colocar recheio em excesso para conseguir fechar bem a massa.",
+                     "Mantenha a temperatura do óleo próxima de 180 °C para obter uma fritura uniforme.",
+                     "O empanamento duplo ajuda a formar uma casquinha mais crocante."
+                 ],
+        "quick":  false,
+        "totalTime":  "PT70M"
     }
 ]
